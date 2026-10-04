@@ -18,12 +18,17 @@ planta baja y planta alta), desarrollada por la *mesa de dibujo* del proyecto JM
 | `A-05_azotea_situacion.*` | Planta de azotea (+6,20) y planta de situación del conjunto | 1:75 / 1:280 |
 | `A-06_cortes_fachadas_situacion.*` | **Cortes y fachadas (planta baja y alta) con dimensiones + miniatura de situación** | 1:100 / 1:600 |
 | `S-01_situacion_bloque.*` | Planta de situación del bloque en el conjunto (predio 100 × 100 m) | 1:200 |
+| `BLU-00_blueprint_completo_A0.*` | **Blueprint de conjunto (A0)**: plantas, cortes A-A/B-B, alzados sur/norte/este/oeste y situación | 1:100 / 1:500 |
 | `BLU-01_blueprint.*` | **Blueprint**: plantas baja y alta + corte y fachada | 1:75 / 1:100 |
 | `BLU-02_blueprint_cortes_fachadas.*` | **Blueprint**: cortes y fachadas (baja y alta) + situación | 1:100 / 1:600 |
 
-Cada lámina se entrega en cuatro formatos: **PDF** (vectorial, A1, listo para imprimir),
+Cada lámina se entrega en cuatro formatos: **PDF** (vectorial, listo para imprimir),
 **SVG** (vectorial editable), **PNG** (vista rápida, 150 dpi) y **DXF** (CAD, dibujado a
 escala 1:1 en metros, con capas y un rótulo de bloque).
+
+Las versiones **blueprint** (cianotipo: BLU-00, BLU-01 y BLU-02) se entregan además en
+**JPG** de alta resolución (hasta 7 000 px de ancho) y en **JPG ligero `*_web.jpg`**
+(≈ 2 200 px, < 250 KB) para presentaciones, correo y mensajería.
 
 ### `tools/` — fuente y generador
 
@@ -35,6 +40,7 @@ escala 1:1 en metros, con capas y un rótulo de bloque).
 | `build.py` | Genera las 9 láminas y verifica el encuadre de cada elemento dentro del marco. |
 | `memoria.py` | Genera la memoria del trabajo en PDF (A4). |
 | `indice.py` | Genera el índice visual de láminas. |
+| `web_jpg.py` | Genera las copias JPG ligeras de los blueprints (`*_web.jpg`). |
 
 Regenerar todo:
 
@@ -43,6 +49,7 @@ cd planos/tools
 python3 build.py  --dpi 150 --out ../entrega   # láminas (PDF/SVG/PNG/DXF)
 python3 memoria.py --out ../entrega            # memoria del trabajo
 python3 indice.py                              # índice visual
+python3 web_jpg.py                             # JPG ligeros para web/mensajería
 ```
 
 Requisitos: `ezdxf`, `reportlab`, `pillow` (`pip install ezdxf reportlab pillow`).

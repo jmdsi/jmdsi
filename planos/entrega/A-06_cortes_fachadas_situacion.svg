@@ -962,18 +962,18 @@
 <polygon points="313.500,384.500 316.200,382.850 316.200,386.150" fill="none" stroke="#101010" stroke-width="0.200"/>
 <polygon points="313.500,384.500 316.200,382.850 316.200,386.150" fill="#101010" stroke="none"/>
 <text x="318.000" y="383.300" font-size="1.596" fill="#101010" text-anchor="start" font-weight="normal">NTN -0,45</text>
-<line x1="70.000" y1="381.500" x2="70.000" y2="361.500" stroke="#333333" stroke-width="0.130"/>
-<line x1="310.000" y1="381.500" x2="310.000" y2="361.500" stroke="#333333" stroke-width="0.130"/>
-<line x1="70.000" y1="360.000" x2="310.000" y2="360.000" stroke="#333333" stroke-width="0.130"/>
-<line x1="68.500" y1="361.500" x2="71.500" y2="358.500" stroke="#333333" stroke-width="0.130"/>
-<line x1="308.500" y1="361.500" x2="311.500" y2="358.500" stroke="#333333" stroke-width="0.130"/>
-<text x="190.000" y="358.900" font-size="1.900" fill="#1a1a1a" text-anchor="middle" font-weight="normal">24,00</text>
-<line x1="70.000" y1="381.500" x2="70.000" y2="370.500" stroke="#333333" stroke-width="0.130"/>
-<line x1="65.500" y1="381.500" x2="65.500" y2="370.500" stroke="#333333" stroke-width="0.130"/>
-<line x1="70.000" y1="369.000" x2="65.500" y2="369.000" stroke="#333333" stroke-width="0.130"/>
-<line x1="68.500" y1="370.500" x2="71.500" y2="367.500" stroke="#333333" stroke-width="0.130"/>
-<line x1="64.000" y1="370.500" x2="67.000" y2="367.500" stroke="#333333" stroke-width="0.130"/>
-<text x="67.750" y="367.900" font-size="1.368" fill="#1a1a1a" text-anchor="middle" font-weight="normal">0,45</text>
+<line x1="70.000" y1="309.500" x2="70.000" y2="300.500" stroke="#333333" stroke-width="0.130"/>
+<line x1="310.000" y1="309.500" x2="310.000" y2="300.500" stroke="#333333" stroke-width="0.130"/>
+<line x1="70.000" y1="299.000" x2="310.000" y2="299.000" stroke="#333333" stroke-width="0.130"/>
+<line x1="68.500" y1="300.500" x2="71.500" y2="297.500" stroke="#333333" stroke-width="0.130"/>
+<line x1="308.500" y1="300.500" x2="311.500" y2="297.500" stroke="#333333" stroke-width="0.130"/>
+<text x="190.000" y="297.900" font-size="1.900" fill="#1a1a1a" text-anchor="middle" font-weight="normal">24,00</text>
+<line x1="70.000" y1="386.000" x2="70.000" y2="393.000" stroke="#333333" stroke-width="0.130"/>
+<line x1="65.500" y1="386.000" x2="65.500" y2="393.000" stroke="#333333" stroke-width="0.130"/>
+<line x1="70.000" y1="391.500" x2="65.500" y2="391.500" stroke="#333333" stroke-width="0.130"/>
+<line x1="68.500" y1="393.000" x2="71.500" y2="390.000" stroke="#333333" stroke-width="0.130"/>
+<line x1="64.000" y1="393.000" x2="67.000" y2="390.000" stroke="#333333" stroke-width="0.130"/>
+<text x="67.750" y="390.400" font-size="1.368" fill="#1a1a1a" text-anchor="middle" font-weight="normal">0,45</text>
 <text x="58.000" y="272.000" font-size="2.432" fill="#101010" text-anchor="start" font-weight="bold">FACHADA SUR  ·  PRINCIPAL (BAJA Y ALTA)</text>
 <line x1="58.000" y1="274.600" x2="238.000" y2="274.600" stroke="#000000" stroke-width="0.400"/>
 <text x="238.000" y="272.000" font-size="1.672" fill="#5c5c5c" text-anchor="end" font-weight="normal">E 1:100</text>
@@ -1120,18 +1120,18 @@
 <polygon points="603.500,384.500 606.200,382.850 606.200,386.150" fill="none" stroke="#101010" stroke-width="0.200"/>
 <polygon points="603.500,384.500 606.200,382.850 606.200,386.150" fill="#101010" stroke="none"/>
 <text x="608.000" y="383.300" font-size="1.596" fill="#101010" text-anchor="start" font-weight="normal">NTN -0,45</text>
-<line x1="360.000" y1="381.500" x2="360.000" y2="361.500" stroke="#333333" stroke-width="0.130"/>
-<line x1="600.000" y1="381.500" x2="600.000" y2="361.500" stroke="#333333" stroke-width="0.130"/>
-<line x1="360.000" y1="360.000" x2="600.000" y2="360.000" stroke="#333333" stroke-width="0.130"/>
-<line x1="358.500" y1="361.500" x2="361.500" y2="358.500" stroke="#333333" stroke-width="0.130"/>
-<line x1="598.500" y1="361.500" x2="601.500" y2="358.500" stroke="#333333" stroke-width="0.130"/>
-<text x="480.000" y="358.900" font-size="1.900" fill="#1a1a1a" text-anchor="middle" font-weight="normal">24,00</text>
-<line x1="360.000" y1="381.500" x2="360.000" y2="370.500" stroke="#333333" stroke-width="0.130"/>
-<line x1="355.500" y1="381.500" x2="355.500" y2="370.500" stroke="#333333" stroke-width="0.130"/>
-<line x1="360.000" y1="369.000" x2="355.500" y2="369.000" stroke="#333333" stroke-width="0.130"/>
-<line x1="358.500" y1="370.500" x2="361.500" y2="367.500" stroke="#333333" stroke-width="0.130"/>
-<line x1="354.000" y1="370.500" x2="357.000" y2="367.500" stroke="#333333" stroke-width="0.130"/>
-<text x="357.750" y="367.900" font-size="1.368" fill="#1a1a1a" text-anchor="middle" font-weight="normal">0,45</text>
+<line x1="360.000" y1="309.500" x2="360.000" y2="300.500" stroke="#333333" stroke-width="0.130"/>
+<line x1="600.000" y1="309.500" x2="600.000" y2="300.500" stroke="#333333" stroke-width="0.130"/>
+<line x1="360.000" y1="299.000" x2="600.000" y2="299.000" stroke="#333333" stroke-width="0.130"/>
+<line x1="358.500" y1="300.500" x2="361.500" y2="297.500" stroke="#333333" stroke-width="0.130"/>
+<line x1="598.500" y1="300.500" x2="601.500" y2="297.500" stroke="#333333" stroke-width="0.130"/>
+<text x="480.000" y="297.900" font-size="1.900" fill="#1a1a1a" text-anchor="middle" font-weight="normal">24,00</text>
+<line x1="360.000" y1="386.000" x2="360.000" y2="393.000" stroke="#333333" stroke-width="0.130"/>
+<line x1="355.500" y1="386.000" x2="355.500" y2="393.000" stroke="#333333" stroke-width="0.130"/>
+<line x1="360.000" y1="391.500" x2="355.500" y2="391.500" stroke="#333333" stroke-width="0.130"/>
+<line x1="358.500" y1="393.000" x2="361.500" y2="390.000" stroke="#333333" stroke-width="0.130"/>
+<line x1="354.000" y1="393.000" x2="357.000" y2="390.000" stroke="#333333" stroke-width="0.130"/>
+<text x="357.750" y="390.400" font-size="1.368" fill="#1a1a1a" text-anchor="middle" font-weight="normal">0,45</text>
 <text x="348.000" y="272.000" font-size="2.432" fill="#101010" text-anchor="start" font-weight="bold">FACHADA NORTE (BAJA Y ALTA)</text>
 <line x1="348.000" y1="274.600" x2="528.000" y2="274.600" stroke="#000000" stroke-width="0.400"/>
 <text x="528.000" y="272.000" font-size="1.672" fill="#5c5c5c" text-anchor="end" font-weight="normal">E 1:100</text>

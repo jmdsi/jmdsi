@@ -128,7 +128,8 @@ def construir(path, outdir):
         ['Promotor / autor', PROMOTOR],
         ['Ubicación', 'Campus JMDSI — predio de 100,00 × 100,00 m (10 000 m²)'],
         ['Fecha', FECHA],
-        ['Documentos', 'Láminas A-01 a A-06, S-01 y BLU-01/BLU-02 + presente memoria'],
+        ['Documentos', 'Láminas A-01 a A-06, S-01 y BLU-00 / BLU-01 / BLU-02 '
+         '(blueprint, también en JPG) + presente memoria'],
         ['Normativa de referencia', 'Criterios de diseño de alojamientos colectivos: '
          'circulación ≥ 1,20 m, puertas ≥ 0,80 m, altura libre ≥ 2,50 m'],
     ], [40 * mm, 132 * mm]))
@@ -147,7 +148,8 @@ def construir(path, outdir):
                'planta alta, A-03 cortes A-A y B-B con detalles, A-04 fachadas, A-05 '
                'planta de azotea y situación, A-06 cortes y fachadas (niveles bajo y '
                'alto) con miniatura de situación, S-01 planta de situación a escala y '
-               'BLU-01 / BLU-02 versión blueprint (cianotipo) del conjunto.'))
+               'BLU-00, BLU-01 y BLU-02 en versión blueprint (cianotipo), también '
+               'en JPG.'))
 
     # ------------------------------------------------------------------ 2
     F.append(P('2. Descripción del edificio', 'h1'))
@@ -350,6 +352,8 @@ def construir(path, outdir):
         ['A-06', 'Cortes y fachadas (baja y alta) con dimensiones + miniatura de '
          'situación', '1:100 / 1:600', 'A1'],
         ['S-01', 'Planta de situación del bloque en el conjunto', '1:200', 'A1'],
+        ['BLU-00', 'Blueprint de conjunto — plantas, cortes, alzados y situación',
+         '1:100 / 1:500', 'A0'],
         ['BLU-01', 'Blueprint — plantas baja y alta, corte y fachada', '1:75 / 1:100',
          'A1'],
         ['BLU-02', 'Blueprint — cortes y fachadas + situación', '1:100 / 1:600',
@@ -358,7 +362,9 @@ def construir(path, outdir):
     F.append(Spacer(1, 3))
     F.append(P('Cada lámina se entrega en PDF (vectorial, listo para imprimir), SVG '
                '(editable), PNG (vista rápida) y DXF (CAD, dibujado a escala 1:1 en '
-               'metros).', 'nota'))
+               'metros). Las versiones <b>blueprint</b> (BLU-00, BLU-01 y BLU-02) se '
+               'entregan además en <b>JPG</b> para su uso directo en presentaciones y '
+               'mensajería.', 'nota'))
 
     # ------------------------------------------------------------------ 9
     img = os.path.join(outdir, 'A-06_cortes_fachadas_situacion.png')

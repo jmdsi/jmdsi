@@ -470,6 +470,89 @@ def lamina_blueprint_cortes():
 
 
 # ===========================================================================
+# BLU-00 — BLUEPRINT COMPLETO (A0)
+# ===========================================================================
+def lamina_blueprint_completo():
+    """Blueprint de conjunto en A0: plantas, cortes, fachadas/alzados y situación."""
+    s = Sheet(1189, 841, codigo='BLU-00',
+              titulo='BLUEPRINT — BLOQUE DORMITORIOS (JUEGO COMPLETO)',
+              escala='E 1:100 / 1:500', tema='blueprint')
+    marco_lamina(s)
+    # ---------------- título general ----------------
+    s.text((40, 22), 'BLOQUE DORMITORIOS  ·  BLUEPRINT DE CONJUNTO', h=6.4, bold=True)
+    s.line((40, 27.5), (620, 27.5), 'marco-medio')
+    s.text((40, 33), 'Plantas baja y alta  ·  cortes A-A y B-B  ·  fachadas sur, norte '
+           'y este  ·  situación', h=2.6, layer='texto-suave')
+    s.text((40, 40), 'Dimensiones en metros  ·  niveles en metros  ·  2026-10-04',
+           h=2.2, layer='texto-suave')
+    # ---------------- plantas ----------------
+    v1 = View(s, 105, 205, denom=100, nombre='PB')
+    planta(v1, 0)
+    titulo_vista(s, 68, 72, 'PLANTA BAJA  ·  N.P.T. ±0,00', 'E 1:100', h=3.4, w=170)
+    v2 = View(s, 415, 205, denom=100, nombre='PA')
+    planta(v2, 1)
+    titulo_vista(s, 378, 72, 'PLANTA ALTA  ·  N.P.T. +3,25', 'E 1:100', h=3.4, w=170)
+    # ---------------- situación ----------------
+    vs = View(s, 762, 258, denom=500, nombre='SIT')
+    situacion_mini(vs)
+    titulo_vista(s, 746, 26, 'SITUACIÓN DEL BLOQUE (D)', 'E 1:500', h=2.8, w=120,
+                 sub=None)
+    s.text((746, 282), 'Escala 1:500  ·  predio de 100,00 × 100,00 m', h=2.0,
+           layer='texto-suave')
+    # ---------------- cortes ----------------
+    v3 = View(s, 150, 480, denom=100, nombre='AA')
+    corte_transversal(v3, 12.0)
+    titulo_vista(s, 100, 386, 'CORTE A-A  ·  TRANSVERSAL', 'E 1:100',
+                 sub='Crujía 9,60 m — ±0,00 · +3,25 · +6,20', w=150, h=3.0)
+    v4 = View(s, 390, 480, denom=100, nombre='BB')
+    corte_longitudinal(v4, 2.0)
+    titulo_vista(s, 356, 386, 'CORTE B-B  ·  LONGITUDINAL', 'E 1:100',
+                 sub='Longitud 24,00 m — planta baja y planta alta', w=170, h=3.0)
+    # ---------------- fachadas / alzados ----------------
+    v5 = View(s, 760, 470, denom=100, nombre='FS')
+    fachada(v5, 'S')
+    titulo_vista(s, 700, 366, 'FACHADA SUR  ·  PRINCIPAL', 'E 1:100',
+                 sub='Ingreso principal · niveles ±0,00 y +3,25', w=170, h=3.0)
+    v6 = View(s, 130, 665, denom=100, nombre='FN')
+    fachada(v6, 'N')
+    titulo_vista(s, 100, 560, 'FACHADA NORTE', 'E 1:100',
+                 sub='Ventanas de dormitorios en ambos niveles', w=170, h=3.0)
+    v7 = View(s, 470, 665, denom=100, nombre='FE')
+    fachada(v7, 'E')
+    titulo_vista(s, 452, 560, 'FACHADA ESTE', 'E 1:100', h=3.0, w=120,
+                 sub='Lavandería, depósito y sala de estudio')
+    v8 = View(s, 780, 665, denom=100, nombre='FO')
+    fachada(v8, 'O')
+    titulo_vista(s, 762, 560, 'FACHADA OESTE', 'E 1:100', h=3.0, w=120,
+                 sub='Dormitorios extremos — ambos niveles')
+    # ---------------- cuadros y notas ----------------
+    notas(s, 640, 560, 'DATOS CLAVE DEL BLOQUE', [
+        'Bloque de 24,00 × 9,60 m en planta · 2 niveles.',
+        'Niveles: ±0,00 · +3,25 (planta alta) · +6,20 (azotea).',
+        '16 dormitorios dobles de 11,36 m² · 32 camas.',
+        'Pasillo central de 1,70 m libre.',
+        'Escalera de 2 tramos: 18 C/H de 0,181 m.',
+    ], w_col=250, size=2.1, dy=3.6)
+    notas(s, 640, 690, 'NOTAS', [
+        'Documento gráfico de conjunto; el desarrollo está en A-01 a A-06 y S-01.',
+        'Medidas en metros; cotas de nivel referidas al N.P.T. ±0,00.',
+    ], w_col=250, size=1.95, dy=3.4)
+    cuadro_areas(s, 990, 560, nivel=None,
+                 w_cols=[13, 12, 34, 14, 13, 12, 34, 14], h_fila=4.0, size=1.55)
+    escala_grafica(s, 700, 540, 100, n=5, seg_m=1.0)
+    escala_grafica(s, 920, 540, 500, n=2, seg_m=10.0)
+    norte(s, 1130, 420, r=15)
+    # ---------------- situación: rótulo del bloque ----------------
+    s.line((786, 176), (742, 210), 'marco-medio')
+    s.text((788, 174), 'BLOQUE DORMITORIOS (D) — 24,00 × 9,60 m', h=2.4)
+    cajetin_lamina(s, dict(codigo='BLU-00',
+                           contenido='Blueprint de conjunto — plantas (baja y alta), '
+                           'cortes A-A / B-B, fachadas sur / norte / este y situación',
+                           escala='E 1:100 / 1:500', num='BLU-00', hoja='1 de 1'))
+    return s
+
+
+# ===========================================================================
 # VERIFICACIÓN DE ENCUADRE
 # ===========================================================================
 def _pts(it):
@@ -495,6 +578,9 @@ def _pts(it):
 
 def verificar(sheet, nombre=''):
     """Informa de elementos fuera del marco o dentro del cajetín."""
+    global MX1, MY1
+    MX1, MY1 = sheet.w - 12.0, sheet.h - 12.0
+    caj = (sheet.w - 12.0 - 190.0, sheet.h - 12.0 - 62.0, sheet.w - 12.0, sheet.h - 12.0)
     fuera, en_caj = 0, 0
     for it in sheet.items:
         p = _pts(it)
@@ -504,8 +590,8 @@ def verificar(sheet, nombre=''):
         x1 = max(q[0] for q in p)
         y0 = min(q[1] for q in p)
         y1 = max(q[1] for q in p)
-        dentro_caj = (x0 > CAJ[0] - 2 and x1 < CAJ[2] + 2 and y0 > CAJ[1] - 2
-                      and y1 < CAJ[3] + 2)
+        dentro_caj = (x0 > caj[0] - 2 and x1 < caj[2] + 2 and y0 > caj[1] - 2
+                      and y1 < caj[3] + 2)
         if (x1 < MX0 - 1 or x0 > MX1 + 1 or y1 < MY0 - 1 or y0 > MY1 + 1
                 or x0 < MX0 - 0.5 or x1 > MX1 + 0.5 or y0 < MY0 - 0.5
                 or y1 > MY1 + 0.5):
@@ -531,6 +617,7 @@ def main():
     args = ap.parse_args()
 
     laminas = [
+        ('BLU-00_blueprint_completo_A0', lamina_blueprint_completo, None),
         ('A-01_planta_baja', lamina_planta, 0),
         ('A-02_planta_alta', lamina_planta, 1),
         ('A-03_cortes_detalles', lamina_cortes, None),
@@ -546,12 +633,15 @@ def main():
             continue
         s = fn(arg) if arg is not None else fn()
         verificar(s, base.split('_')[0])
-        r = emitir(s, args.out, base, dpi=args.dpi)
-        print('%-34s PDF %5.0f KB  SVG %5.0f KB  PNG %5.0f KB  DXF %s'
+        es_blueprint = base.startswith('BLU')
+        r = emitir(s, args.out, base, dpi=args.dpi, jpg=es_blueprint,
+                   jpg_dpi=max(args.dpi, 150))
+        print('%-34s PDF %5.0f KB  SVG %5.0f KB  PNG %5.0f KB  DXF %5s  JPG %s'
               % (base, os.path.getsize(r['pdf']) / 1024.0,
                  os.path.getsize(r['svg']) / 1024.0,
                  os.path.getsize(r['png']) / 1024.0,
-                 ('%5.0f KB' % (os.path.getsize(r['dxf']) / 1024.0)) if r['dxf'] else '—'))
+                 ('%5.0f KB' % (os.path.getsize(r['dxf']) / 1024.0)) if r['dxf'] else '—',
+                 ('%5.0f KB' % (os.path.getsize(r['jpg']) / 1024.0)) if r['jpg'] else '—'))
 
 
 if __name__ == '__main__':

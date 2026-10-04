@@ -759,6 +759,20 @@ def to_png(sheet, path, dpi=150):
     img.save(path)
 
 
+def to_jpg(sheet, path, dpi=200, quality=90):
+    """Exporta la lámina a JPG (fondo blanco o azul del tema blueprint)."""
+    from PIL import Image
+    tmp = path + '.tmp.png'
+    to_png(sheet, tmp, dpi=dpi)
+    im = Image.open(tmp).convert('RGB')
+    im.save(path, 'JPEG', quality=quality, optimize=True, progressive=True,
+            dpi=(dpi, dpi))
+    try:
+        os.remove(tmp)
+    except OSError:
+        pass
+
+
 # ---------------------------------------------------------------- DXF -------
 def to_dxf(sheet, path, escala_lamina=50, dxf_version='R2010'):
     """DXF a 1:1 (metros) deshaciendo la escala de cada vista.
@@ -825,7 +839,8 @@ def to_dxf(sheet, path, escala_lamina=50, dxf_version='R2010'):
 
 
 # ---------------------------------------------------------------- Salida ----
-def emitir(sheet, outdir, base, dpi=150, dxf=True, escala_dxf=50):
+def emitir(sheet, outdir, base, dpi=150, dxf=True, escala_dxf=50, jpg=False,
+           jpg_dpi=200, jpg_quality=90):
     os.makedirs(outdir, exist_ok=True)
     p_svg = os.path.join(outdir, base + '.svg')
     with open(p_svg, 'w', encoding='utf-8') as f:
@@ -842,4 +857,8 @@ def emitir(sheet, outdir, base, dpi=150, dxf=True, escala_dxf=50):
         except Exception as e:      # noqa
             p_dxf = None
             print('   ! DXF no generado:', e)
-    return dict(pdf=p_pdf, svg=p_svg, png=p_png, dxf=p_dxf)
+    p_jpg = None
+    if jpg:
+        p_jpg = os.path.join(outdir, base + '.jpg')
+        to_jpg(sheet, p_jpg, dpi=jpg_dpi, quality=jpg_quality)
+    return dict(pdf=p_pdf, svg=p_svg, png=p_png, dxf=p_dxf, jpg=p_jpg)

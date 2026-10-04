@@ -7,6 +7,8 @@ FONT_R = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 FONT_B = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 
 LAMINAS = [
+    ('BLU-00_blueprint_completo_A0.png',
+     'BLU-00  BLUEPRINT DE CONJUNTO (A0) — PLANTAS, CORTES, ALZADOS Y SITUACIÓN'),
     ('A-01_planta_baja.png', 'A-01  PLANTA BAJA  ·  E 1:50'),
     ('A-02_planta_alta.png', 'A-02  PLANTA ALTA  ·  E 1:50'),
     ('A-03_cortes_detalles.png', 'A-03  CORTES A-A / B-B + DETAILS  ·  E 1:50'),

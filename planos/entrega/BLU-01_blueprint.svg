@@ -2469,18 +2469,18 @@
 <polygon points="573.500,474.500 576.200,472.850 576.200,476.150" fill="none" stroke="#eaf3ff" stroke-width="0.200"/>
 <polygon points="573.500,474.500 576.200,472.850 576.200,476.150" fill="#eaf3ff" stroke="none"/>
 <text x="578.000" y="473.300" font-size="1.596" fill="#eaf3ff" text-anchor="start" font-weight="normal">NTN -0,45</text>
-<line x1="330.000" y1="471.500" x2="330.000" y2="451.500" stroke="#8fc0e8" stroke-width="0.130"/>
-<line x1="570.000" y1="471.500" x2="570.000" y2="451.500" stroke="#8fc0e8" stroke-width="0.130"/>
-<line x1="330.000" y1="450.000" x2="570.000" y2="450.000" stroke="#8fc0e8" stroke-width="0.130"/>
-<line x1="328.500" y1="451.500" x2="331.500" y2="448.500" stroke="#8fc0e8" stroke-width="0.130"/>
-<line x1="568.500" y1="451.500" x2="571.500" y2="448.500" stroke="#8fc0e8" stroke-width="0.130"/>
-<text x="450.000" y="448.900" font-size="1.900" fill="#dbe9ff" text-anchor="middle" font-weight="normal">24,00</text>
-<line x1="330.000" y1="471.500" x2="330.000" y2="460.500" stroke="#8fc0e8" stroke-width="0.130"/>
-<line x1="325.500" y1="471.500" x2="325.500" y2="460.500" stroke="#8fc0e8" stroke-width="0.130"/>
-<line x1="330.000" y1="459.000" x2="325.500" y2="459.000" stroke="#8fc0e8" stroke-width="0.130"/>
-<line x1="328.500" y1="460.500" x2="331.500" y2="457.500" stroke="#8fc0e8" stroke-width="0.130"/>
-<line x1="324.000" y1="460.500" x2="327.000" y2="457.500" stroke="#8fc0e8" stroke-width="0.130"/>
-<text x="327.750" y="457.900" font-size="1.368" fill="#dbe9ff" text-anchor="middle" font-weight="normal">0,45</text>
+<line x1="330.000" y1="399.500" x2="330.000" y2="390.500" stroke="#8fc0e8" stroke-width="0.130"/>
+<line x1="570.000" y1="399.500" x2="570.000" y2="390.500" stroke="#8fc0e8" stroke-width="0.130"/>
+<line x1="330.000" y1="389.000" x2="570.000" y2="389.000" stroke="#8fc0e8" stroke-width="0.130"/>
+<line x1="328.500" y1="390.500" x2="331.500" y2="387.500" stroke="#8fc0e8" stroke-width="0.130"/>
+<line x1="568.500" y1="390.500" x2="571.500" y2="387.500" stroke="#8fc0e8" stroke-width="0.130"/>
+<text x="450.000" y="387.900" font-size="1.900" fill="#dbe9ff" text-anchor="middle" font-weight="normal">24,00</text>
+<line x1="330.000" y1="476.000" x2="330.000" y2="483.000" stroke="#8fc0e8" stroke-width="0.130"/>
+<line x1="325.500" y1="476.000" x2="325.500" y2="483.000" stroke="#8fc0e8" stroke-width="0.130"/>
+<line x1="330.000" y1="481.500" x2="325.500" y2="481.500" stroke="#8fc0e8" stroke-width="0.130"/>
+<line x1="328.500" y1="483.000" x2="331.500" y2="480.000" stroke="#8fc0e8" stroke-width="0.130"/>
+<line x1="324.000" y1="483.000" x2="327.000" y2="480.000" stroke="#8fc0e8" stroke-width="0.130"/>
+<text x="327.750" y="480.400" font-size="1.368" fill="#dbe9ff" text-anchor="middle" font-weight="normal">0,45</text>
 <text x="318.000" y="370.000" font-size="2.128" fill="#eaf3ff" text-anchor="start" font-weight="bold">FACHADA SUR  ·  PRINCIPAL</text>
 <line x1="318.000" y1="372.600" x2="468.000" y2="372.600" stroke="#dbe9ff" stroke-width="0.400"/>
 <text x="468.000" y="370.000" font-size="1.672" fill="#8fb7d8" text-anchor="end" font-weight="normal">E 1:100</text>

@@ -579,8 +579,8 @@ def fachada(v, lado, con_niveles=True, con_material=True):
         cota_nivel(v, 7.20, -1.30, off=-3.4, size=1.9, lado='izq', txt='ALBARDILLA')
         cota_nivel(v, NIVEL_TERRENO, largo + 0.35, off=0, size=2.1, lado='der',
                    txt='NTN ' + nivel_txt(NIVEL_TERRENO))
-    dim_h(v, 0.0, largo, 0.0, off=-20.0, size=2.5)
-    dim_h(v, 0.0, NIVEL_TERRENO, 0.0, off=-11.0, size=1.8)
+    dim_h(v, 0.0, largo, 7.20, off=-9.0, size=2.5)
+    dim_h(v, 0.0, NIVEL_TERRENO, NIVEL_TERRENO, off=7.0, size=1.8)
 
 
 # ============================================================================
