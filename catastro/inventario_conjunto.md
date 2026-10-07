@@ -31,17 +31,21 @@ Lectura directa de rótulos. Los que no se leen con certeza van marcados.
 
 | Fracción | Bloque | Observación |
 |---|---|---|
-| ① | Lectorio / Auditorio | extremo sureste |
-| ② | *(rótulo no legible)* | gran bloque sur, con patio |
-| ③ | Dormitorios | ala suroeste |
-| ④ | Aulas | ala este |
-| ⑤ | Laboratorio | ala este — **extremo del conector Fracción 7** |
-| ⑥ | Talleres | ala noreste |
-| **⑦** | **Corredor Casino de Cadetes – Laboratorios** | **fichado: `ENV-C-CX-001`** |
-| ⑧ | *(sobre Cocina y Comedor de Cadetes)* | a confirmar |
-| ⑨ | *(no legible)* | a confirmar |
-| ⑩ | **Enfermería** | ala suroeste |
-| ⑪ | Lavandería | junto a planta eléctrica |
+| Fracción | Bloque | Lámina recibida | Corredor |
+|---|---|---|---|
+| ① | Lectorio / Auditorio | ✗ **falta** | — |
+| ② / "E" | Biblioteca · Dirección · Secretaría · Administración | ✓ planta, envigado, fundaciones | Perimetral en U |
+| ③ | **Dormitorios** | ✓ planta alta, envigado 1er piso, fundaciones, **instalación eléctrica planta baja** | **Perimetral en U, en DOS niveles** |
+| ④ | **Aulas** (6 aulas) | ✓ planta 1er piso, fachadas, corte | Lateral poniente |
+| ⑤ | **Laboratorios** (2 lab. + Sala de Dibujo) | ✓ planta, 4 fachadas, 2 cortes | Lateral poniente — **extremo del conector Fr. 7** |
+| ⑥ | **Talleres y Casino** | ✓ planta, 4 fachadas, 2 cortes, notas de modificación | Perimetral en L |
+| **⑦** | **Conector Casino de Cadetes – Laboratorios** | ✓ **3 láminas** | **FICHADO: `ENV-C-CX-001` — 156,00 m² — COLAPSADO** |
+| ⑧ | **Casino de Oficiales y Gimnasio** | ✓ planta (general y detalle) | En L / T — **módulo 3,00 m, columna 0,25 m** |
+| ⑨ | **Casino y Comedor de Cadetes** | ✓ planta baja (general y detalle) | Red interna extensa |
+| ⑩ | **Enfermería** | ✓ planta, 4 fachadas, 2 cortes | Dos ramales |
+| ⑪ | Lavandería · Planta Eléctrica | ✗ **falta** | — |
+
+**Cobertura documental: 9 de 11 fracciones.** Faltan ① y ⑪.
 
 ### Servicios e instalaciones
 
@@ -97,6 +101,43 @@ Depósito · zona de baños
 
 **Estado:** ⚠️ **No calculable.** La fotografía general no permite leer las cadenas de
 acotado. Se requiere fotografía cerrada de la planta para extraer longitudes y anchos.
+
+---
+
+---
+
+## HALLAZGO DECISIVO — Dónde están acotados los corredores
+
+La lámina **Fracción 3 — Planta Baja, Instalación Eléctrica** (MOP, 20-1-51) repite **tres
+veces** la nota:
+
+> *"PARA LAS LÁMPARAS DE ESTE CORREDOR VÉASE EL PLANO DE SITUACIÓN GENERAL"*
+
+**El MOP trató los corredores como un sistema autónomo del plano de conjunto**, no como parte
+de cada fracción. Las láminas de fracción dibujan la retícula del corredor pero deliberadamente
+**no la acotan**.
+
+**Por tanto:** fotografiar más fracciones **no cerrará el cómputo de área**. La documentación
+con las cotas es el **Plano de Situación General 1:500**, que debe fotografiarse **por sectores
+solapados en alta resolución**.
+
+---
+
+## Datos dimensionales verificados
+
+| Parámetro | Valor | Confianza | Fuente |
+|---|---|---|---|
+| Módulo Fr. 7 | 4,00 m | `COT` | 13 × 4,00 = 52,00 ✓ |
+| Módulo Fr. 8 | 3,00 m | `COT` | 5,00+3,50+3,00×5 = 23,50 ✓ |
+| **Sección de columna** | **0,25 m** | `COT` | Fr. 8, cadena de luces |
+| Luz libre entre columnas (Fr. 8) | 2,75 m | `COT` | Fr. 8 |
+| Ancho entre ejes Fr. 7 | 3,00 m | `COT` | Fundaciones con pilotes |
+| Gimnasio (Fr. 8) | 24,00 × 11,75 m | `COT` | Fr. 8 |
+| Frente total Fr. 8 | 23,50 m | `COT` | Cota general |
+
+> ⚠ **El módulo NO es constante.** Afirmación corregida: varía por fracción (4,00 m en Fr. 7;
+> 3,00 m en Fr. 8). La estimación por conteo de crujías sólo vale **dentro de una misma
+> fracción**.
 
 ---
 

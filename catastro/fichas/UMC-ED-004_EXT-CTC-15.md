@@ -86,12 +86,54 @@ independientes** de la Fracción 7 —Planta y Fachadas, Planta de Fundaciones y
 Planta de Fundaciones con Pilotes—, levantadas para fines distintos. El ancho de 3,00 m está
 acotado entre ejes de las dos vigas longitudinales `VF1-7`.
 
-### 2.2 Módulo dimensional del sistema
+### 2.2 Módulo dimensional del sistema — CORRECCIÓN
 
-De la lectura de las fracciones 2, 3, 6, 7, 9 y 10 se confirma un **módulo estructural
-constante de 4,00 m entre ejes de columnas** en toda la red de corredores. Es el invariante
-de proyecto del conjunto ENV y permite estimar longitudes por conteo de crujías cuando la
-cota general no sea legible.
+> ⚠ **Rectificación de una afirmación previa.** En una versión anterior de esta ficha se
+> sostuvo que el módulo de 4,00 m era constante en toda la red. **Es incorrecto.** La lectura
+> de la Fracción 8 lo desmiente y se corrige aquí.
+
+**El módulo varía por fracción:**
+
+| Fracción | Módulo entre ejes | Verificación |
+|---|---|---|
+| 7 — Conector Casino–Laboratorios | **4,00 m** | 13 × 4,00 = 52,00 m ✓ cota general |
+| 8 — Casino de Oficiales y Gimnasio | **3,00 m** | 5,00 + 3,50 + 3,00×5 = 23,50 m ✓ cota general |
+
+**Consecuencia metodológica:** la estimación de longitudes por conteo de crujías **sólo es
+válida dentro de una misma fracción**, nunca extrapolada entre fracciones. Cada tramo exige
+lectura de su propia cadena de acotado.
+
+### 2.2.bis Sección de columna — dato nuevo verificado
+
+La cadena secundaria de la Fracción 8 descompone el módulo con precisión:
+
+```
+0,85 │ 2,75 │ 0,25 │ 2,75 │ 0,25 │ 2,75 │ 0,25 │ 2,75 │ 0,25 │ 2,75
+       luz    col.   luz    col.   luz    col.   luz    col.   luz
+
+Comprobación:  2,75 (luz) + 0,25 (columna) = 3,00 m entre ejes   ✓
+```
+
+**Sección de columna del pórtico: 0,25 m** (`COT`, Fracción 8).
+
+Es el dato que faltaba para la verificación normativa del ancho libre (ver §4).
+
+### 2.2.ter Hallazgo documental decisivo
+
+La lámina **Fracción 3 — Planta Baja, Instalación Eléctrica** (MOP, **20-1-51**) consigna
+**tres veces** la nota:
+
+> *"PARA LAS LÁMPARAS DE ESTE CORREDOR VÉASE EL PLANO DE SITUACIÓN GENERAL"*
+
+**Interpretación.** El MOP **no documentó los corredores dentro de las láminas de fracción**.
+Los concibió y dibujó como **sistema autónomo perteneciente al plano de conjunto**. Por eso
+las fracciones representan la retícula del corredor pero **no la acotan**: no es omisión del
+dibujante, es una decisión deliberada de organización documental.
+
+**Consecuencia operativa de primer orden:** fotografiar más láminas de fracción **no cerrará
+el área faltante**. La documentación que contiene las cotas de los corredores es el **PLANO
+DE SITUACIÓN GENERAL 1:500**, que debe fotografiarse **por sectores y en alta resolución**.
+Esto reorienta por completo la campaña de cierre (ver §6).
 
 ### 2.3 Tramos identificados, pendientes de cota
 
@@ -179,9 +221,11 @@ tanto como **índice maestro** del archivo planimétrico.
 | Parámetro | Valor de proyecto | Referencia | Cumplimiento |
 |---|---|---|---|
 | Ancho entre ejes (Fr. 7) | **3,00 m** | — | — |
-| **Ancho libre de circulación** | **pendiente** — requiere sección de columna | ≥ 1,20 m (criterio adoptado) | **Previsiblemente conforme**: aun descontando columnas de 0,40 m, el libre superaría 2,20 m |
+| Sección de columna | **0,25 m** (`COT`, Fr. 8) | — | — |
+| **Ancho libre de circulación (Fr. 7)** | **≈ 2,75 m** (`EST`) | ≥ 1,20 m (criterio adoptado) | **✓ CONFORME** — holgura de 229 % |
+| **Ancho libre de circulación (Fr. 8)** | **2,75 m** (`COT`) | ≥ 1,20 m | **✓ CONFORME** |
 | Altura libre | `NV` | ≥ 2,50 m | **No verificable** |
-| Módulo entre columnas | 4,00 m | — | Regular en toda la red |
+| Módulo entre columnas | **Variable**: 4,00 m (Fr. 7) · 3,00 m (Fr. 8) | — | Ver §2.2 |
 | Accesibilidad universal | `NV` | Pendientes, rampas, cambios de nivel | **No verificable** — la planimetría de 1951 es anterior a toda normativa de accesibilidad |
 
 > **Nota de contexto normativo.** Un conjunto proyectado en 1946-51 no fue concebido bajo
@@ -235,11 +279,15 @@ institucional en los nombres de sus vías:
 
 ## 6. PENDIENTES PARA CIERRE DE LA FICHA
 
+> **REORIENTACIÓN DE LA CAMPAÑA (ver §2.2.ter).** El pendiente nº 1 ya no se resuelve
+> fotografiando más fracciones. Las cotas de los corredores están en el **Plano de Situación
+> General 1:500**, por decisión documental del propio MOP.
+
 | # | Dato | Cómo obtenerlo | Criticidad |
 |---|---|---|---|
-| 1 | Cotas de corredores de Fr. 2, 3, 6, 9 y 10 | Fotografía cerrada de las cadenas de acotado | **Alta** — cierra el 93,8 % no verificado |
+| 1 | **Cotas de la red de corredores** | **PLANO DE SITUACIÓN GENERAL 1:500 fotografiado POR SECTORES en alta resolución** (4–6 tomas solapadas, no una general) | **Máxima** — cierra el 93,8 % no verificado |
 | 2 | Confirmación de corredor en planta alta Fr. 3 | Lectura de cota de la lámina Fracción 3 Planta Alta | **Alta** — afecta el nº de niveles |
-| 3 | Sección de columna y altura libre | Detalles 1:20 y cotas verticales de fachada | Media |
+| 3 | Altura libre | Cotas verticales de fachada/corte | Media — *(sección de columna ya resuelta: 0,25 m)* |
 | 4 | Vuelo de losa sobre eje | Detalle de borde — daría el área de cubierta real | Media |
 | 5 | Fecha y acta del evento sísmico | Informe de inspección postsísmica | **Alta** — soporta la baja registral |
 | 6 | Homogeneización del norte ENV / ortofoto | Verificación de rosa de los vientos | **Alta** — condiciona toda superposición |
