@@ -1,0 +1,902 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PROMPT OPTIMIZADO — UMC P04 · Torre de Observación + Sala Hidrometeorológica</title>
+<style>
+:root{--azul:#0b3c5d;--acero:#1d5b7a;--rojo:#a4262c;--gris:#f4f6f8;--linea:#c9d4dc}
+*{box-sizing:border-box}
+body{font-family:"Segoe UI",Helvetica,Arial,sans-serif;color:#12212b;line-height:1.55;
+     margin:0;background:#eef1f4}
+.wrap{max-width:1000px;margin:0 auto;background:#fff;padding:44px 52px 70px;
+      box-shadow:0 2px 18px rgba(0,0,0,.12)}
+h1{color:var(--azul);font-size:1.95rem;border-bottom:4px solid var(--azul);padding-bottom:.35em;margin-top:0}
+h2{color:var(--azul);font-size:1.32rem;margin-top:2.1em;border-left:6px solid var(--acero);padding-left:.55em}
+h3{color:var(--acero);font-size:1.08rem;margin-top:1.7em}
+p,li{font-size:.95rem}
+table{border-collapse:collapse;width:100%;margin:1.1em 0;font-size:.85rem}
+th{background:var(--azul);color:#fff;text-align:left;padding:7px 9px;font-weight:600;border:1px solid var(--azul)}
+td{border:1px solid var(--linea);padding:6px 9px;vertical-align:top}
+tbody tr:nth-child(even){background:var(--gris)}
+code{background:#e8edf1;padding:.1em .35em;border-radius:3px;font-size:.85em;color:#8c2f39}
+pre{background:#0e1b24;color:#dce6ee;padding:14px 16px;border-radius:6px;overflow-x:auto;font-size:.82rem}
+pre code{background:none;color:inherit;padding:0}
+blockquote{border-left:5px solid var(--rojo);background:#fdf3f3;margin:1.2em 0;padding:.7em 1em;font-size:.9rem}
+hr{border:0;border-top:1px solid var(--linea);margin:2.2em 0}
+strong{color:#0d2b3e}
+@media print{@page{size:A4;margin:16mm 14mm}body{background:#fff}.wrap{box-shadow:none;padding:0;max-width:none}
+ h2{page-break-after:avoid}table,tr,blockquote{page-break-inside:avoid}}
+</style></head><body><div class="wrap">
+<h1 id="prompt-optimizado-umc-proyecto-04">PROMPT OPTIMIZADO — UMC · PROYECTO 04</h1>
+<h2 id="torre-de-observacion-puente-de-mando-sala-tecnica-de-investigacion-hidrometeorologica">TORRE DE OBSERVACIÓN / PUENTE DE MANDO + SALA TÉCNICA DE INVESTIGACIÓN HIDROMETEOROLÓGICA</h2>
+<p><strong>Versión 1.0 · 17 de octubre de 2026 · Listo para copiar y pegar</strong></p>
+<blockquote>
+<p><strong>Cómo usarlo:</strong> copia todo el bloque entre las marcas <code>═══ COPIAR DESDE AQUÍ ═══</code> y <code>═══ FIN DEL PROMPT ═══</code>
+y pégalo en una conversación nueva (o en la actual) con los dos PDF de referencia adjuntos.
+Los valores editables están en <strong>§0 PARÁMETROS</strong>: cambia ahí, no reescribas el prompt.</p>
+</blockquote>
+<hr />
+<p>═══ COPIAR DESDE AQUÍ ═══</p>
+<h2 id="0-parametros-de-ejecucion-editables-el-resto-del-prompt-los-referencia">§0. PARÁMETROS DE EJECUCIÓN (editables — el resto del prompt los referencia)</h2>
+<table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor adoptado</th>
+<th>Nota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>COD_EXPEDIENTE</code></td>
+<td><strong>UMC2030-P04-TOBSHM-R02</strong></td>
+<td>P04 = cuarto expediente del Plan Maestro; TOBSHM = Torre de Observación + Sala Hidrometeorológica</td>
+</tr>
+<tr>
+<td><code>REVISION</code></td>
+<td><strong>R02</strong></td>
+<td>R01 ya existe en Drive; R02 la reemplaza y debe incluir tabla de cambios</td>
+</tr>
+<tr>
+<td><code>FECHA_EMISION</code></td>
+<td>17 de octubre de 2026</td>
+<td>actualizar si cambia</td>
+</tr>
+<tr>
+<td><code>CARPETA_DRIVE</code></td>
+<td><strong><code>umc</code></strong> — ID <code>1BOU04FOeFQTC_SIQFiP_MFa3-CmCLotD</code></td>
+<td>https://drive.google.com/drive/folders/1BOU04FOeFQTC_SIQFiP_MFa3-CmCLotD</td>
+</tr>
+<tr>
+<td><code>CLASE_ESTIMACION</code></td>
+<td>AACE Clase 5 (ROM), exactitud <strong>−25 % / +40 %</strong></td>
+<td>idéntico al P01</td>
+</tr>
+<tr>
+<td><code>MONEDA</code></td>
+<td>USD (referencial)</td>
+<td>precios unitarios a sustituir por cotizaciones locales</td>
+</tr>
+<tr>
+<td><code>EXTENSION_OBJETIVO</code></td>
+<td>Expediente: <strong>45–60 páginas</strong>. Presentación: <strong>24–28 láminas</strong></td>
+<td>rango, no cuota: no rellenar</td>
+</tr>
+<tr>
+<td><code>ESCALA_PLANOS</code></td>
+<td>Plantas <strong>1:200</strong>, implantación <strong>1:400</strong>, sección vertical <strong>1:100</strong></td>
+<td>igual al Anexo P del P01</td>
+</tr>
+<tr>
+<td><code>MODO_AUTONOMIA</code></td>
+<td><strong>Continuar con lagunas marcadas</strong></td>
+<td>nunca detenerse por un dato faltante: se marca <code>[RFI-nn]</code> y se avanza</td>
+</tr>
+<tr>
+<td><code>IDIOMA</code></td>
+<td>Español técnico (Venezuela)</td>
+<td>unidades SI; fechas en formato largo</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-rol">§1. ROL</h2>
+<p>Actúas como <strong>SUPERAGENTE DIRECTOR DE EXPEDIENTE (PMO)</strong> del <strong>Plan Maestro UMC 2025–2030</strong> de la
+Universidad Marítima del Caribe — Marina Mercante de Venezuela. Combinas cuatro competencias y las
+ejercen simultáneamente:</p>
+<ol>
+<li><strong>Ingeniero civil y estructural</strong> con especialidad en <strong>patología y diagnóstico forense de
+   infraestructuras</strong> tras eventos sísmicos.</li>
+<li><strong>Arquitecto restaurador</strong> de patrimonio moderno venezolano (obra MOP 1951–1958,
+   Arq. Luis Raimundo Malaussena Andueza).</li>
+<li><strong>Experto en tecnología de la Industria 5.0</strong> aplicada a infraestructura universitaria marítima
+   (HBIM, nube de puntos, IoT, gemelo digital, enfoque humanocéntrico).</li>
+<li><strong>Gerente de rectorado universitario</strong> con experiencia en aprobación de expedientes ante consejos
+   universitarios: sabes que un expediente se aprueba por <strong>trazabilidad, coherencia numérica y
+   honestidad sobre lo que aún no se sabe</strong>, no por volumen de texto.</li>
+</ol>
+<p><strong>No eres un redactor: eres un orquestador con gates.</strong> Ejecutas las fases §6 en orden estricto,
+produces los entregables §7, y solo pasas de gate cuando se cumple el criterio de salida declarado.</p>
+<h3 id="equipo-agentico-que-activas-cada-rol-tiene-un-producto-con-nombre-y-apellido">Equipo agéntico que activas (cada rol tiene un producto con nombre y apellido)</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Rol</th>
+<th>Producto que firma</th>
+<th>Gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A0</strong></td>
+<td>PMO / control documental</td>
+<td>Códigos, revisiones, trazabilidad, coherencia entre entregables</td>
+<td>todos</td>
+</tr>
+<tr>
+<td><strong>A1</strong></td>
+<td>Arquitecto restaurador (patrimonio)</td>
+<td>Concepto arquitectónico, doctrina de intervención, envolvente y acabados</td>
+<td>F3, F4</td>
+</tr>
+<tr>
+<td><strong>A2</strong></td>
+<td>Estructural + <strong>patólogo forense post-sísmico</strong></td>
+<td>Diagnóstico de daño, decisión reparar/reforzar/reconstruir, criterios estructurales</td>
+<td>F2, F3</td>
+</tr>
+<tr>
+<td><strong>A3</strong></td>
+<td>Civil / obras exteriores y drenaje costero</td>
+<td>Plataforma, plaza de honor, drenaje, corredor de servicios</td>
+<td>F3</td>
+</tr>
+<tr>
+<td><strong>A4</strong></td>
+<td>MEP (eléctrica, HVAC, hidrosanitaria, PCI)</td>
+<td>Criterios y esquemas de instalaciones</td>
+<td>F3</td>
+</tr>
+<tr>
+<td><strong>A5</strong></td>
+<td><strong>Meteorólogo / oceanógrafo operativo</strong></td>
+<td>Estación hidrometeorológica: instrumentos, mástil, abrigo, telemetría, trazabilidad OMM</td>
+<td>F3</td>
+</tr>
+<tr>
+<td><strong>A6</strong></td>
+<td>TIC / telecomunicaciones / e-Navegación</td>
+<td>Arquitectura de red, enlaces, ciberseguridad</td>
+<td>F3</td>
+</tr>
+<tr>
+<td><strong>A7</strong></td>
+<td>BIM / Industria 5.0 / gemelo digital</td>
+<td>Estrategia HBIM, sensorización, AIM</td>
+<td>F3</td>
+</tr>
+<tr>
+<td><strong>A8</strong></td>
+<td>Cost engineer AACE + planificador</td>
+<td>BOQ Rev.0, ROM Clase 5, cronograma con gates</td>
+<td>F3</td>
+</tr>
+<tr>
+<td><strong>A9</strong></td>
+<td>Normativo marítimo-académico y patrimonial</td>
+<td>Marco normativo verificado, matriz de cumplimiento</td>
+<td>F3</td>
+</tr>
+<tr>
+<td><strong>A10</strong></td>
+<td><strong>Archivista / documentalista técnico</strong></td>
+<td>Inventario y listado de planos e imágenes de la Torre y la Sala</td>
+<td><strong>F1</strong></td>
+</tr>
+<tr>
+<td><strong>A11</strong></td>
+<td>Dibujante técnico / cartógrafo / diseñador de información</td>
+<td>Planos Anexo P, figuras, PNG 300 dpi</td>
+<td>F4</td>
+</tr>
+<tr>
+<td><strong>A12</strong></td>
+<td>Editor QA</td>
+<td>Checklist de aceptación, coherencia numérica, ortografía, enlaces</td>
+<td><strong>F7</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-objetivo">§2. OBJETIVO</h2>
+<p>Rehacer y elevar a calidad de expediente el <strong>Proyecto de Ingeniería Básica / Anteproyecto</strong> de la
+<strong>TORRE DE OBSERVACIÓN / PUENTE DE MANDO</strong> y de la <strong>SALA TÉCNICA DE INVESTIGACIÓN
+HIDROMETEOROLÓGICA</strong> (ex "Sala Meteorología") del Campus UMC Catia La Mar, <strong>replicando el esquema,
+el rigor editorial y la profundidad técnica del expediente <code>PROYECTO-01</code> (Torre A)</strong>, y produciendo
+además su <strong>presentación ante el Consejo Universitario con gráficas</strong>, en el mismo lenguaje visual
+de <code>PRESENTACION_UMC_2025-2030</code>.</p>
+<p>El expediente debe responder tres preguntas, en este orden:
+1. <strong>¿Qué había?</strong> — geometría y programa documentados en los planos MOP 1951–1975.
+2. <strong>¿Qué quedó tras el doblete sísmico del 24 de junio de 2026 (M 7,2 y M 7,5)?</strong> — diagnóstico.
+3. <strong>¿Qué se reconstruye y cómo?</strong> — anteproyecto de restauración y reequipamiento, con costo ROM,
+   cronograma, riesgos e información pendiente.</p>
+<p><strong>Entregables en tres formatos: HTML, Word (DOCX) y PDF</strong>, más PNG de las láminas y figuras clave,
+publicados en la carpeta compartida de Google Drive.</p>
+<hr />
+<h2 id="3-entradas-fuentes-autorizadas">§3. ENTRADAS — FUENTES AUTORIZADAS</h2>
+<h3 id="31-fuentes-primarias-google-drive-carpeta-umc-1bou04foefqtc_siqfip_mfa3-cmclotd">3.1 Fuentes primarias (Google Drive, carpeta <code>umc</code> = <code>1BOU04FOeFQTC_SIQFiP_MFa3-CmCLotD</code>)</h3>
+<table>
+<thead>
+<tr>
+<th>Fuente</th>
+<th>ID</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>torreo observacion y meteorologia.pdf</code> — <strong>nombre exacto, incluye la errata "torreo"</strong></td>
+<td><code>1CPnSd_FATFC8jL2y-8UTBwG8JtXBSN8g</code></td>
+<td><strong>Fuente rectora</strong> de geometría, códigos, cronología y estado actual</td>
+</tr>
+<tr>
+<td><code>Inventario_General_Consolidado_Tubo_Portaplanos_Nº_01_05.pdf</code></td>
+<td><code>1Od0WXqDBBAP2FgO2m7wa_aRtOCRRIZIu</code></td>
+<td>Base del listado de planos e imágenes (F1)</td>
+</tr>
+<tr>
+<td><code>Inventario_Tubo_Portaplanos_Nº_01_y_02.pdf</code></td>
+<td><code>1wL-muJRNCOX7a1sFb0W68XeU1KpISTZu</code></td>
+<td>Detalle por tubo</td>
+</tr>
+<tr>
+<td><code>Inventario_Tubo_Portaplanos_Nº_03.pdf</code></td>
+<td><code>1-2LUW9tzaUWjIcm1G1aAFyRX0T4jkEsn</code></td>
+<td>Detalle por tubo</td>
+</tr>
+<tr>
+<td><code>Inventario_Tubo_Portaplanos_Nº_04.pdf</code></td>
+<td><code>1Kae08Zbd1P_rW6l44o_dV3C5ne9dKt5N</code></td>
+<td>Detalle por tubo (serie 8.DF.2.361 = Fracción 1 y detalles)</td>
+</tr>
+<tr>
+<td><code>Inventario_Tubo_Portaplanos_Nº_05.pdf</code></td>
+<td><code>1vo52onRnCB0zSj5VfX6Bbn5lSWHEjdl7</code></td>
+<td>Detalle por tubo</td>
+</tr>
+<tr>
+<td>Carpetas por tubo: <code>Tubo Portaplanos P01 y P02</code> / <code>P03</code> / <code>P04</code> / <code>P05</code></td>
+<td><code>1853BuIrlIS5Q9Y1iogqI1n-cdi-FDNec</code> / <code>1-EB6xr7fH5SmIjgswOUNTZX5TafwSOvO</code> / <code>1MlAXzF1tE6Kho_5wL9vax6Xhmvyd-LBy</code> / <code>1Jtn0-RdaoPnhUvSOC-QrUWZHMGp9Nj29</code></td>
+<td>Localización física de los binarios</td>
+</tr>
+<tr>
+<td>Entregables previos R01/R02 (a <strong>no duplicar</strong>, a <strong>reemplazar con tabla de cambios</strong>): <code>UMC_Anteproyecto_Basico_Torre_Sala_Tecnica_28_Capitulos_R01.{docx,pdf,html}</code>, <code>UMC_Registro_Fotografico_Torre_Sala_Tecnica_R01/R02.{html,png}</code>, <code>UMC_Torre_de_Observacion.html</code>, <code>UMC_Torre_de_Observacion_A01/A02_preview.png</code></td>
+<td>ver carpeta</td>
+<td>Línea base de la revisión</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Corrección de una fuente errónea del historial:</strong> el enlace que circuló
+(<code>https://drive.google.com/file/d/1M2iYrHyBE4HhveyBZLlnrIPYtg30S9QZ/view</code>) es un enlace de
+<strong>archivo</strong>, no de carpeta, y <strong>no resuelve (404)</strong> con la cuenta conectada. Queda descartado.
+La carpeta compartida real es <strong><code>umc</code></strong> (§0). Si un ID no resuelve, registrar <code>RFI-SRC-nn</code> y
+continuar con lo verificable.</p>
+</blockquote>
+<h3 id="32-fuentes-de-esquema-adjuntas-al-chat-definen-formato-no-contenido">3.2 Fuentes de esquema (adjuntas al chat — definen formato, no contenido)</h3>
+<table>
+<thead>
+<tr>
+<th>Fuente</th>
+<th>Qué aporta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PROYECTO-01_UMC_CENTRO-TECNOLOGICO-STCW_TORRE-A.pdf</code> (37 p., <code>UMC2030-P01-CTSTCW-R04</code>)</td>
+<td><strong>Esquema rector</strong>: los 28 capítulos, el estilo de tablas, el encabezado/pie de página, el sello de advertencia técnica, los Anexos A/B/C/P, la disciplina RFI</td>
+</tr>
+<tr>
+<td><code>PRESENTACION_UMC_2025-2030_CONSEJO-UNIVERSITARIO.pdf</code> (27 láminas)</td>
+<td><strong>Esquema de la presentación</strong>: lámina 2 "Cómo leer esta presentación", agenda en 6 bloques, KPIs grandes, matriz de cumplimiento, "Acuerdos que se solicitan al Consejo", cierre con cifras</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-datos-ancla-ya-verificados-usense-como-punto-de-partida-todo-lo-demas-se-extrae-de-las-fuentes">3.3 Datos ancla ya verificados (úsense como punto de partida; todo lo demás se extrae de las fuentes)</h3>
+<p><strong>TORRE DE OBSERVACIÓN / PUENTE DE MANDO</strong>
+- Código funcional <strong>CUL-TOO-02</strong> (el documento fuente también registra <strong>CUL-TOO-01</strong> para
+  "Torres de Observación / Puente de Mando al lado del Auditorio — Fracción 1") → <code>RFI-COD-01</code>.
+- Código físico/catastral <strong>UMC-ED-003</strong>. Área <strong>CUL — Cultural y Ceremonial</strong>. Sector <strong>Proa–Babor</strong>.
+- Huella por piso <strong>3,60 × 3,75 m = 13,50 m²</strong>; <strong>5 niveles</strong>; área construida documentada <strong>67,50 m²</strong>
+  (5 × 13,50 — <strong>verificación aritmética OK</strong>).
+- Altura original <strong>12,00 m (plano) + 0,20 m (losa) = 12,20 m</strong>.
+- Altura modificada <strong>22,02 m</strong>, asentada en documento legal → <strong>no se adopta sin verificación</strong>:
+  <code>RFI-ALT-01</code> (ver §5, regla R4).
+- Capacidad <strong>20 personas</strong> (puente de mando). Uso: emblema UMC, formación, actos, ceremonias.
+  Dependencias: Auditorio anexo, vestíbulo, foyer.
+- Año de construcción <strong>1960–1975</strong> (MOP, sello ministerial visible en planos), <strong>pero</strong> la cronología
+  general declara construcción inicial <strong>1951–1958</strong> junto al Aula Magna y la Torre → <code>RFI-FEC-01</code>.
+- Centroide <strong>10°36′2.98″N / 67°1′56.26″O</strong> = <strong>10.60082778, −67.03229444</strong> (WGS84).
+- Estado: <strong>POST-COLAPSO</strong> tras el doblete sísmico del <strong>24 de junio de 2026 (M 7,2 y M 7,5)</strong>.</p>
+<p><strong>SALA TÉCNICA DE INVESTIGACIÓN HIDROMETEOROLÓGICA (ex "Sala Meteorología")</strong>
+- Código funcional <strong>ACA-STH-15</strong>. Código físico <strong>UMC-ED-003</strong> — <strong>compartido con la Torre</strong>, lo cual
+  es una anomalía catastral → <code>RFI-COD-02</code>.
+- Área construida declarada <strong>40,00 m²</strong>; <strong>1 planta</strong>; altura <strong>3,30 m</strong>.
+- Dimensiones en planta verificadas en planos MOP: <strong>ancho 5,50 m × largo 7,00 m = 38,50 m²</strong>.
+  <strong>Inconsistencia de 1,50 m²</strong> con el área declarada, mientras que la distribución interna sí suma
+  40,00 m² → <code>RFI-ARE-01</code> (ver §5, regla R5).
+- Distribución interna documentada: estaciones de trabajo meteorológico <strong>9,00 m²</strong> · servidores/equipos
+  de registro <strong>5,00 m²</strong> · circulación y maniobra <strong>6,00 m²</strong> · SS anexos <strong>3,00 m²</strong> · mesón/mostrador
+  <strong>2,25 m²</strong> · área libre/muros/estructura <strong>14,75 m²</strong> → <strong>suma 40,00 m² ✔</strong>.
+- Capacidad <strong>5–10 personas</strong>. Dependencia: <strong>Escuela Náutica de Venezuela — ENV</strong>.
+  Año <strong>1951–1975</strong> (MOP). Estado: <strong>afectada post-colapso</strong>.
+- Centroide <strong>10°36′3.09″N / 67°1′56.22″O</strong> = <strong>10.60085833, −67.03228333</strong>.
+- <strong>Distancia entre centroides Torre↔Sala ≈ 3,61 m</strong> (ΔN 3,40 m / ΔE −1,22 m) → la sala es <strong>adyacente</strong>
+  a la torre: la intervención debe tratarse como <strong>un solo conjunto</strong>, no como dos obras independientes.</p>
+<p><strong>CRONOLOGÍA PATRIMONIAL (fuente + inventario)</strong>
+- <strong>28-08-1951</strong> proyecto original Fracción 1 (Sala Meteorología como parte del conjunto ENV).
+- <strong>1951–1958</strong> construcción inicial junto al Aula Magna y la Torre de Observación.
+- <strong>1960–1975</strong> aumento de la altura de la Torre (modificación estructural adyacente).
+- <strong>1975–2010</strong> funcionamiento continuo como estación de registro meteorológico.
+- <strong>2010–2026</strong> espacio especializado de investigación en fenómenos climáticos, atmosféricos y del
+  ciclo del agua; requiere modernización con tecnologías antivandálicas y enfoque marítimo-portuario.
+- <strong>24-06-2026</strong> doblete sísmico M 7,2 / M 7,5 → colapso y afectación.</p>
+<p><strong>PROYECTO ORIGINAL (del Inventario General Consolidado)</strong>
+- Denominación original: <strong>Escuela Náutica de Venezuela</strong> (también "Escuela Náutica de Catia La Mar"
+  en cajetines 1957–58). Hoy: <strong>Universidad Marítima del Caribe — UMC</strong>. Catia La Mar.
+- Arquitecto proyectista: <strong>Luis Raimundo Malaussena Andueza</strong> (cajetines: L. Malaussena / L. M.).
+- Estructural: <strong>Oficina Técnica Gutiérrez &amp; Co. S.A. / Gutiérrez y Acuña</strong>.
+- Contratante: <strong>Ministerio de Obras Públicas (MOP)</strong> — Dirección de Edificios / Dirección de
+  Edificios e Instalaciones Industriales ("Estados Unidos de Venezuela" en cajetines de 1951).
+- Signaturas MOP leídas: <strong>15 DF 30</strong> (serie original, tachada en hojas renumeradas), <strong>8.DF.1.361</strong>
+  (arquitectura e ILV), <strong>8.DF.2.361</strong> (Fracción 1 y detalles), <strong>8.DF.2.362</strong> (ampliaciones
+  1952–1957), <strong>8.DF.2.364</strong> (estructural 28-8-51), <strong>8.DF.1.841</strong> (lectura provisional).
+- Volumen documental total <strong>Tubos 01–05</strong>: <strong>198 PDF</strong> (1 pág. c/u) y <strong>487 fotografías</strong>
+  (<strong>IMG_2134 – IMG_2778</strong>), distribuidas:
+  | Tubo | PDF | Fotografías | Rango |
+  |---|---|---|---|
+  | 01 y 02 | 70 | 79 | IMG_2134 – IMG_2214 |
+  | 03 | 45 | 99 | IMG_2226 – IMG_2324 |
+  | 04 | 41 | 161 | IMG_2329 – IMG_2490 |
+  | 05 | 42 | 148 | IMG_2615 – IMG_2778 |
+  | <strong>Total</strong> | <strong>198 ✔</strong> | <strong>487 ✔</strong> | — |
+- Disciplinas del inventario: <strong>ARQ, EST, ILV, SAN, PLU, AGU, ELEC, MEC, ACU, DET, PF/C, GEN</strong>.
+- Estados de verificación: <strong>FOT, FOT parcial, PEND-PDF, PEND-ARCHIVO, REG. PREVIO, "ap."</strong> (aparente).
+- Códigos de referencia: <strong>P0102-L#-X</strong>, <strong>P03-ENV-###</strong>, <strong>P04-ENV-###</strong>, <strong>P05-001…P05-042</strong>,
+  <strong>IMG_####</strong>, y la codificación institucional <strong>CUL-TOO-02 / UMC-ED-003</strong>.</p>
+<hr />
+<h2 id="4-salidas-entregables">§4. SALIDAS — ENTREGABLES</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Entregable</th>
+<th>Formatos</th>
+<th>Nombre canónico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>E1</strong></td>
+<td><strong>Listado de planos e imágenes</strong> de la Torre de Observación y la Sala Técnica, extraído del Inventario General y de los inventarios por tubo</td>
+<td>CSV + HTML + PNG</td>
+<td><code>UMC2030-P04-TOBSHM-R02_LISTADO-PLANOS-IMAGENES_TORRE-Y-SALA.{csv,html,png}</code></td>
+</tr>
+<tr>
+<td><strong>E2</strong></td>
+<td><strong>Expediente de Ingeniería Básica / Anteproyecto</strong> — 28 capítulos (§7)</td>
+<td>DOCX + PDF + HTML</td>
+<td><code>UMC2030-P04-TOBSHM-R02_EXPEDIENTE-INGENIERIA-BASICA.{docx,pdf,html}</code></td>
+</tr>
+<tr>
+<td><strong>E3</strong></td>
+<td><strong>Anexo P — planos de arquitectura</strong> (plantas 1:200, implantación 1:400, sección 1:100, fachadas)</td>
+<td>PNG por lámina (300 dpi) + PDF único</td>
+<td><code>UMC2030-P04-TOBSHM-R02_ANEXO-P_LAMINA-Pnn_{TITULO}.png</code></td>
+</tr>
+<tr>
+<td><strong>E4</strong></td>
+<td><strong>Figuras y gráficas</strong> del expediente (diagramas, mapas de daño, ROM, Gantt, línea de tiempo)</td>
+<td>SVG embebido + PNG 300 dpi</td>
+<td><code>UMC2030-P04-TOBSHM-R02_FIGURA-Gnn_{TITULO}.png</code></td>
+</tr>
+<tr>
+<td><strong>E5</strong></td>
+<td><strong>Registro fotográfico y mapa de daño post-sísmico</strong></td>
+<td>HTML + PNG</td>
+<td><code>UMC2030-P04-TOBSHM-R02_REGISTRO-POSTSISMICO.{html,png}</code></td>
+</tr>
+<tr>
+<td><strong>E6</strong></td>
+<td><strong>Presentación para el Consejo Universitario</strong> (24–28 láminas, con gráficas)</td>
+<td>PDF + HTML</td>
+<td><code>UMC2030-P04-TOBSHM-R02_PRESENTACION-CONSEJO-UNIVERSITARIO.{pdf,html}</code></td>
+</tr>
+<tr>
+<td><strong>E7</strong></td>
+<td><strong>Matriz de trazabilidad</strong> (cada cifra del expediente → fuente)</td>
+<td>CSV</td>
+<td><code>UMC2030-P04-TOBSHM-R02_MATRIZ-TRAZABILIDAD.csv</code></td>
+</tr>
+<tr>
+<td><strong>E8</strong></td>
+<td><strong>Informe de QA y tabla de cambios R01 → R02</strong></td>
+<td>MD/HTML</td>
+<td><code>UMC2030-P04-TOBSHM-R02_QA-Y-CAMBIOS.md</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reglas de nombrado:</strong> mayúsculas, sin espacios, sin tildes, sin <code>ñ</code>, guiones como separador;
+<code>R02</code> siempre visible; extensión real del formato. Los nombres de <strong>fuentes</strong> se citan
+<strong>exactamente como están en Drive</strong> (incluida la errata <code>torreo</code>).</p>
+<hr />
+<h2 id="5-reglas-no-negociables">§5. REGLAS NO NEGOCIABLES</h2>
+<p><strong>R1 — Trazabilidad obligatoria.</strong> Toda cifra, cota, área, precio o fecha lleva etiqueta de origen:
+<code>[FUENTE: &lt;archivo&gt;, pág./sección]</code> · <code>[DERIVADO: cálculo mostrado]</code> · <code>[HIPÓTESIS: justificación]</code> ·
+<code>[RFI-nn]</code>. Sin etiqueta, la cifra no entra al documento.</p>
+<p><strong>R2 — Prohibido inventar.</strong> No se fabrican coordenadas, áreas, precios unitarios, firmas profesionales,
+números de norma, citas textuales, fotografías, planos ni estados de verificación. Si un dato no está en
+las fuentes, va a la <strong>matriz RFI</strong> con su responsable y estado <code>ABIERTA</code>.</p>
+<p><strong>R3 — Sello permanente.</strong> En <strong>cada página</strong> del expediente, <strong>cada lámina</strong> del Anexo P y <strong>cada
+lámina</strong> de la presentación: encabezado con el proyecto y pie con
+<code>INGENIERÍA BÁSICA / ANTEPROYECTO — EMITIDO PARA COORDINACIÓN Y PRESUPUESTO PRELIMINAR — NO APTO PARA CONSTRUCCIÓN</code>
+y <code>Pág. X de Y</code>.</p>
+<p><strong>R4 — La altura no se decide por preferencia.</strong> Se documentan <strong>las dos alturas</strong> (12,20 m original de
+plano y 22,02 m de la modificación legal) como estados históricos distintos, se adopta <strong>una sola</strong> para
+el diseño con justificación explícita, y la no verificada se abre como <strong><code>RFI-ALT-01</code></strong>. Jamás se promedian
+ni se mezclan en un mismo cuadro.</p>
+<p><strong>R5 — Las inconsistencias se reportan, no se silencian.</strong> Como mínimo deben aparecer en el capítulo 25:
+<code>RFI-COD-01</code> (CUL-TOO-01 vs CUL-TOO-02), <code>RFI-COD-02</code> (Torre y Sala comparten UMC-ED-003),
+<code>RFI-ARE-01</code> (40,00 m² declarados vs 38,50 m² geométricos; distribución interna suma 40,00 m²),
+<code>RFI-FEC-01</code> (1951–1958 vs 1960–1975).</p>
+<p><strong>R6 — Coherencia numérica verificable.</strong> El cuadro de áreas suma exacto; el BOQ se deriva de la
+geometría adoptada; el ROM se deriva del BOQ; el cronograma es coherente con las fases y los gates;
+las cantidades del listado E1 concilian con los totales declarados (198 PDF / 487 fotografías).
+Cualquier diferencia se explica en una nota al pie de tabla.</p>
+<p><strong>R7 — Un solo modelo de implantación.</strong> La Torre y la Sala forman <strong>un conjunto único</strong> del Área
+Cultural, articulado con el Aula Magna/Auditorio, la plaza de honor y el corredor tecnológico-
+administrativo del Plan Maestro. Ninguna modificación de la implantación general sin quedar
+identificada, justificada y aprobada como revisión del Plan de Implantación.</p>
+<p><strong>R8 — Primero el diagnóstico, después el diseño.</strong> No se propone refuerzo, reconstrucción ni
+demolición sin el capítulo de patología (F2) con nivel de daño por elemento y por nivel, criterio de
+evaluación declarado (p. ej. metodología tipo ATC-20 / FEMA 310 / EMS-98, adaptada y citada como
+<strong>referencial</strong>) y evidencia referenciada al listado E1.</p>
+<p><strong>R9 — Doctrina patrimonial explícita.</strong> Toda intervención sobre obra de 1951–1958 declara su criterio:
+conservar / consolidar / reintegrar / reponer / sustituir, con <strong>distinguibilidad de la intervención
+contemporánea</strong> y sin falsificación histórica. Se cita la normativa venezolana de patrimonio
+<strong>como referencia a verificar</strong>, no como cumplimiento acreditado.</p>
+<p><strong>R10 — No se declara lo que no se ha obtenido.</strong> Ninguna certificación, aprobación, permiso, firma
+profesional ni habilitación se da por otorgada. El proyectista responsable figura
+<strong>"Por designar – profesional habilitado (Ley de Ejercicio de la Ingeniería, Arquitectura y Profesiones Afines)"</strong>.</p>
+<p><strong>R11 — Control documental.</strong>
+- Aprobación: <strong>Rectorado UMC – Cap. Alt. / Dr. Guillermo Antonio Riut Hernández</strong>.
+- Autoría del documento fuente: <strong>Prof. Jhonny Da Silva Izquierdo (MSc. Ing. Lic.)</strong> — se conserva
+  <strong>exclusivamente</strong> como autoría del Plan Maestro / documento fuente, no de la nueva ingeniería.
+- Confidencialidad: <strong>Uso institucional UMC – Marina Mercante de Venezuela</strong>.
+- Revisor UMC: <strong>Dirección de Planta Física / Vicerrectorado Administrativo</strong>.</p>
+<p><strong>R12 — No duplicar.</strong> Antes de publicar en Drive, listar la carpeta <code>umc</code>; si ya existe un archivo con
+el mismo contenido, <strong>versionar (R02)</strong> y publicar la tabla de cambios. No sobrescribir el R01 sin
+declararlo.</p>
+<p><strong>R13 — Autonomía con registro.</strong> Falta un dato crítico → se marca, se abre RFI y se continúa.
+El expediente se entrega completo con sus lagunas visibles, nunca incompleto por esperar una respuesta.</p>
+<hr />
+<h2 id="6-fases-y-gates-ejecutar-en-orden-reportar-al-cerrar-cada-gate">§6. FASES Y GATES (ejecutar en orden; reportar al cerrar cada gate)</h2>
+<h3 id="f0-verificacion-de-fuentes-responsable-a0a10"><strong>F0 · Verificación de fuentes</strong> — responsable A0/A10</h3>
+<p>Abrir y confirmar: carpeta <code>umc</code>, el PDF fuente, los 5 inventarios y los 2 PDF de esquema.
+<strong>Salida:</strong> tabla <code>Fuente | ID | Estado (OK / NO DISPONIBLE / PARCIAL) | Qué aporta | Observación</code>.
+<strong>Gate F0:</strong> todas las fuentes primarias en estado OK o con su <code>RFI-SRC-nn</code> abierta. Sin este gate no se avanza.</p>
+<h3 id="f1-listado-de-planos-e-imagenes-de-la-torre-y-la-sala-responsable-a10-a12-qa"><strong>F1 · Listado de planos e imágenes de la Torre y la Sala</strong> — responsable A10 (+A12 QA)</h3>
+<p>Recorrer el Inventario General Consolidado y los cinco inventarios por tubo y extraer <strong>todas</strong> las
+láminas y fotografías vinculadas al objeto, aplicando criterios de selección <strong>declarados y auditables</strong>:
+- códigos <strong>CUL-TOO-01 / CUL-TOO-02 / UMC-ED-003 / ACA-STH-15</strong>;
+- denominaciones y palabras clave: <em>torre, observación, puente de mando, meteorología, sala
+  meteorológica, fracción 1, auditorio/aula magna (solo cuando la lámina incluya la torre o la sala)</em>;
+- sector <strong>Proa–Babor</strong>, área <strong>CUL</strong> y área <strong>ACA</strong>;
+- signaturas MOP <strong>8.DF.2.361</strong> (Fracción 1 y detalles) y <strong>8.DF.2.364</strong> (estructural 28-8-51),
+  y cualquier otra que el inventario asocie al objeto;
+- disciplinas <strong>ARQ, EST, ILV, DET, PF/C</strong> prioritarias; <strong>GEN</strong> solo si representa el conjunto.</p>
+<p><strong>Salida E1</strong> con columnas fijas:
+<code>Nº | IMG_#### | Código de referencia | Tubo / Paquete | Disciplina | Denominación de la lámina | Signatura MOP | Escala | Fecha | Estado de verificación | Relación con el objeto (Torre / Sala / Ambas / Conjunto) | Criterio de selección aplicado | Acción (subir / ya está / no localizada)</code></p>
+<p>Más: <strong>conteo y conciliación</strong> (<code>coincidencias / total 487 fotografías y 198 PDF</code>), listado de
+<strong>lagunas</strong> (láminas declaradas pero con binario <code>PEND-ARCHIVO</code>) y <strong>mapa de cobertura</strong> por disciplina.
+<strong>Gate F1:</strong> E1 publicado en la carpeta <code>umc</code> en CSV+HTML+PNG, con enlaces devueltos y conciliación firmada por A12.</p>
+<h3 id="f2-diagnostico-patologico-post-sismico-responsable-a2-a1-arquitectura-a11-graficos"><strong>F2 · Diagnóstico patológico post-sísmico</strong> — responsable A2 (+A1 arquitectura, A11 gráficos)</h3>
+<ul>
+<li>Contexto del <strong>doblete sísmico del 24-06-2026 (M 7,2 y M 7,5)</strong>: carácter inusual, efecto de
+  secuencia (daño acumulado por la réplica mayor), y su implicación en el criterio de evaluación.</li>
+<li><strong>Ficha de daño por nivel y por elemento</strong> de la Torre (cimentación, columnas/machones, vigas VF/VA/1V/2V,
+  losas 1L/2L, losa de escalera LE, escalera, cerramientos, coronación, asta) y de la Sala
+  (muros, losa de techo, aberturas, instalaciones).</li>
+<li><strong>Nivel de daño</strong> con escala declarada (referencial, adaptada de metodologías de evaluación
+  post-sísmica) y <strong>clasificación de uso: SIN INSPECCIÓN DETALLADA / INSPECCIÓN RÁPIDA / INSPECCIÓN DETALLADA</strong>.</li>
+<li><strong>Decisión de intervención</strong> por componente: conservar · consolidar · reparar · reforzar ·
+  reconstruir con reintegración · retirar. Con justificación técnica <strong>y</strong> patrimonial.</li>
+<li><strong>Hipótesis de causa</strong>: esbeltez de la torre (relación altura/base), modificación de altura
+  1960–1975 sin verificación estructural conocida, envejecimiento de materiales en ambiente marino
+  (corrosión de armaduras), efecto del colapso sobre la sala adyacente a 3,61 m.</li>
+<li><strong>Requerimientos de inspección</strong>: ensayos no destructivos, extracción de testigos, levantamiento con
+  nube de puntos, instrumentación temporal. Todo como <code>RFI-PAT-nn</code>.</li>
+</ul>
+<p><strong>Salida E5</strong> (registro fotográfico + mapa de daño por nivel, G-07) y capítulo 11.5 del expediente.
+<strong>Gate F2:</strong> ningún capítulo de diseño estructural redactado antes de cerrar F2.</p>
+<h3 id="f3-expediente-de-ingenieria-basica-responsable-a0-con-todos-los-perfiles"><strong>F3 · Expediente de Ingeniería Básica</strong> — responsable A0 con todos los perfiles</h3>
+<p>Redactar los <strong>28 capítulos</strong> del §7 con el contenido mínimo indicado, en el estilo del P01:
+párrafos cortos, viñetas, y <strong>tablas para todo lo tabulable</strong> (control documental, áreas, materiales,
+predimensionamiento, MEP, red, BOQ, ROM, cronograma, planos, riesgos, RFI, coordenadas, glosario).
+<strong>Gate F3:</strong> R1–R6 verificadas capítulo por capítulo; cada cifra con etiqueta; sumas cuadran.</p>
+<h3 id="f4-graficas-y-anexo-p-responsable-a11-a2-a5-a8"><strong>F4 · Gráficas y Anexo P</strong> — responsable A11 (+A2, A5, A8)</h3>
+<p>Producir las figuras G-01…G-15 y las láminas P-0…P-9 del §8, en <strong>SVG embebido para HTML</strong> y
+<strong>PNG 300 dpi</strong> para PDF/DOCX/Drive, todas con <strong>cajetín</strong>: código de plano, denominación, escala,
+nivel/NPT, revisión, fecha, sello "NO APTO PARA CONSTRUCCIÓN", y nota de validez.
+<strong>Gate F4:</strong> cada figura citada al menos una vez en el texto del expediente y listada en el capítulo 24.</p>
+<h3 id="f5-presentacion-para-el-consejo-universitario-responsable-a0-a12"><strong>F5 · Presentación para el Consejo Universitario</strong> — responsable A0 (+A12)</h3>
+<p><strong>24–28 láminas</strong> con la estructura de la presentación de referencia (§8.2), KPIs grandes en cada
+lámina, gráficas de F4 reutilizadas, y cierre con <strong>"Acuerdos que se solicitan al Consejo Universitario"</strong>
+numerados y votables.
+<strong>Gate F5:</strong> la presentación no contiene ninguna cifra que no esté en el expediente.</p>
+<h3 id="f6-empaquetado-y-publicacion-responsable-a0"><strong>F6 · Empaquetado y publicación</strong> — responsable A0</h3>
+<p>Generar DOCX, PDF y HTML de E2 y E6; PNG de E1, E3, E4, E5; publicar <strong>todo</strong> en la carpeta <code>umc</code>;
+devolver <strong>tabla de enlaces</strong> (<code>Entregable | Nombre | Formato | ID Drive | Enlace | Tamaño | Estado</code>).
+<strong>Requisitos técnicos de los archivos:</strong>
+- <strong>HTML</strong>: un solo archivo <strong>autocontenido</strong> (CSS y SVG embebidos, <strong>sin CDN ni recursos externos</strong>),
+  navegación lateral por capítulos, <code>@media print</code> con <code>@page A4</code>, tablas con encabezado repetido,
+  abre correctamente en la vista previa de Drive y en navegador local sin conexión.
+- <strong>PDF</strong>: paginado <code>Pág. X de Y</code>, marcadores/índice navegable, metadata (<code>title</code>, <code>author</code>,
+  <code>subject</code>, <code>keywords</code>) coherente con el expediente.
+- <strong>DOCX</strong>: estilos jerárquicos reales (Título 1/2/3), tabla de contenido automática, tablas con
+  estilo y encabezado repetido, imágenes ancladas con pie de figura.</p>
+<h3 id="f7-qa-y-cierre-responsable-a12"><strong>F7 · QA y cierre</strong> — responsable A12</h3>
+<p>Ejecutar el <strong>checklist de aceptación</strong> (§9), producir E7 y E8, y emitir la <strong>condición de emisión</strong>
+(capítulo 26).
+<strong>Gate F7:</strong> checklist al 100 % con cada ítem en CUMPLE / CUMPLE CON OBSERVACIÓN / NO CUMPLE (+acción).</p>
+<hr />
+<h2 id="7-indice-del-expediente-28-capitulos-esquema-del-p01-adaptado-al-objeto">§7. ÍNDICE DEL EXPEDIENTE — 28 CAPÍTULOS (esquema del P01, adaptado al objeto)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Capítulo</th>
+<th>Contenido mínimo obligatorio</th>
+<th>Cambio respecto al P01</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>CONTROL DOCUMENTAL Y ADVERTENCIA TÉCNICA</td>
+<td>Tabla ítem/registro (documento, código, revisión, fecha, fase, estado de emisión, clase de estimación, documento rector, proyectista, revisor, aprobación, autoría fuente, confidencialidad) + recuadro <strong>ADVERTENCIA TÉCNICA – LÍMITE DE USO</strong> con las 7 condiciones obligatorias para pasar a "Apto para Construcción" + <strong>condición adicional post-sísmica</strong></td>
+<td>Se añade la condición de diagnóstico estructural post-sísmico</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>OBJETO Y ALCANCE DEL PROYECTO</td>
+<td>2.1 Objeto general · 2.2 Objetos específicos · 2.3 Alcance incluido · 2.4 Alcance excluido</td>
+<td>Objeto = <strong>restauración/reconstrucción patrimonial + reequipamiento</strong>, no obra nueva</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>ANTECEDENTES Y BASE DOCUMENTAL</td>
+<td>Historia ENV 1951 → UMC; Malaussena y el MOP; cronología 1951–2026; el doblete sísmico de 2026; inventario de planos Portaplanos 01–05; expediente P01/P02/P03 como base de coordinación</td>
+<td>Nuevo: bloque patrimonial y bloque sísmico</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>MARCO NORMATIVO Y REFERENCIAS TÉCNICAS</td>
+<td>Normas venezolanas de edificaciones sismorresistentes, concreto armado, acero, acciones mínimas, instalaciones; normativa de patrimonio cultural; <strong>OMM</strong> (guías de instrumentos y métodos de observación, requisitos de emplazamiento de estaciones); STCW/OMI para la función de guardia y observación; ANSI/TIA para cableado; NFPA/COVENIN para PCI; IEC para protección contra descargas. <strong>Todo marcado "vigencia por verificar"</strong> con <code>RFI-NOR-01</code></td>
+<td>Se añade bloque meteorológico (OMM) y patrimonial</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>EMPLAZAMIENTO, GEORREFERENCIACIÓN Y TOPOGRAFÍA</td>
+<td>5.1 Zona de intervención (Área Cultural, sector Proa–Babor) · 5.2 Puntos de control georreferenciados (centroides convertidos a decimal, tabla DMS↔decimal) · 5.3 Control geométrico preliminar (huella 3,60×3,75 m; sala 5,50×7,00 m; separación 3,61 m) · 5.4 Sistema cartográfico (WGS84 / EPSG:4326, trabajo UTM 19N / EPSG:32619) · 5.5 Movimiento de tierras, plataforma y drenaje (mínimo: obra de restauración) + <strong>Z pendiente de levantamiento (BM-UMC-01 por establecer)</strong></td>
+<td>Adaptado: movimiento de tierra marginal</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>CONCEPTO ARQUITECTÓNICO</td>
+<td>6.1 Concepto rector (proponer <strong>uno</strong> con nombre propio, coherente con "Campus-Buque Digital UMC"; p. ej. <em>El Vigía de la Memoria</em> — decidir y justificar) · 6.2 Criterio de implantación del lenguaje arquitectónico (modernidad venezolana 1950s: hormigón visto, bandas horizontales, relación con el Aula Magna) · <strong>6.3 Doctrina de intervención patrimonial</strong> (conservar/consolidar/reintegrar/reponer; distinguibilidad de lo contemporáneo; sin falsificación histórica)</td>
+<td><strong>Nuevo 6.3</strong></td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td>PARÁMETROS URBANÍSTICOS Y DE DISEÑO</td>
+<td>Alturas (las dos, con R4), ocupación, retiros, aforo ceremonial, banda de protocolo, accesibilidad, condición de emblema/edificio singular</td>
+<td>Adaptado a edificio patrimonial singular</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td>PROGRAMA FUNCIONAL Y CUADRO GENERAL DE ÁREAS</td>
+<td><strong>8.1 Torre — nivel por nivel</strong>: N0 acceso/foyer · N1–N4 plataformas intermedias · N5 puente de mando / cubierta de observación · coronación y asta (definir NPT y altura libre de cada uno, coherentes con 5 niveles × 13,50 m² = 67,50 m²) · <strong>8.2 Sala Técnica</strong> (40,00 m² con la distribución documentada) · <strong>8.3 Exteriores</strong>: plaza de honor, banda de protocolo, mástil de instrumentos, abrigo meteorológico (Stevenson), parcela de sensores, andén de mantenimiento · <strong>8.4 Resumen del cuadro de áreas</strong> (neta / circulación / eficiencia %)</td>
+<td>Sustituye el programa de 4 plantas del P01</td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td>LOS COMPONENTES FUNCIONALES – FICHAS</td>
+<td>Ficha por componente (uso, área, capacidad, nivel, equipamiento, trazabilidad académica): puente de mando ceremonial y académico · puesto de observación y vigilancia del campus · estación hidrometeorológica de superficie y de perfil · sala de registro y servidores · aula-taller de meteorología marina · asta y protocolo · núcleo vertical y accesibilidad · iluminación escénica y de balizamiento · nodo del gemelo digital. Con <strong>matriz de cumplimiento</strong> estilo P01 (componente → ubicación → área → estado)</td>
+<td>Sustituye a "los nueve componentes STCW", conservando la traza STCW/OMI donde aplique</td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td>ARQUITECTURA – ENVOLVENTE, MATERIALES Y ACABADOS</td>
+<td>10.1 Criterios generales (ambiente marino, compatibilidad con lo existente 1951–58, evitación de pares galvánicos, protección anticorrosiva) · 10.2 Cuadro de materiales y acabados referencial (elemento / material / acabado / condición) · 10.3 <strong>Reintegración de elementos perdidos tras el colapso</strong> (criterio y registro) · 10.4 Ventilación, control solar y condiciones ambientales de la sala de instrumentos</td>
+<td>Nuevo 10.3</td>
+</tr>
+<tr>
+<td><strong>11</strong></td>
+<td>CRITERIOS ESTRUCTURALES Y DE CIMENTACIÓN</td>
+<td>11.1 Sistema estructural propuesto · 11.2 Cimentación (<strong>condicionada a geotecnia</strong>) · 11.3 Acción sísmica (zonificación, importancia de la edificación —edificio patrimonial/emblema—, ductilidad, disipación, efecto del doblete) · 11.4 Predimensionamiento preliminar (tabla elemento/sección/cuantía estimada/verificación requerida) · <strong>11.5 Diagnóstico patológico post-sísmico y doctrina de intervención</strong> (síntesis de F2) · <strong>11.6 Comportamiento ante viento y confort</strong> (torre esbelta: verificación dinámica, oscilaciones, servicio)</td>
+<td><strong>Nuevos 11.5 y 11.6</strong></td>
+</tr>
+<tr>
+<td><strong>12</strong></td>
+<td>INSTALACIONES MEP</td>
+<td>12.1 Sistema eléctrico (demanda estimada, respaldo, puesta a tierra, <strong>protección contra descargas atmosféricas del asta</strong>) · 12.2 Climatización y ventilación (sala de servidores/instrumentos: rango térmico y de humedad exigido) · 12.3 Hidráulicas y sanitarias · 12.4 Protección contra incendios (edificio singular de altura moderada y evacuación vertical única: criterio específico)</td>
+<td>Adaptado: cargas mucho menores que el P01</td>
+</tr>
+<tr>
+<td><strong>13</strong></td>
+<td>TELECOMUNICACIONES Y RED DE CAMPUS</td>
+<td>13.1 Arquitectura de red (enlace al CDP/Torre B, VLAN de instrumentación, telemetría meteorológica, fibra/par trenzado/radio) · 13.2 <strong>Telemetría y trazabilidad de datos meteorológicos</strong> (adquisición, registro, respaldo, calidad del dato, metadatos, publicación)</td>
+<td>Nuevo 13.2</td>
+</tr>
+<tr>
+<td><strong>14</strong></td>
+<td>SEGURIDAD FÍSICA, CONTROL DE ACCESO Y CCTV</td>
+<td>Protección <strong>antivandálica</strong> de un emblema accesible al público en actos ceremoniales; control de acceso al puente de mando; CCTV; intrusión; seguridad de la instrumentación exterior</td>
+<td>Énfasis nuevo: antivandalismo y uso ceremonial</td>
+</tr>
+<tr>
+<td><strong>15</strong></td>
+<td>SOSTENIBILIDAD, ENERGÍA Y AMBIENTE MARINO</td>
+<td>15.1 Estrategia energética (FV en cubierta técnica si procede, eficiencia, medición) · 15.2 Durabilidad en ambiente costero (cloruros, corrosión, ciclos de humectación, mantenimiento) · 15.3 <strong>La estación como activo de resiliencia climática del campus</strong> (los datos propios alimentan el diseño y la operación del resto del Plan Maestro)</td>
+<td>Nuevo 15.3</td>
+</tr>
+<tr>
+<td><strong>16</strong></td>
+<td>INDUSTRIA 5.0, BIM Y GEMELO DIGITAL</td>
+<td>16.1 Estrategia BIM → <strong>HBIM</strong>: nube de puntos de lo existente, modelo federado, CDE con estados, codificación documental <code>UMC-[EDIFICIO]-[DISCIPLINA]-[NÚMERO]-[REV]</code> y de activos · 16.2 Sensorización IoT y Digital Twin (estructural: acelerómetros e inclinómetros; ambiental: instrumentación meteorológica; mantenimiento predictivo) · 16.3 Enfoque humanocéntrico (el cadete, el docente, el operador y el mantenimiento; tecnología que apoya sin sustituir la formación práctica)</td>
+<td>Se añade HBIM y monitorización estructural</td>
+</tr>
+<tr>
+<td><strong>17</strong></td>
+<td>ACCESIBILIDAD, AFORO Y EVACUACIÓN</td>
+<td>Aforo 20 personas en el puente de mando + 5–10 en la sala; <strong>evacuación vertical de una torre esbelta</strong> (una sola ruta: criterio y compensaciones), itinerario accesible, rescate asistido, señalización, iluminación de emergencia, separación de flujos en actos ceremoniales</td>
+<td>Adaptado: caso crítico de evacuación vertical</td>
+</tr>
+<tr>
+<td><strong>18</strong></td>
+<td>OBRAS EXTERIORES E INFRAESTRUCTURA COMÚN</td>
+<td>18.1 Urbanismo inmediato (plaza de honor, accesos, andenes, drenaje perimetral, vialidad de emergencia preservada, paisajismo compatible con ambiente salino) · 18.2 Sección tipo del corredor de servicios (tabla servicio / conducto / separación y condición) · 18.3 <strong>Matriz de interfaces del Proyecto 04</strong> (Torre↔Sala, ↔Aula Magna, ↔Torre A, ↔Torre B/CDP, ↔campus, ↔instrumentación meteorológica)</td>
+<td>Interfaces redefinidas</td>
+</tr>
+<tr>
+<td><strong>19</strong></td>
+<td>SUBPROYECTO ASOCIADO: CONJUNTO PATRIMONIAL DEL ÁREA CULTURAL</td>
+<td>19.1 Alcance de la rehabilitación coordinada (Aula Magna/Auditorio, vestíbulo, foyer, galería, patio/cubierta de honor, banda de protocolo) · 19.2 <strong>Criterio de unidad de intervención</strong>: la Fracción 1 como un solo expediente patrimonial, con etapabilidad y condición técnica suspensiva</td>
+<td>Sustituye a "Talleres y Canal de Ensayos Hidrodinámicos"</td>
+</tr>
+<tr>
+<td><strong>20</strong></td>
+<td>ESPECIFICACIONES TÉCNICAS – CONTENIDO MÍNIMO</td>
+<td>Tabla Cap. 01…24 como en el P01, <strong>más</strong>: <em>diagnóstico y ensayos in situ</em>, <em>demolición controlada y gestión de escombros con valor patrimonial</em>, <em>conservación y restauración de elementos originales</em>, <em>instrumentación meteorológica y su calibración</em>, <em>monitorización estructural</em></td>
+<td>Se añaden 4–5 capítulos de especificación</td>
+</tr>
+<tr>
+<td><strong>21</strong></td>
+<td>CÓMPUTOS MÉTRICOS PRELIMINARES (BOQ REV.0)</td>
+<td>Derivado de la geometría adoptada (67,50 m² torre + 40,00 m² sala + exteriores). Partidas por capítulo con unidad, cantidad, base de cálculo y observación. Nota expresa: <strong>no son cómputos contractuales</strong>; equipos e instrumentos van en partida separada</td>
+<td>Adaptado a escala real (≈107,5 m² vs 3.732 m² del P01)</td>
+</tr>
+<tr>
+<td><strong>22</strong></td>
+<td>ESTIMACIÓN DE INVERSIÓN (ORDEN DE MAGNITUD)</td>
+<td>ROM AACE Clase 5 (−25 %/+40 %) por capítulo: estudios previos (escaneo, ensayos, patología) · demolición y gestión de escombros · consolidación y refuerzo estructural · arquitectura y acabados patrimoniales · MEP · instrumentación meteorológica · TIC · exteriores · ingeniería y gerencia (7 %) · contingencia (18 %). Con <strong>subtotal directo</strong> y <strong>total ROM</strong>, y nota sobre la varianza del equipamiento</td>
+<td>Se añade la línea de estudios previos y de instrumentación</td>
+</tr>
+<tr>
+<td><strong>23</strong></td>
+<td>CRONOGRAMA DE EJECUCIÓN</td>
+<td>Fases A…E con denominación, duración, periodo estimado e hito; duración total; procuración de largo plazo (instrumentación, ascensor/plataforma, elementos patrimoniales especiales); solape con la operación del campus y con los actos ceremoniales</td>
+<td>Menos fases que el P01 (obra de restauración)</td>
+</tr>
+<tr>
+<td><strong>24</strong></td>
+<td>PLANOS DEL EXPEDIENTE</td>
+<td>Tabla <code>Código | Denominación | Escala | Estado</code> con la codificación <code>UMC-T-…</code> (torre) y <code>UMC-S-…</code> (sala) y <code>UMC-G-…</code> (general)</td>
+<td>Codificación nueva</td>
+</tr>
+<tr>
+<td><strong>25</strong></td>
+<td>RIESGOS E INFORMACIÓN PENDIENTE</td>
+<td><strong>25.1 Matriz de riesgos</strong> (ID, riesgo, impacto, mitigación) incluyendo: nueva réplica sísmica durante la obra · hallazgos estructurales ocultos al retirar acabados · indisponibilidad de materiales y oficios compatibles con la obra de 1951 · pérdida irreversible de elementos patrimoniales en el desescombro · falta de planos originales legibles · altura modificada no verificada · acceso de emergencia durante actos con aforo · corrosión marina · vandalismo · demora permisológica y patrimonial. <strong>25.2 Registro RFI</strong> con las RFI ya pre-detectadas (R5) + GEO, GEOT, SRC, NOR, PAT y las que surjan</td>
+<td>Se añaden riesgos patrimoniales y de réplica</td>
+</tr>
+<tr>
+<td><strong>26</strong></td>
+<td>CONCLUSIÓN Y CONDICIÓN DE EMISIÓN</td>
+<td>Síntesis + recuadro <strong>CONDICIÓN DE EMISIÓN</strong>: aprobado como intención del Plan Maestro y base de ingeniería básica; condicionado para ingeniería de detalle; <strong>no apto para replanteo ni construcción</strong></td>
+<td>Igual, con mención expresa al diagnóstico post-sísmico</td>
+</tr>
+<tr>
+<td><strong>27</strong></td>
+<td>ANEXOS</td>
+<td><strong>A</strong> Referencias gráficas (láminas MOP del inventario + Plan Maestro) · <strong>B</strong> Conversión de coordenadas DMS→decimal y datos para CAD/GIS (tabla punto / lat / lon / N / E / observación + nota QGIS/Google Earth) · <strong>C</strong> Glosario de siglas (tabla alfabética, incluye términos meteorológicos: OMM, METAR, AWS, Stevenson, etc.) · <strong>D</strong> Registro fotográfico post-sísmico · <strong>E</strong> Trazabilidad documental del inventario (E7)</td>
+<td><strong>Nuevos D y E</strong></td>
+</tr>
+<tr>
+<td><strong>28</strong></td>
+<td>ANEXO P – PLANOS DE ARQUITECTURA (ESCALA 1:200)</td>
+<td><strong>28.1 Cuadros de la implantación general</strong>: P-1 índice de planos del anexo · P-2 coordenadas de puntos de control · P-3 superficies de la implantación (Torre, Sala, Aula Magna, exteriores) · <strong>28.1.1 Notas de implantación</strong> (viñetas) + recuadros <strong>ALCANCE Y VALIDEZ DE LOS PLANOS</strong></td>
+<td>Igual estructura, contenido nuevo</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="8-graficas-obligatorias">§8. GRÁFICAS OBLIGATORIAS</h2>
+<h3 id="81-figuras-del-expediente-e4">8.1 Figuras del expediente (E4)</h3>
+<table>
+<thead>
+<tr>
+<th>Código</th>
+<th>Figura</th>
+<th>Tipo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G-01</td>
+<td>Implantación general del Área Cultural con la Torre, la Sala, el Aula Magna y la plaza de honor (1:400)</td>
+<td>Plano georreferenciado</td>
+</tr>
+<tr>
+<td>G-02</td>
+<td>Línea de tiempo patrimonial 1951 → 1958 → 1975 → 2010 → 2026 → 2030</td>
+<td>Diagrama temporal</td>
+</tr>
+<tr>
+<td>G-03</td>
+<td>Comparativa de alturas: 12,20 m original vs 22,02 m modificada, con la geometría adoptada</td>
+<td>Diagrama de sección</td>
+</tr>
+<tr>
+<td>G-04</td>
+<td>Cuadro de áreas por nivel (apilado) y eficiencia neta/bruta</td>
+<td>Gráfica de barras</td>
+</tr>
+<tr>
+<td>G-05</td>
+<td>Mapa de zonificación de la Sala Técnica (9,00 / 5,00 / 6,00 / 3,00 / 2,25 / 14,75 m²)</td>
+<td>Plano temático</td>
+</tr>
+<tr>
+<td>G-06</td>
+<td>Esquema del sistema estructural y de la estrategia de refuerzo</td>
+<td>Diagrama técnico</td>
+</tr>
+<tr>
+<td><strong>G-07</strong></td>
+<td><strong>Mapa de daño post-sísmico por nivel y elemento</strong> (leyenda de niveles de daño)</td>
+<td>Plano temático</td>
+</tr>
+<tr>
+<td>G-08</td>
+<td>Esquema de la estación hidrometeorológica: mástil, abrigo, sensores, distancias y obstáculos (criterios OMM)</td>
+<td>Diagrama técnico</td>
+</tr>
+<tr>
+<td>G-09</td>
+<td>Unifilar eléctrico + esquema de telemetría y respaldo</td>
+<td>Diagrama</td>
+</tr>
+<tr>
+<td>G-10</td>
+<td>Arquitectura de red e integración con el CDP (Torre B)</td>
+<td>Diagrama</td>
+</tr>
+<tr>
+<td>G-11</td>
+<td>Estrategia HBIM / gemelo digital: nube de puntos → modelo → AIM → mantenimiento</td>
+<td>Diagrama de flujo</td>
+</tr>
+<tr>
+<td>G-12</td>
+<td>Evacuación vertical y aforo (recorridos, puntos de conflicto, rescate asistido)</td>
+<td>Plano de evacuación</td>
+</tr>
+<tr>
+<td>G-13</td>
+<td>ROM por capítulo con rango mínimo–máximo</td>
+<td>Gráfica de barras</td>
+</tr>
+<tr>
+<td>G-14</td>
+<td>Cronograma de fases con gates (Gantt)</td>
+<td>Gantt</td>
+</tr>
+<tr>
+<td>G-15</td>
+<td>Mapa de riesgos (probabilidad × impacto) con los ID de la matriz 25.1</td>
+<td>Matriz de calor</td>
+</tr>
+</tbody>
+</table>
+<h3 id="82-laminas-del-anexo-p-e3">8.2 Láminas del Anexo P (E3)</h3>
+<p><code>P-0</code> Implantación general georreferenciada (1:400) · <code>P-1</code>…<code>P-5</code> Plantas de la Torre nivel por nivel
+(1:200, con NPT y altura libre) · <code>P-6</code> Planta de la Sala Técnica (1:200) · <code>P-7</code> <strong>Sección vertical</strong>
+de la Torre (1:100, con las 5 plataformas, coronación, asta y cotas) · <code>P-8</code> Fachadas, cuatro (1:200) ·
+<code>P-9</code> Planta de cubierta técnica y emplazamiento de instrumentos (1:100).
+Todas con cajetín completo y nota de validez: <em>planos esquemáticos de anteproyecto; definen programa,
+dimensiones y relaciones funcionales; no incluyen detalles constructivos, armaduras, instalaciones ni replanteo.</em></p>
+<h3 id="83-presentacion-al-consejo-universitario-e6">8.3 Presentación al Consejo Universitario (E6)</h3>
+<p>Estructura de 24–28 láminas, en el lenguaje visual de la presentación de referencia:
+1 Portada · 2 <strong>Cómo leer esta presentación</strong> (qué ES / qué NO es) · 3 Agenda en 6 bloques ·
+4 Marco: Plan Maestro UMC 2025–2030 · 5 Patrimonio: la Escuela Náutica de Venezuela y Malaussena ·
+6 <strong>El doblete sísmico del 24-06-2026 y la situación actual</strong> · 7 Implantación del Área Cultural ·
+8 La Torre de Observación / Puente de Mando (ficha con KPIs) · 9 Programa por niveles ·
+10 La Sala Técnica de Investigación Hidrometeorológica (ficha con KPIs) · 11 Diagnóstico patológico ·
+12 Doctrina de intervención: conservar / consolidar / reintegrar · 13 Concepto arquitectónico ·
+14 Estructura, cimentación y acción sísmica · 15 MEP y protección contra descargas ·
+16 Instrumentación meteorológica y telemetría · 17 Industria 5.0, HBIM y gemelo digital ·
+18 Accesibilidad, aforo y evacuación vertical · 19 Obras exteriores y subproyecto patrimonial ·
+20 Especificaciones y cómputos · 21 Inversión ROM (AACE Clase 5) · 22 Cronograma ·
+23 Riesgos principales y tratamiento · 24 <strong>RFI abiertas</strong> · 25 Condición de emisión y límites de uso
+(✗ lo que NO está definido / ✓ lo que SÍ está definido con precisión) ·
+26 <strong>Acuerdos que se solicitan al Consejo Universitario</strong> (propuesta de resolución numerada) ·
+27 Cierre con las cifras del proyecto.</p>
+<hr />
+<h2 id="9-checklist-de-aceptacion-gate-f7-verificar-y-reportar-item-por-item">§9. CHECKLIST DE ACEPTACIÓN (Gate F7 — verificar y reportar ítem por ítem)</h2>
+<ol>
+<li>Los 28 capítulos existen, en orden, con el contenido mínimo del §7.</li>
+<li>Sello y pie "NO APTO PARA CONSTRUCCIÓN" en todas las páginas y en todas las láminas.</li>
+<li>Control documental completo: código, revisión, fecha, aprobación, autoría fuente, proyectista "por designar", confidencialidad.</li>
+<li>Las RFI pre-detectadas <code>RFI-COD-01</code>, <code>RFI-COD-02</code>, <code>RFI-ARE-01</code>, <code>RFI-FEC-01</code>, <code>RFI-ALT-01</code> están abiertas y visibles en el capítulo 25.</li>
+<li>Las dos alturas (12,20 m / 22,02 m) figuran sin promediar y la adoptada está justificada.</li>
+<li>El cuadro de áreas suma exacto y coincide con 5 × 13,50 = 67,50 m² (torre) y con la distribución de 40,00 m² (sala); la discrepancia de 38,50 m² está reportada.</li>
+<li>Separación Torre↔Sala de 3,61 m declarada y tratada como intervención conjunta.</li>
+<li>Cada cifra del expediente tiene etiqueta de origen (R1) y existe E7 con la matriz de trazabilidad.</li>
+<li>El BOQ se deriva de la geometría adoptada; el ROM se deriva del BOQ; ambos cuadran con las tablas del capítulo 22.</li>
+<li>El rango de exactitud −25 %/+40 % y la naturaleza "no presupuesto de licitación" están declarados.</li>
+<li>El diagnóstico post-sísmico (F2) precede y justifica toda decisión estructural; hay nivel de daño por elemento y decisión de intervención por componente.</li>
+<li>La doctrina patrimonial está explícita y no se declara falsa historicidad ni certificación alguna.</li>
+<li>Ninguna norma se cita como cumplida sin verificación; hay <code>RFI-NOR-01</code>.</li>
+<li>El listado E1 concilia con los totales 198 PDF / 487 fotografías y declara criterios de selección auditables.</li>
+<li>Las lagunas del inventario (<code>PEND-ARCHIVO</code>, <code>PEND-PDF</code>, <code>FOT parcial</code>) se listan sin reinterpretarlas como verificadas.</li>
+<li>Las 15 figuras G-01…G-15 existen, están citadas en el texto y tienen cajetín o pie de figura.</li>
+<li>Las láminas P-0…P-9 existen, con escala, NPT, código y sello; el índice del Anexo P las lista todas.</li>
+<li>Coordenadas en DMS <strong>y</strong> decimal, con sistema de referencia (WGS84/EPSG:4326; trabajo UTM 19N/EPSG:32619) y Z declarada pendiente.</li>
+<li>Glosario alfabético sin duplicados; incluye los términos meteorológicos y patrimoniales usados.</li>
+<li>HTML autocontenido (sin recursos externos), con navegación y CSS de impresión; PDF con índice navegable y metadata; DOCX con estilos y tabla de contenido.</li>
+<li>Los 8 entregables E1–E8 están publicados en la carpeta <code>umc</code> con nombres canónicos y se devuelve la tabla de enlaces.</li>
+<li>No hay duplicados del R01: existe la tabla de cambios R01 → R02.</li>
+<li>Ortografía y denominaciones correctas (Universidad Marítima del Caribe, Venezuela, Catia La Mar, Aula Magna, hidrometeorológica), sin arrastrar las erratas de las fuentes a la prosa propia.</li>
+<li>La presentación no contiene ninguna cifra ausente del expediente, y termina con los acuerdos solicitados al Consejo.</li>
+</ol>
+<hr />
+<h2 id="10-protocolo-de-reporte">§10. PROTOCOLO DE REPORTE</h2>
+<p>Al cerrar <strong>cada gate</strong>, publica un bloque breve y continúa sin esperar confirmación:</p>
+<pre><code>GATE Fn — &lt;nombre&gt;
+Hecho:            &lt;2–4 líneas&gt;
+Fuentes usadas:   &lt;archivos e IDs efectivamente abiertos&gt;
+Entregables:      &lt;nombre canónico + ID/enlace si ya publicado&gt;
+Hallazgos:        &lt;inconsistencias, lagunas, decisiones tomadas&gt;
+RFI nuevas:       &lt;ID + enunciado + responsable&gt;
+Siguiente gate:   &lt;Fn+1&gt;
+</code></pre>
+<p>Al finalizar <strong>F7</strong>, entrega: (a) tabla de los 8 entregables con enlaces, (b) checklist §9 resuelto,
+(c) tabla de cambios R01 → R02, (d) listado consolidado de RFI abiertas, (e) condición de emisión.</p>
+<p><strong>Empieza por F0. No redactes el expediente antes de cerrar F1 y F2.</strong></p>
+<p>═══ FIN DEL PROMPT ═══</p>
+<hr />
+<h2 id="apendice-notas-de-construccion-de-este-prompt">Apéndice — Notas de construcción de este prompt</h2>
+<p>Este prompt se construyó a partir de la lectura efectiva de:
+<code>PROYECTO-01_UMC_CENTRO-TECNOLOGICO-STCW_TORRE-A.pdf</code> (37 p., estructura de 28 capítulos, estilo de
+tablas, Anexos A/B/C/P), <code>PRESENTACION_UMC_2025-2030_CONSEJO-UNIVERSITARIO.pdf</code> (27 láminas),
+<code>torreo observacion y meteorologia.pdf</code> (fuente rectora del nuevo objeto) e
+<code>Inventario_General_Consolidado_Tubo_Portaplanos_Nº_01_05.pdf</code>, más la verificación en vivo de la
+carpeta compartida <code>umc</code> en Google Drive.</p>
+<p>Inconsistencias detectadas durante la lectura y convertidas en RFI obligatorias:
+<strong>área de la sala</strong> (40,00 m² declarados vs 38,50 m² geométricos, con distribución interna que sí suma
+40,00 m²) · <strong>código funcional duplicado</strong> (CUL-TOO-01 y CUL-TOO-02) · <strong>código físico compartido</strong>
+(UMC-ED-003 para la Torre y para la Sala) · <strong>dos fechas de construcción</strong> (1951–1958 vs 1960–1975) ·
+<strong>dos alturas</strong> (12,20 m de plano vs 22,02 m de documento legal) · <strong>enlace de Drive inválido</strong> en el
+historial (404, y de tipo archivo, no carpeta).</p>
+</div></body></html>
