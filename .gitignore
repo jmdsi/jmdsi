@@ -2,3 +2,5 @@ google_drive/
 build/
 entregables/
 .venv/
+__pycache__/
+*.pyc
