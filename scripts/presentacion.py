@@ -409,12 +409,17 @@ def render_pdf(path):
                 ("TOPPADDING", (0, 0), (-1, -1), 2), ("BOTTOMPADDING", (0, 0), (-1, -1), 2)]))
             tw, th = t.wrap(left_w, 200 * mm)
             t.drawOn(c, x0, y - th - (0 if not sl.get("bullets") else 0))
-        if img and os.path.exists(img):
-            ir = ImageReader(img); iw, ih = ir.getSize()
+        imgs = [i for i in (img, sl.get("img2")) if i and os.path.exists(i)]
+        if imgs:
             box_w = content_w * 0.46; box_h = H - 62 * mm
-            sc = min(box_w / iw, box_h / ih)
-            c.drawImage(img, x0 + left_w + 2 * mm, y - box_h + (box_h - ih * sc) / 2,
-                        width=iw * sc, height=ih * sc, preserveAspectRatio=True, mask="auto")
+            slot = box_h / len(imgs)
+            for k, im in enumerate(imgs):
+                ir = ImageReader(im); iw, ih = ir.getSize()
+                sc = min(box_w / iw, (slot - 4 * mm) / ih)
+                c.drawImage(im, x0 + left_w + 2 * mm,
+                            y - (k + 1) * slot + (slot - ih * sc) / 2,
+                            width=iw * sc, height=ih * sc,
+                            preserveAspectRatio=True, mask="auto")
         if sl.get("nota"):
             pp = Paragraph(sl["nota"], s_n)
             _, hh = pp.wrap(content_w - 8 * mm, 30 * mm)
@@ -462,8 +467,9 @@ def render_html(path):
                          "</tr></thead><tbody>" + "".join(
                              "<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>"
                              for r in rows[1:]) + "</tbody></table>")
-        if sl.get("img"):
-            parts.append(f"<img src='{b64(sl['img'])}'/>")
+        for kk in ("img", "img2"):
+            if sl.get(kk):
+                parts.append(f"<img src='{b64(sl[kk])}'/>")
         if sl.get("nota"):
             parts.append(f"<div class='nota'>{sl['nota']}</div>")
         parts.append("</section>")
