@@ -352,6 +352,8 @@ def render_pdf(path):
         content_w = W - 24 * mm
         img = sl.get("img")
         left_w = content_w * (0.52 if img else 1.0)
+        if sl.get("img_below"):
+            left_w = content_w
         # KPIs
         if sl.get("kpis"):
             ks = sl["kpis"]; kw = content_w / len(ks)
@@ -410,7 +412,15 @@ def render_pdf(path):
             tw, th = t.wrap(left_w, 200 * mm)
             t.drawOn(c, x0, y - th - (0 if not sl.get("bullets") else 0))
         imgs = [i for i in (img, sl.get("img2")) if i and os.path.exists(i)]
-        if imgs:
+        if sl.get("img_below") and imgs:
+            im = imgs[0]
+            ir = ImageReader(im); iw, ih = ir.getSize()
+            top, bot = y + 2 * mm, 28 * mm
+            sc = min((content_w * 0.94) / iw, (top - bot) / ih)
+            dw, dh = iw * sc, ih * sc
+            c.drawImage(im, x0 + (content_w - dw) / 2, bot + (top - bot - dh) / 2,
+                        width=dw, height=dh, preserveAspectRatio=True, mask="auto")
+        elif imgs:
             box_w = content_w * 0.46; box_h = H - 62 * mm
             slot = box_h / len(imgs)
             for k, im in enumerate(imgs):

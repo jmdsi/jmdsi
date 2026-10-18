@@ -13,6 +13,7 @@ from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 
 import presentacion as PR
+import notas_v3 as NV
 
 AZUL = RGBColor(0x0B, 0x3C, 0x5D)
 ACERO = RGBColor(0x1D, 0x5B, 0x7A)
@@ -29,18 +30,62 @@ F2 = A + "IMG-CU-02_PLAZA-DE-HONOR-CREPUSCULO.png"
 F3 = A + "IMG-CU-03_EVACUACION-DOBLETE-24JUN2026.png"
 F4 = A + "IMG-CU-04_ESCUELA-NAUTICA-MALAUSSENA-HISTORICA.png"
 G02 = "build/fig/G-02_linea_tiempo.png"
+# Aportes del Rectorado extraídos de su mazo editado en Drive (v3)
+UA = "src/assets/user/"
+U_IMG1 = UA + "RECT-COMUNICACIONES-AZOTEA.jpg"      # comunicaciones / mástil en azotea
+U_IMG2 = UA + "RECT-CANALIZACIONES-PARARRAYOS-FIBRA.jpg"      # canalizaciones y bajantes
+U_IMG3 = UA + "RECT-DETALLE-INSTALACION-OBRA.jpg"      # detalle de instalación en obra
+G10 = "build/fig/G-10_red.png"
+
+U1_BULLETS = [
+    "Ingeniería estructural en azotea: definir si el mástil irá anclado a la losa de concreto "
+    "mediante una base de placa de acero con pernos de expansión o si requerirá un sistema "
+    "adicional de vientos (tensores) para soportar las cargas de viento en altura.",
+    "Infraestructura de comunicaciones: detallar la canalización vertical (tubería EMT o PVC "
+    "pesado) desde el datalogger en la azotea bajando por los 5 pisos de la torre hasta la "
+    "caja de empalme que conecta con el backbone de fibra óptica hacia el CDP (Torre B)."]
+U2_BULLETS = [
+    "Independencia de canalizaciones: está estrictamente prohibido compartir bandejas, ductos "
+    "o pasamuros entre la bajante del pararrayos (cable de cobre desnudo de 50 mm² o pletina "
+    "equivalente) y las tuberías conduit EMT que portan la fibra OS2 y el cableado de señales "
+    "meteorológicas.",
+    "Equipotencialidad terrestre: aunque las bajantes corren completamente separadas a lo "
+    "largo de los 5 pisos, la malla de puesta a tierra dedicada del pararrayos se unirá a la "
+    "malla general de baja tensión en el subsuelo mediante un electrodo de chispa (spark "
+    "gap): referencia común solo ante descargas masivas de alta frecuencia, sin bucles de "
+    "tierra destructivos."]
+U3_BULLETS = [
+    "IDF/MMR en la Sala Técnica y backbone de fibra OS2 hasta el CDP de Torre B (Proyecto 02).",
+    "Replicación del dato meteorológico con ciberseguridad y respaldo; registro autónomo del "
+    "datalogger ante caída del enlace.",
+    "Integración con los sistemas institucionales: CCTV, control de acceso y VTS."]
 
 COD = PR.COD
 SELLO = PR.SELLO
 
 
 def deck():
-    """Guion modificado: fotografías institucionales integradas y lámina del emblema."""
+    """Guion v3: fotografías institucionales + glosario de siglas + láminas aportadas por el
+    Rectorado (azotea/canalizaciones, notas de instalación, red G-10) + ROM con guía de
+    lectura. Mismo orden que el mazo PPTX v3 de 32 láminas."""
     S = copy.deepcopy(PR.S)
     out, inserted = [], False
     for sl in S:
         t = sl["t"]
-        if t.startswith("Marco:"):
+        if t.startswith("Cómo leer"):
+            out.append(sl)
+            out.append(dict(
+                t="Siglas y abreviaturas de la exposición",
+                st="Guía de lectura rápida: todos los términos que aparecen en esta exposición",
+                col_izq=("A – I", NV.GLOSARIO_IZQ),
+                col_der=("K – V", NV.GLOSARIO_DER),
+                nota="Fuente: anexo C del expediente R02 (§27.3), ampliado con los términos "
+                     "propios de esta exposición. Definiciones completas en el glosario del "
+                     "documento."))
+            continue
+        if t.startswith("Agenda"):
+            sl["tabla"] = [["#", "Bloque", "Láminas"]] + NV.AGENDA
+        elif t.startswith("Marco:"):
             sl["img"] = G02
         elif t.startswith("Patrimonio:"):
             sl["img"] = F4
@@ -74,6 +119,23 @@ def deck():
                      "institucional UMC, 2026 (aportado por el Rectorado)."))
             inserted = True
             continue
+        elif t.startswith("Instrumentación meteorológica"):
+            out.append(sl)
+            out.append(dict(
+                t=t, st="Decisiones de obra por definir: anclaje del mástil y canalización "
+                        "de comunicaciones",
+                img=U_IMG1, bullets=U1_BULLETS))
+            out.append(dict(
+                t=t, st="Notas de instalación en obra: independencia de canalizaciones y "
+                        "equipotencialidad",
+                img=U_IMG2, img2=U_IMG3, bullets=U2_BULLETS))
+            out.append(dict(
+                t=t, st="Arquitectura de red y telemetría del campus (figura G-10)",
+                img=G10, bullets=U3_BULLETS))
+            continue
+        elif t.startswith("Inversión estimada"):
+            sl["img_below"] = True          # G-13 a ancho completo bajo los KPI (legible)
+            sl["nota"] = NV.ROM_NOTA
         out.append(sl)
     assert inserted
     return out

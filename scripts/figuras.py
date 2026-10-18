@@ -7,6 +7,7 @@ fecha y sello «NO APTO PARA CONSTRUCCIÓN».
 Salida: build/fig/*.png  y  build/laminas/*.png  (300 dpi).
 """
 import math
+import os
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -463,26 +464,47 @@ def g12():
 
 # ----------------------------------------------------------------------------- G-13 ROM
 def g13():
-    fig, ax = nuevo("G-13 · Estimación ROM AACE Clase 5 por capítulo",
-                    "Banda −25 % / +40 %. Miles de USD. No constituye presupuesto de licitación.")
-    cap = ["Estudios previos (escaneo,\nensayos, patología)", "Demolición y gestión\nde escombros",
-           "Consolidación y refuerzo\nestructural", "Arquitectura y acabados\npatrimoniales",
-           "MEP", "Instrumentación\nmeteorológica", "TIC y seguridad",
-           "Obras exteriores y\nplaza de honor", "Ingeniería (7 %) y\ncontingencia (18 %)"]
+    """v3: cada barra identificada con su capítulo (nombre legible + rango anotado) y leyenda
+    que explica los dos tramos. Corrige la queja del Rectorado: «no entiendo qué es cada barra»."""
+    from matplotlib.patches import Patch
+    fig, ax = nuevo("G-13 · Estimación ROM (AACE Clase 5) por capítulo del presupuesto",
+                    "Cada barra = un capítulo: tramo azul oscuro hasta el mínimo (−25 %), tramo "
+                    "azul claro hasta el máximo (+40 %). Cifras en kUSD (miles de USD).")
+    ax.set_axis_on()
+    fig.subplots_adjust(left=.255, right=.965, top=.835, bottom=.115)
+    cap = ["1 · Estudios previos\n(escaneo, ensayos, patología)",
+           "2 · Demolición y gestión de\nescombros patrimoniales",
+           "3 · Consolidación y refuerzo\nestructural",
+           "4 · Arquitectura y acabados\npatrimoniales",
+           "5 · MEP (45 kVA + HVAC\nde precisión)",
+           "6 · Instrumentación\nmeteorológica (AWS)",
+           "7 · TIC y seguridad\nelectrónica",
+           "8 · Obras exteriores y\nplaza de honor",
+           "9 · Ingeniería (7 %) y\ncontingencia (18 %)"]
     lo = [180, 90, 420, 380, 150, 220, 110, 260, 280]
     hi = [260, 140, 640, 560, 230, 420, 170, 400, 430]
-    y = range(len(cap))
-    ax.barh(list(y), lo, color=ACERO, height=.62)
-    ax.barh(list(y), [b - a for a, b in zip(lo, hi)], left=lo, color="#c9d8e2", height=.62)
+    y = list(range(len(cap)))
+    ax.barh(y, lo, color=ACERO, height=.58)
+    ax.barh(y, [b - a for a, b in zip(lo, hi)], left=lo, color="#BBD0DC", height=.58)
     for i, (a, b) in enumerate(zip(lo, hi)):
-        txt(ax, b + 14, i, f"{a}–{b}", fontsize=6.8, color="#12212b")
-    ax.set_yticks(list(y)); ax.set_yticklabels(cap, fontsize=6.9)
-    ax.set_xlabel("miles de USD", fontsize=7.4); ax.set_xlim(0, 780)
-    txt(ax, 700, 8.6, "TOTAL ROM\n2.090 – 3.250\nmiles de USD", fontsize=8.2, color=ROJO,
-        weight="bold", ha="center")
-    ax.invert_yaxis()
-    for s in ("top", "right"):
+        ax.plot([(a + b) / 2], [i], marker="D", ms=4.5, color=ROJO, zorder=5,
+                clip_on=False)
+        txt(ax, b + 14, i, f"{a} – {b} kUSD", fontsize=8.8, color="#12212b", weight="bold")
+    ax.set_yticks(y); ax.set_yticklabels(cap, fontsize=8.8)
+    ax.tick_params(axis="x", labelsize=8.4)
+    ax.set_xlabel("kUSD (miles de dólares de los EE. UU.)", fontsize=9.2)
+    ax.set_xlim(0, 860); ax.set_ylim(len(cap) - .5, -2.3)
+    ax.grid(axis="x", color="#dde5ea", lw=.6, zorder=0)
+    ax.set_axisbelow(True)
+    for s in ("top", "right", "left"):
         ax.spines[s].set_visible(False)
+    ax.legend(handles=[
+        Patch(color=ACERO, label="Del cero al mínimo (−25 %)"),
+        Patch(color="#BBD0DC", label="Del mínimo al máximo (+40 %)"),
+        Line2D([0], [0], marker="D", ls="", color=ROJO, label="Punto medio")],
+        title="TOTAL ROM: 2.090 – 3.250 kUSD", loc="upper center", ncol=3,
+        bbox_to_anchor=(0.5, 0.995), fontsize=8.6, title_fontsize=9.2, frameon=True,
+        framealpha=1, edgecolor=GRIS, columnspacing=1.4, handlelength=1.6)
     cajetin(fig, "UMC-T-COS-001-R02", "ROM por capítulo (AACE Clase 5)", "s/e (gráfica)")
     guardar(fig, FIG + "G-13_rom.png")
 
