@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="780" viewBox="0 0 1000 780" font-family="Helvetica,Arial,sans-serif">
+<rect x="0" y="0" width="1000" height="780" fill="#ffffff"/>
+<rect x="0.0" y="0.0" width="1000.0" height="26.0" rx="0" fill="#0b3a66" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="10.0" y="17.0" font-size="12" fill="#ffffff" text-anchor="start" font-weight="bold">UMC-PCH-P-6 — PLANTA DE ZONIFICACIÓN CEREMONIAL Y PROTOCOLO</text>
+<text x="990.0" y="17.0" font-size="9" fill="#cfe0f0" text-anchor="end">UMC2030-P05-EXTPCH-R01</text>
+<rect x="180.0" y="74.0" width="570.0" height="36.0" rx="0" fill="#cdd9e5" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="465.0" y="96.0" font-size="10" fill="#5a6b7a" text-anchor="middle">FRACCIÓN 1 — AULA MAGNA / AUDITORIO + FOYER (NPT ±0,000)</text>
+<rect x="752.0" y="74.0" width="34.0" height="439.5" rx="0" fill="#cdd9e5" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="769.0" y="298.8" font-size="9" fill="#5a6b7a" text-anchor="middle" transform="rotate(90 769.0 298.75)">FRACCIÓN 2 — 13 módulos × 4,00 m = 52,00 m</text>
+<rect x="180.0" y="489.5" width="570.0" height="30.0" rx="0" fill="#cdd9e5" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="465.0" y="508.5" font-size="10" fill="#5a6b7a" text-anchor="middle">FRACCIÓN 3 — DORMITORIOS DE CADETES (Popa)</text>
+<rect x="138.0" y="150.0" width="26.0" height="26.0" rx="0" fill="#9fb4c8" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="151.0" y="144.0" font-size="8" fill="#5a6b7a" text-anchor="middle">TORRE</text>
+<text x="151.0" y="190.0" font-size="7" fill="#5a6b7a" text-anchor="middle">CUL-TOO-02</text>
+<rect x="132.0" y="190.0" width="38.0" height="22.0" rx="0" fill="#b8c9d9" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="151.0" y="224.0" font-size="7" fill="#5a6b7a" text-anchor="middle">SALA ACA-STH-15</text>
+<rect x="190.0" y="120.0" width="550.0" height="357.5" rx="0" fill="#e9eef4" fill-opacity="1" stroke="#0b3a66" stroke-width="2"/>
+<line x1="190.0" y1="483.5" x2="740.0" y2="483.5" stroke="#0b3a66" stroke-width="0.8"/>
+<text x="465.0" y="471.5" font-size="11" fill="#0b3a66" text-anchor="middle" font-weight="bold">50,00 m</text>
+<text x="198.0" y="298.8" font-size="11" fill="#0b3a66" text-anchor="start" font-weight="bold" transform="rotate(-90 198 298.75)">32,50 m</text>
+<line x1="810.0" y1="190.0" x2="810.0" y2="150.0" stroke="#0b3a66" stroke-width="2"/>
+<polygon points="810.0,150.0 813.0,156.3 807.0,156.3" fill="#0b3a66"/>
+<text x="810.0" y="140.0" font-size="9" fill="#0b3a66" text-anchor="middle" font-weight="bold">N (Proa)</text>
+<rect x="190.0" y="120.0" width="128.7" height="357.5" rx="0" fill="#f3c9ca" fill-opacity="0.85" stroke="#5a6b7a" stroke-width="0.8"/>
+<text x="254.4" y="298.8" font-size="9" fill="#1c2b36" text-anchor="middle" transform="rotate(-90 254.35000000000002 298.75)">Banda Protocolo + borde P04</text>
+<rect x="318.7" y="120.0" width="220.0" height="357.5" rx="0" fill="#cfe3cf" fill-opacity="0.85" stroke="#5a6b7a" stroke-width="0.8"/>
+<text x="428.7" y="298.8" font-size="9" fill="#1c2b36" text-anchor="middle" transform="rotate(-90 428.70000000000005 298.75)">Formación por compañías (orden cerrado)</text>
+<rect x="538.7" y="120.0" width="110.0" height="357.5" rx="0" fill="#cfd9ee" fill-opacity="0.85" stroke="#5a6b7a" stroke-width="0.8"/>
+<text x="593.7" y="298.8" font-size="9" fill="#1c2b36" text-anchor="middle" transform="rotate(-90 593.7 298.75)">Calle de revista / eje de desfile</text>
+<rect x="648.7" y="120.0" width="91.3" height="357.5" rx="0" fill="#f2e3bd" fill-opacity="0.85" stroke="#5a6b7a" stroke-width="0.8"/>
+<text x="694.3" y="298.8" font-size="9" fill="#1c2b36" text-anchor="middle" transform="rotate(-90 694.3499999999999 298.75)">Autoridades, tribuna y acceso F2</text>
+<circle cx="465.0" cy="146.0" r="6" fill="#c9a227" stroke="none" stroke-width="1"/>
+<text x="475.0" y="150.0" font-size="9" fill="#1c2b36" text-anchor="start">Asta + podio accesible</text>
+<text x="190.0" y="560.0" font-size="10.5" fill="#1c2b36" text-anchor="start">Capacidades: 1.300 cadetes a 1,25 m²/ef. (1.625/1,25=1.300 ✔) · 1.625 personas a 1,00 m²/p. · R-1: 1.080–1.625 personas</text>
+<text x="190.0" y="578.0" font-size="9" fill="#5a6b7a" text-anchor="start">[FUENTE: Ficha EXT-PCH-04 §2 Capacidad] · Distribución espacial de zonas: [HIPÓTESIS de anteproyecto]</text>
+<rect x="6.0" y="6.0" width="988.0" height="768.0" rx="0" fill="none" fill-opacity="1" stroke="#0b3a66" stroke-width="2"/>
+<line x1="6.0" y1="648.0" x2="994.0" y2="648.0" stroke="#0b3a66" stroke-width="1.5"/>
+<rect x="6.0" y="648.0" width="988.0" height="126.0" rx="0" fill="#f4f7fa" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="20.0" y="670.0" font-size="10" fill="#0b3a66" text-anchor="start" font-weight="bold">UNIVERSIDAD MARÍTIMA DEL CARIBE — PLAN MAESTRO UMC 2025–2030</text>
+<text x="20.0" y="688.0" font-size="9" fill="#5a6b7a" text-anchor="start">PATIO / CUBIERTA DE HONOR (EXT-PCH-04) · PROA CENTRAL · Catia La Mar</text>
+<text x="20.0" y="706.0" font-size="10" fill="#0b3a66" text-anchor="start" font-weight="bold">LÁMINA UMC-PCH-P-6 — PLANTA DE ZONIFICACIÓN CEREMONIAL Y PROTOCOLO</text>
+<text x="20.0" y="724.0" font-size="8" fill="#5a6b7a" text-anchor="start">1.300 cadetes a 1,25 m²/ef. · Banda de Protocolo 210,00 m² (interfaz P04) · tribuna por dimensionar [RFI-PRO-01]</text>
+<line x1="686.0" y1="648.0" x2="686.0" y2="774.0" stroke="#28506e" stroke-width="1"/>
+<text x="700.0" y="668.0" font-size="9" fill="#0b3a66" text-anchor="start" font-weight="bold">CÓDIGO: UMC2030-P05-EXTPCH-R01</text>
+<text x="700.0" y="684.0" font-size="8" fill="#5a6b7a" text-anchor="start">ESCALA: 1:250 (referencial s/ impresión)</text>
+<text x="700.0" y="700.0" font-size="8" fill="#5a6b7a" text-anchor="start">REV.: R01 · FECHA: 26 de octubre de 2026</text>
+<text x="700.0" y="716.0" font-size="7.5" fill="#5a6b7a" text-anchor="start">PROYECTISTA: Por designar · FUENTE: Prof. J. Da Silva I. (CIV 95787)</text>
+<text x="700.0" y="732.0" font-size="7.5" fill="#5a6b7a" text-anchor="start">APROBACIÓN: Rectorado UMC — Cap. Alt./Dr. G. A. Riut Hernández</text>
+<rect x="20.0" y="740.0" width="560.0" height="26.0" rx="0" fill="#fff3cd" fill-opacity="1" stroke="#c9a227" stroke-width="1.5"/>
+<text x="300.0" y="757.0" font-size="8.5" fill="#7a5900" text-anchor="middle" font-weight="bold">NO APTO PARA CONSTRUCCIÓN — ANTEPROYECTO · Uso institucional UMC – Marina Mercante de Venezuela</text></svg>

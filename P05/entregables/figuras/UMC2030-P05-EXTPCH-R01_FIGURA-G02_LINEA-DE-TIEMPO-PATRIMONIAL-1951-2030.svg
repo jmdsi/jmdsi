@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" font-family="Helvetica,Arial,sans-serif">
+<rect x="0" y="0" width="1000" height="640" fill="#ffffff"/>
+<rect x="0.0" y="0.0" width="1000.0" height="26.0" rx="0" fill="#0b3a66" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="10.0" y="17.0" font-size="12" fill="#ffffff" text-anchor="start" font-weight="bold">G-02 — LINEA DE TIEMPO PATRIMONIAL 1951-2030</text>
+<text x="990.0" y="17.0" font-size="9" fill="#cfe0f0" text-anchor="end">UMC2030-P05-EXTPCH-R01</text>
+<line x1="80.0" y1="300.0" x2="920.0" y2="300.0" stroke="#0b3a66" stroke-width="3"/>
+<circle cx="80.0" cy="300.0" r="7" fill="#0b3a66" stroke="none" stroke-width="1"/>
+<line x1="80.0" y1="300.0" x2="80.0" y2="240.0" stroke="#5a6b7a" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="80.0" y="232.0" font-size="12" fill="#0b3a66" text-anchor="middle" font-weight="bold">28-08-1951</text>
+<text x="80.0" y="248.0" font-size="9" fill="#1c2b36" text-anchor="middle">Proyecto estructural F1/F2 (15 DF </text>
+<text x="80.0" y="260.0" font-size="9" fill="#1c2b36" text-anchor="middle">30, 8.DF.2.364)</text>
+<circle cx="248.0" cy="300.0" r="7" fill="#0b3a66" stroke="none" stroke-width="1"/>
+<line x1="248.0" y1="300.0" x2="248.0" y2="360.0" stroke="#5a6b7a" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="248.0" y="376.0" font-size="12" fill="#0b3a66" text-anchor="middle" font-weight="bold">24-10-1953</text>
+<text x="248.0" y="392.0" font-size="9" fill="#1c2b36" text-anchor="middle">Situación General y Urbanismo P04-</text>
+<text x="248.0" y="404.0" font-size="9" fill="#1c2b36" text-anchor="middle">L5-A</text>
+<circle cx="416.0" cy="300.0" r="7" fill="#0b3a66" stroke="none" stroke-width="1"/>
+<line x1="416.0" y1="300.0" x2="416.0" y2="240.0" stroke="#5a6b7a" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="416.0" y="232.0" font-size="12" fill="#0b3a66" text-anchor="middle" font-weight="bold">1956–1958</text>
+<text x="416.0" y="248.0" font-size="9" fill="#1c2b36" text-anchor="middle">Obras complementarias; operación 1</text>
+<text x="416.0" y="260.0" font-size="9" fill="#1c2b36" text-anchor="middle">951–1959</text>
+<circle cx="584.0" cy="300.0" r="7" fill="#0b3a66" stroke="none" stroke-width="1"/>
+<line x1="584.0" y1="300.0" x2="584.0" y2="360.0" stroke="#5a6b7a" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="584.0" y="376.0" font-size="12" fill="#0b3a66" text-anchor="middle" font-weight="bold">1951–2025</text>
+<text x="584.0" y="392.0" font-size="9" fill="#1c2b36" text-anchor="middle">Uso ceremonial continuo — estado B</text>
+<text x="584.0" y="404.0" font-size="9" fill="#1c2b36" text-anchor="middle">ueno</text>
+<circle cx="752.0" cy="300.0" r="7" fill="#c0272d" stroke="none" stroke-width="1"/>
+<line x1="752.0" y1="300.0" x2="752.0" y2="240.0" stroke="#5a6b7a" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="752.0" y="232.0" font-size="12" fill="#c0272d" text-anchor="middle" font-weight="bold">24-06-2026</text>
+<text x="752.0" y="248.0" font-size="9" fill="#1c2b36" text-anchor="middle">Doblete sísmico Mw 7,2 / 7,5 — INH</text>
+<text x="752.0" y="260.0" font-size="9" fill="#1c2b36" text-anchor="middle">ABILITADO</text>
+<circle cx="920.0" cy="300.0" r="7" fill="#0b3a66" stroke="none" stroke-width="1"/>
+<line x1="920.0" y1="300.0" x2="920.0" y2="360.0" stroke="#5a6b7a" stroke-width="0.8" stroke-dasharray="3,3"/>
+<text x="920.0" y="376.0" font-size="12" fill="#0b3a66" text-anchor="middle" font-weight="bold">2026–2030</text>
+<text x="920.0" y="392.0" font-size="9" fill="#1c2b36" text-anchor="middle">Restauración integral P05 (este ex</text>
+<text x="920.0" y="404.0" font-size="9" fill="#1c2b36" text-anchor="middle">pediente)</text>
+<text x="14.0" y="604.0" font-size="9" fill="#5a6b7a" text-anchor="start">Cronología verificada en cajetines MOP y Ficha Catastral Validada.</text>
+<line x1="0.0" y1="618.0" x2="1000.0" y2="618.0" stroke="#5a6b7a" stroke-width="0.6"/>
+<text x="10.0" y="630.0" font-size="7.5" fill="#5a6b7a" text-anchor="start">INGENIERÍA BÁSICA / ANTEPROYECTO — EMITIDO PARA COORDINACIÓN Y PRESUPUESTO PRELIMINAR — NO APTO PARA CONSTRUCCIÓN</text>
+<text x="990.0" y="630.0" font-size="7.5" fill="#5a6b7a" text-anchor="end">Figura G-02 · esquema de anteproyecto, sin valor de replanteo</text></svg>

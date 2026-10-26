@@ -1,0 +1,25 @@
+﻿Nº;Ítem de verificación;Criterio;Resultado;Evidencia
+1;Código de expediente único UMC2030-P05-EXTPCH-R01 en todos los entregables;sin restos de P04/TOBSHM;CONFORME;nombres de archivo + portadas E1–E8
+2;Sello NO APTO PARA CONSTRUCCIÓN en toda página/lámina;100 % páginas PDF/HTML/láminas;CONFORME;header/footer PDF, cajetines P-0…P-9, pie de slides
+3;Área total 1.625,00 m² = 50,00 × 32,50 m;aritmética exacta;CONFORME;Cap. 5.3 [DERIVADO] ✔
+4;Conciliación anidada 1.625 ⊃ 380 ⊃ 210 y neto 1.245;"380+1.245=1.625; sin doble suma (R4)";CONFORME;G-03, Cap. 8.6, lámina P-9
+5;Mapa de daño D3 680 + D2 565 + D4 380 = 1.625 m²;cierre al 100,00 %;CONFORME;G-07, E5, Cap. 11.5
+6;Deducción P04 USD 330.000 aplicada una sola vez;895.000−330.000=565.000;CONFORME;Cap. 22, G-13
+7;ROM 765.000+53.550+76.450=895.000 con nota de redondeo (76.450 vs 76.500);suma exacta + redondeo declarado (R6);CONFORME;Cap. 22 fila contingencia
+8;Rangos AACE Clase 5 −25 %/+40 % (750–1.120 / 490–720 k);consignados en ROM y presentación;CONFORME;Cap. 22, slide 22
+9;Aforos 1.300 (1,25 m²/ef.) · 1.625 (1,00 m²/p.) · R-1 1.080–1.625;1.625/1,25=1.300 ✔;CONFORME;Cap. 7 y 17
+10;Asta 12,00 m y mástil OMM 10,00 m sin confusión con alturas de la Torre;22,02/12,20 m solo como contexto P04;CONFORME;Cap. 7, G-10, RFI-ALT-01 heredada
+11;"Coordenadas 10°36'02,55""N/67°01'55,20""O = UTM 19N E 715.324,40/N 1.172.523,10";conversión y corrección de inversión X/Y;CONFORME;Cap. 5.2, Anexo B, P-0
+12;ΔE +32,21 / ΔN −13,21 (d=34,81 m) respecto a la Torre;consistente con Ficha;CONFORME;Cap. 5.2
+13;Pendiente 1,2–1,5 % y NPT ±0,000 declarados;fuente Ficha + P03-ENV-002;CONFORME;Cap. 5.5, P-1
+14;Drenaje Q 73,13/145 L/s Tr 25 · 180 m C250 · 140 m PEAD SN8 · 8 tanquillas;cifras de la Ficha sin alteración;CONFORME;Cap. 12.2, G-08, P-3
+15;Eléctrica 12 LED IP66/IK10 100–150 lux · tierra ≤5 Ω · SPDA IEC 62305;cifras de la Ficha;CONFORME;Cap. 12.1, G-09, P-4
+16;Sellado de juntas 980 m, e=25–50 mm;partida E3.02;CONFORME;Cap. 11.3, Cap. 21
+17;E1 con 26 láminas/series y conciliación 26/198 PDF · 77/487 fotos;totales del inventario firmado;CONFORME;E1 CSV/HTML, slide 5
+18;Trazabilidad [FUENTE]/[DERIVADO]/[HIPÓTESIS] en figuras y tablas;toda cifra etiquetada o heredada de tabla con fuente;CONFORME;"G-01…G-15 notas al pie; Caps. 5,7,8,21,22"
+19;Condición suspensiva P04→borde Babor en Caps. 2, 19, 23 y lámina P-9;secuencia declarada como gate;CONFORME;box Cap. 19, Gantt G-14
+20;RFI-EVA-01 (R-1 alterno) visible como CRÍTICA en E2, E5 y E6;prioridad máxima declarada;CONFORME;Cap. 17 box, E5 §3, slide 25
+21;Normas citadas como referenciales sin acreditar cumplimiento (R10);tabla normativa con estado por verificar;CONFORME;Cap. 4
+22;Expediente 45–60 páginas y presentación 24–28 láminas;50 págs. PDF · 26 slides;CONFORME;conteo PDF E2 + E6
+23;Registro RFI completo (16 activas + 2 cerradas/resueltas) con responsable;tabla única consolidada;CONFORME;Cap. 25.2, E8
+24;Sin imágenes fabricadas: fotos referenciadas a Lámina 4 y acervo IMG (R5);solo esquemas vectoriales propios;CONFORME;E5 §2, Anexo D

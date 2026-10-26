@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" font-family="Helvetica,Arial,sans-serif">
+<rect x="0" y="0" width="1000" height="700" fill="#ffffff"/>
+<rect x="0.0" y="0.0" width="1000.0" height="26.0" rx="0" fill="#0b3a66" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="10.0" y="17.0" font-size="12" fill="#ffffff" text-anchor="start" font-weight="bold">E5 — REGISTRO PATOLÓGICO POST-SÍSMICO — SÍNTESIS (24-06-2026 Mw 7,2 + 7,5)</text>
+<text x="990.0" y="17.0" font-size="9" fill="#cfe0f0" text-anchor="end">UMC2030-P05-EXTPCH-R01</text>
+<rect x="60.0" y="90.0" width="280.0" height="190.0" rx="8" fill="#e8762c" fill-opacity="0.85" stroke="#28506e" stroke-width="1"/>
+<text x="200.0" y="125.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">D3 — SEVERO</text>
+<text x="200.0" y="165.0" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">680,00 m²</text>
+<text x="200.0" y="192.0" font-size="11" fill="#ffffff" text-anchor="middle">41,85 % del total</text>
+<text x="200.0" y="220.0" font-size="9.5" fill="#ffffff" text-anchor="middle">fractura + escalonamiento 1,5–4,5 cm</text>
+<rect x="90.0" y="238.0" width="220.0" height="26.0" rx="5" fill="#ffffff" fill-opacity="0.92" stroke="#28506e" stroke-width="1"/>
+<text x="200.0" y="255.0" font-size="10" fill="#0b3a66" text-anchor="middle" font-weight="bold">DEMOLER Y REPONER</text>
+<rect x="360.0" y="90.0" width="280.0" height="190.0" rx="8" fill="#f5c843" fill-opacity="0.85" stroke="#28506e" stroke-width="1"/>
+<text x="500.0" y="125.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">D2 — MODERADO</text>
+<text x="500.0" y="165.0" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">565,00 m²</text>
+<text x="500.0" y="192.0" font-size="11" fill="#ffffff" text-anchor="middle">34,77 % del total</text>
+<text x="500.0" y="220.0" font-size="9.5" fill="#ffffff" text-anchor="middle">fisuración + pérdida de sellos</text>
+<rect x="390.0" y="238.0" width="220.0" height="26.0" rx="5" fill="#ffffff" fill-opacity="0.92" stroke="#28506e" stroke-width="1"/>
+<text x="500.0" y="255.0" font-size="10" fill="#0b3a66" text-anchor="middle" font-weight="bold">REPARAR + RESELLAR</text>
+<rect x="660.0" y="90.0" width="280.0" height="190.0" rx="8" fill="#c0272d" fill-opacity="0.85" stroke="#28506e" stroke-width="1"/>
+<text x="800.0" y="125.0" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">D4 — INDUCIDO</text>
+<text x="800.0" y="165.0" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">380,00 m²</text>
+<text x="800.0" y="192.0" font-size="11" fill="#ffffff" text-anchor="middle">23,38 % del total</text>
+<text x="800.0" y="220.0" font-size="9.5" fill="#ffffff" text-anchor="middle">escombros Torre (borde Babor)</text>
+<rect x="690.0" y="238.0" width="220.0" height="26.0" rx="5" fill="#ffffff" fill-opacity="0.92" stroke="#28506e" stroke-width="1"/>
+<text x="800.0" y="255.0" font-size="10" fill="#0b3a66" text-anchor="middle" font-weight="bold">TRANSFERIDO A P04</text>
+<text x="500.0" y="310.0" font-size="12" fill="#0b3a66" text-anchor="middle" font-weight="bold">680,00 + 565,00 + 380,00 = 1.625,00 m² ✔ (100,00 % de la poligonal 50,00 × 32,50 m)</text>
+<rect x="60.0" y="345.0" width="880.0" height="180.0" rx="6" fill="#fdf1f1" fill-opacity="1" stroke="#b23a3a" stroke-width="1.5"/>
+<text x="80.0" y="371.0" font-size="12" fill="#b23a3a" text-anchor="start" font-weight="bold">ESTADO DEL ACTIVO: INHABILITADO (0 personas para paradas) · PUNTO R-1 SUSPENDIDO → RFI-EVA-01 (CRÍTICA)</text>
+<text x="80.0" y="397.0" font-size="10.5" fill="#5a6b7a" text-anchor="start">Otros daños: subbase/rellenos asentados s/ trincheras · colectores ≈140 m fuga/colapso presunto [HIPÓTESIS] ·</text>
+<text x="80.0" y="417.0" font-size="10.5" fill="#5a6b7a" text-anchor="start">sellos ≈980 m perdidos (envejecimiento 75 años + sismo) · asta mayor por inspeccionar (RFI-PAT-02)</text>
+<text x="80.0" y="445.0" font-size="10.5" fill="#5a6b7a" text-anchor="start">Inspecciones requeridas: TLS (RFI-PAT-01) · calicatas + PDC (RFI-GEOT-01) · videoinspección + estanqueidad</text>
+<text x="80.0" y="465.0" font-size="10.5" fill="#5a6b7a" text-anchor="start">(RFI-PAT-03) · georradar de trincheras (RFI-PAT-04) · escala D0–D4 referencial (ATC-20/pavimentos)</text>
+<text x="80.0" y="497.0" font-size="9.5" fill="#0b3a66" text-anchor="start">Evidencia: Lámina 4 «POST SISMO» de PATIO_HONOR CATASTRO.pdf + dictamen Ficha EXT-PCH-04 (R5: sin imágenes fabricadas)</text>
+<line x1="0.0" y1="678.0" x2="1000.0" y2="678.0" stroke="#5a6b7a" stroke-width="0.6"/>
+<text x="10.0" y="690.0" font-size="7.5" fill="#5a6b7a" text-anchor="start">INGENIERÍA BÁSICA / ANTEPROYECTO — EMITIDO PARA COORDINACIÓN Y PRESUPUESTO PRELIMINAR — NO APTO PARA CONSTRUCCIÓN</text>
+<text x="990.0" y="690.0" font-size="7.5" fill="#5a6b7a" text-anchor="end">E5 · registro patológico — síntesis gráfica</text></svg>

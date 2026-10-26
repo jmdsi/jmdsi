@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" font-family="Helvetica,Arial,sans-serif">
+<rect x="0" y="0" width="1000" height="640" fill="#ffffff"/>
+<rect x="0.0" y="0.0" width="1000.0" height="26.0" rx="0" fill="#0b3a66" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="10.0" y="17.0" font-size="12" fill="#ffffff" text-anchor="start" font-weight="bold">G-14 — CRONOGRAMA DE FASES CON GATES</text>
+<text x="990.0" y="17.0" font-size="9" fill="#cfe0f0" text-anchor="end">UMC2030-P05-EXTPCH-R01</text>
+<line x1="70.0" y1="120.0" x2="70.0" y2="480.0" stroke="#d5dee6" stroke-width="1"/>
+<text x="70.0" y="112.0" font-size="9" fill="#5a6b7a" text-anchor="middle">M0</text>
+<line x1="160.0" y1="120.0" x2="160.0" y2="480.0" stroke="#d5dee6" stroke-width="1"/>
+<text x="160.0" y="112.0" font-size="9" fill="#5a6b7a" text-anchor="middle">M1</text>
+<line x1="250.0" y1="120.0" x2="250.0" y2="480.0" stroke="#d5dee6" stroke-width="1"/>
+<text x="250.0" y="112.0" font-size="9" fill="#5a6b7a" text-anchor="middle">M2</text>
+<line x1="340.0" y1="120.0" x2="340.0" y2="480.0" stroke="#d5dee6" stroke-width="1"/>
+<text x="340.0" y="112.0" font-size="9" fill="#5a6b7a" text-anchor="middle">M3</text>
+<line x1="430.0" y1="120.0" x2="430.0" y2="480.0" stroke="#d5dee6" stroke-width="1"/>
+<text x="430.0" y="112.0" font-size="9" fill="#5a6b7a" text-anchor="middle">M4</text>
+<line x1="520.0" y1="120.0" x2="520.0" y2="480.0" stroke="#d5dee6" stroke-width="1"/>
+<text x="520.0" y="112.0" font-size="9" fill="#5a6b7a" text-anchor="middle">M5</text>
+<line x1="610.0" y1="120.0" x2="610.0" y2="480.0" stroke="#d5dee6" stroke-width="1"/>
+<text x="610.0" y="112.0" font-size="9" fill="#5a6b7a" text-anchor="middle">M6</text>
+<line x1="700.0" y1="120.0" x2="700.0" y2="480.0" stroke="#d5dee6" stroke-width="1"/>
+<text x="700.0" y="112.0" font-size="9" fill="#5a6b7a" text-anchor="middle">M7</text>
+<line x1="790.0" y1="120.0" x2="790.0" y2="480.0" stroke="#d5dee6" stroke-width="1"/>
+<text x="790.0" y="112.0" font-size="9" fill="#5a6b7a" text-anchor="middle">M8</text>
+<line x1="880.0" y1="120.0" x2="880.0" y2="480.0" stroke="#d5dee6" stroke-width="1"/>
+<text x="880.0" y="112.0" font-size="9" fill="#5a6b7a" text-anchor="middle">M9</text>
+<rect x="70.0" y="140.0" width="180.0" height="30.0" rx="4" fill="#8a6bbf" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="76.0" y="160.0" font-size="9.5" fill="#fff" text-anchor="start" font-weight="bold">A — Estudios previos: TLS, calicatas, PDC, BM-UMC-01</text>
+<circle cx="250.0" cy="155.0" r="7" fill="#c9a227" stroke="none" stroke-width="1"/>
+<text x="262.0" y="159.0" font-size="8.5" fill="#7a6212" text-anchor="start">GATE: geotecnia cierra RFI-GEOT-01</text>
+<rect x="205.0" y="204.0" width="180.0" height="30.0" rx="4" fill="#e8762c" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="211.0" y="224.0" font-size="9.5" fill="#fff" text-anchor="start" font-weight="bold">B — Desescombro y demolición controlada (gestión patrimonial)</text>
+<circle cx="385.0" cy="219.0" r="7" fill="#c9a227" stroke="none" stroke-width="1"/>
+<text x="397.0" y="223.0" font-size="8.5" fill="#7a6212" text-anchor="start">GATE: borde Babor consolidado por P04</text>
+<rect x="340.0" y="268.0" width="225.0" height="30.0" rx="4" fill="#b8860b" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="346.0" y="288.0" font-size="9.5" fill="#fff" text-anchor="start" font-weight="bold">C — Saneamiento subbase + colectores PEAD + pruebas estanqueidad</text>
+<circle cx="565.0" cy="283.0" r="7" fill="#c9a227" stroke="none" stroke-width="1"/>
+<text x="577.0" y="287.0" font-size="8.5" fill="#7a6212" text-anchor="start">GATE: estanqueidad aprobada</text>
+<rect x="520.0" y="332.0" width="270.0" height="30.0" rx="4" fill="#11528f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="526.0" y="352.0" font-size="9.5" fill="#fff" text-anchor="start" font-weight="bold">D — Pavimento: losas, juntas, sellos, reintegración acabado</text>
+<circle cx="790.0" cy="347.0" r="7" fill="#c9a227" stroke="none" stroke-width="1"/>
+<text x="802.0" y="351.0" font-size="8.5" fill="#7a6212" text-anchor="start">GATE: paños piloto aprobados</text>
+<rect x="745.0" y="396.0" width="135.0" height="30.0" rx="4" fill="#2e8b57" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="751.0" y="416.0" font-size="9.5" fill="#fff" text-anchor="start" font-weight="bold">E — Asta, eléctrica, señalización R-1, comisionamiento</text>
+<circle cx="880.0" cy="411.0" r="7" fill="#c9a227" stroke="none" stroke-width="1"/>
+<text x="892.0" y="415.0" font-size="8.5" fill="#7a6212" text-anchor="start">GATE: habilitación protocolar</text>
+<text x="70.0" y="510.0" font-size="10" fill="#1c2b36" text-anchor="start">Duración total estimada ≈ 9 meses [HIPÓTESIS planificador A8] · Restricciones duras: (1) P04 precede al borde Babor;</text>
+<text x="70.0" y="530.0" font-size="10" fill="#1c2b36" text-anchor="start">(2) calendario ceremonial (graduaciones) condiciona cortes; (3) lluvias: subbase nunca abierta en pico pluvial; (4) R-1 alterno operativo.</text>
+<text x="70.0" y="600.0" font-size="9" fill="#5a6b7a" text-anchor="start">Cronograma de anteproyecto — no es programa contractual de obra</text>
+<text x="14.0" y="604.0" font-size="9" fill="#5a6b7a" text-anchor="start">5 fases A-E, con condicion suspensiva P04 y calendario ceremonial.</text>
+<line x1="0.0" y1="618.0" x2="1000.0" y2="618.0" stroke="#5a6b7a" stroke-width="0.6"/>
+<text x="10.0" y="630.0" font-size="7.5" fill="#5a6b7a" text-anchor="start">INGENIERÍA BÁSICA / ANTEPROYECTO — EMITIDO PARA COORDINACIÓN Y PRESUPUESTO PRELIMINAR — NO APTO PARA CONSTRUCCIÓN</text>
+<text x="990.0" y="630.0" font-size="7.5" fill="#5a6b7a" text-anchor="end">Figura G-14 · esquema de anteproyecto, sin valor de replanteo</text></svg>

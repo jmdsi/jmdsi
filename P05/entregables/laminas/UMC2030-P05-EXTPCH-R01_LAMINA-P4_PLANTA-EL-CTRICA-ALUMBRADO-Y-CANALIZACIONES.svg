@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="780" viewBox="0 0 1000 780" font-family="Helvetica,Arial,sans-serif">
+<rect x="0" y="0" width="1000" height="780" fill="#ffffff"/>
+<rect x="0.0" y="0.0" width="1000.0" height="26.0" rx="0" fill="#0b3a66" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="10.0" y="17.0" font-size="12" fill="#ffffff" text-anchor="start" font-weight="bold">UMC-PCH-P-4 — PLANTA ELÉCTRICA, ALUMBRADO Y CANALIZACIONES</text>
+<text x="990.0" y="17.0" font-size="9" fill="#cfe0f0" text-anchor="end">UMC2030-P05-EXTPCH-R01</text>
+<rect x="60.0" y="90.0" width="200.0" height="46.0" rx="5" fill="#11528f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="160.0" y="106.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">Acometida campus</text>
+<text x="160.0" y="119.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">(red subterránea nueva)</text>
+<rect x="60.0" y="180.0" width="200.0" height="46.0" rx="5" fill="#0b3a66" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="160.0" y="196.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">TG-PCH Tablero General</text>
+<text x="160.0" y="209.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">Patio de Honor</text>
+<line x1="160.0" y1="136.0" x2="160.0" y2="180.0" stroke="#28506e" stroke-width="1.5"/>
+<polygon points="160.0,180.0 157.0,173.7 163.0,173.7" fill="#28506e"/>
+<rect x="420.0" y="70.0" width="250.0" height="44.0" rx="5" fill="#11528f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="545.0" y="86.0" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold">C1 — Alumbrado ceremonial</text>
+<text x="545.0" y="99.0" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold">12 lum. LED IP66/IK10 · 100–150 lux</text>
+<line x1="260.0" y1="203.0" x2="420.0" y2="92.0" stroke="#28506e" stroke-width="1.5"/>
+<polygon points="420.0,92.0 416.6,98.1 413.1,93.1" fill="#28506e"/>
+<rect x="420.0" y="180.0" width="250.0" height="44.0" rx="5" fill="#11528f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="545.0" y="196.0" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold">C2 — Alumbrado emergencia R-1</text>
+<text x="545.0" y="209.0" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold">(autónomo, señalización 810/187)</text>
+<line x1="260.0" y1="203.0" x2="420.0" y2="202.0" stroke="#28506e" stroke-width="1.5"/>
+<polygon points="420.0,202.0 413.7,205.1 413.7,199.0" fill="#28506e"/>
+<rect x="420.0" y="290.0" width="250.0" height="44.0" rx="5" fill="#11528f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="545.0" y="306.0" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold">C3 — 2 cajas de piso IP67</text>
+<text x="545.0" y="319.0" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold">Banda de Protocolo</text>
+<line x1="260.0" y1="203.0" x2="420.0" y2="312.0" stroke="#28506e" stroke-width="1.5"/>
+<polygon points="420.0,312.0 413.1,311.0 416.5,305.9" fill="#28506e"/>
+<rect x="420.0" y="400.0" width="250.0" height="44.0" rx="5" fill="#11528f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="545.0" y="416.0" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold">C4 — Reserva mástil OMM</text>
+<text x="545.0" y="429.0" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold">+ telemetría (interfaz P04)</text>
+<line x1="260.0" y1="203.0" x2="420.0" y2="422.0" stroke="#28506e" stroke-width="1.5"/>
+<polygon points="420.0,422.0 413.8,418.7 418.7,415.1" fill="#28506e"/>
+<rect x="420.0" y="510.0" width="250.0" height="44.0" rx="5" fill="#11528f" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="545.0" y="526.0" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold">C5 — Reserva CCTV</text>
+<text x="545.0" y="539.0" font-size="9.5" fill="#fff" text-anchor="middle" font-weight="bold">/ megafonía protocolar</text>
+<line x1="260.0" y1="203.0" x2="420.0" y2="532.0" stroke="#28506e" stroke-width="1.5"/>
+<polygon points="420.0,532.0 414.5,527.7 420.0,525.0" fill="#28506e"/>
+<rect x="730.0" y="180.0" width="220.0" height="46.0" rx="5" fill="#2e6b45" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="840.0" y="196.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">Malla de puesta a tierra</text>
+<text x="840.0" y="209.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">R ≤ 5 Ω (IEC 62305)</text>
+<line x1="670.0" y1="203.0" x2="730.0" y2="203.0" stroke="#28506e" stroke-width="1.5"/>
+<polygon points="730.0,203.0 723.7,206.0 723.7,200.0" fill="#28506e"/>
+<rect x="730.0" y="90.0" width="220.0" height="46.0" rx="5" fill="#2e6b45" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="840.0" y="106.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">SPDA asta (12 m) y</text>
+<text x="840.0" y="119.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">mástil (10 m) — IEC 62305</text>
+<line x1="840.0" y1="136.0" x2="840.0" y2="180.0" stroke="#5a6b7a" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="60.0" y="580.0" font-size="10.5" fill="#1c2b36" text-anchor="start">Canalizaciones: bancadas PVC/PEAD Ø4" con juntas sísmicas flexibles. Sustituye la red histórica P03-L3-B (1:200).</text>
+<text x="60.0" y="600.0" font-size="9" fill="#5a6b7a" text-anchor="start">[FUENTE: Ficha EXT-PCH-04, partida E5.01; inventario P03-L3-B] · Unifilar esquemático de anteproyecto</text>
+<rect x="6.0" y="6.0" width="988.0" height="768.0" rx="0" fill="none" fill-opacity="1" stroke="#0b3a66" stroke-width="2"/>
+<line x1="6.0" y1="648.0" x2="994.0" y2="648.0" stroke="#0b3a66" stroke-width="1.5"/>
+<rect x="6.0" y="648.0" width="988.0" height="126.0" rx="0" fill="#f4f7fa" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="20.0" y="670.0" font-size="10" fill="#0b3a66" text-anchor="start" font-weight="bold">UNIVERSIDAD MARÍTIMA DEL CARIBE — PLAN MAESTRO UMC 2025–2030</text>
+<text x="20.0" y="688.0" font-size="9" fill="#5a6b7a" text-anchor="start">PATIO / CUBIERTA DE HONOR (EXT-PCH-04) · PROA CENTRAL · Catia La Mar</text>
+<text x="20.0" y="706.0" font-size="10" fill="#0b3a66" text-anchor="start" font-weight="bold">LÁMINA UMC-PCH-P-4 — PLANTA ELÉCTRICA, ALUMBRADO Y CANALIZACIONES</text>
+<text x="20.0" y="724.0" font-size="8" fill="#5a6b7a" text-anchor="start">12 luminarias LED IP66/IK10 · 100–150 lux · 2 cajas de piso IP67 · malla de tierra R ≤ 5 Ω · SPDA IEC 62305</text>
+<line x1="686.0" y1="648.0" x2="686.0" y2="774.0" stroke="#28506e" stroke-width="1"/>
+<text x="700.0" y="668.0" font-size="9" fill="#0b3a66" text-anchor="start" font-weight="bold">CÓDIGO: UMC2030-P05-EXTPCH-R01</text>
+<text x="700.0" y="684.0" font-size="8" fill="#5a6b7a" text-anchor="start">ESCALA: 1:250 (referencial s/ impresión)</text>
+<text x="700.0" y="700.0" font-size="8" fill="#5a6b7a" text-anchor="start">REV.: R01 · FECHA: 26 de octubre de 2026</text>
+<text x="700.0" y="716.0" font-size="7.5" fill="#5a6b7a" text-anchor="start">PROYECTISTA: Por designar · FUENTE: Prof. J. Da Silva I. (CIV 95787)</text>
+<text x="700.0" y="732.0" font-size="7.5" fill="#5a6b7a" text-anchor="start">APROBACIÓN: Rectorado UMC — Cap. Alt./Dr. G. A. Riut Hernández</text>
+<rect x="20.0" y="740.0" width="560.0" height="26.0" rx="0" fill="#fff3cd" fill-opacity="1" stroke="#c9a227" stroke-width="1.5"/>
+<text x="300.0" y="757.0" font-size="8.5" fill="#7a5900" text-anchor="middle" font-weight="bold">NO APTO PARA CONSTRUCCIÓN — ANTEPROYECTO · Uso institucional UMC – Marina Mercante de Venezuela</text></svg>

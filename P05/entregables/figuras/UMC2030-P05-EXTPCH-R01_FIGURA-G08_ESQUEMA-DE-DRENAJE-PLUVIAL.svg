@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" font-family="Helvetica,Arial,sans-serif">
+<rect x="0" y="0" width="1000" height="640" fill="#ffffff"/>
+<rect x="0.0" y="0.0" width="1000.0" height="26.0" rx="0" fill="#0b3a66" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="10.0" y="17.0" font-size="12" fill="#ffffff" text-anchor="start" font-weight="bold">G-08 — ESQUEMA DE DRENAJE PLUVIAL (Tr = 25 anos)</text>
+<text x="990.0" y="17.0" font-size="9" fill="#cfe0f0" text-anchor="end">UMC2030-P05-EXTPCH-R01</text>
+<rect x="180.0" y="74.0" width="570.0" height="36.0" rx="0" fill="#cdd9e5" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="465.0" y="96.0" font-size="10" fill="#5a6b7a" text-anchor="middle">FRACCIÓN 1 — AULA MAGNA / AUDITORIO + FOYER (NPT ±0,000)</text>
+<rect x="752.0" y="74.0" width="34.0" height="439.5" rx="0" fill="#cdd9e5" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="769.0" y="298.8" font-size="9" fill="#5a6b7a" text-anchor="middle" transform="rotate(90 769.0 298.75)">FRACCIÓN 2 — 13 módulos × 4,00 m = 52,00 m</text>
+<rect x="180.0" y="489.5" width="570.0" height="30.0" rx="0" fill="#cdd9e5" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="465.0" y="508.5" font-size="10" fill="#5a6b7a" text-anchor="middle">FRACCIÓN 3 — DORMITORIOS DE CADETES (Popa)</text>
+<rect x="138.0" y="150.0" width="26.0" height="26.0" rx="0" fill="#9fb4c8" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="151.0" y="144.0" font-size="8" fill="#5a6b7a" text-anchor="middle">TORRE</text>
+<text x="151.0" y="190.0" font-size="7" fill="#5a6b7a" text-anchor="middle">CUL-TOO-02</text>
+<rect x="132.0" y="190.0" width="38.0" height="22.0" rx="0" fill="#b8c9d9" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="151.0" y="224.0" font-size="7" fill="#5a6b7a" text-anchor="middle">SALA ACA-STH-15</text>
+<rect x="190.0" y="120.0" width="550.0" height="357.5" rx="0" fill="#e9eef4" fill-opacity="1" stroke="#0b3a66" stroke-width="2"/>
+<line x1="190.0" y1="483.5" x2="740.0" y2="483.5" stroke="#0b3a66" stroke-width="0.8"/>
+<text x="465.0" y="471.5" font-size="11" fill="#0b3a66" text-anchor="middle" font-weight="bold">50,00 m</text>
+<text x="198.0" y="298.8" font-size="11" fill="#0b3a66" text-anchor="start" font-weight="bold" transform="rotate(-90 198 298.75)">32,50 m</text>
+<line x1="810.0" y1="190.0" x2="810.0" y2="150.0" stroke="#0b3a66" stroke-width="2"/>
+<polygon points="810.0,150.0 813.0,156.3 807.0,156.3" fill="#0b3a66"/>
+<text x="810.0" y="140.0" font-size="9" fill="#0b3a66" text-anchor="middle" font-weight="bold">N (Proa)</text>
+<rect x="184.0" y="114.0" width="562.0" height="6.0" rx="0" fill="#7aa7cf" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<rect x="184.0" y="477.5" width="562.0" height="6.0" rx="0" fill="#7aa7cf" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<rect x="184.0" y="120.0" width="6.0" height="357.5" rx="0" fill="#7aa7cf" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<rect x="740.0" y="120.0" width="6.0" height="357.5" rx="0" fill="#7aa7cf" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<circle cx="258.8" cy="480.5" r="5" fill="#0b3a66" stroke="none" stroke-width="1"/>
+<circle cx="258.8" cy="117.0" r="5" fill="#0b3a66" stroke="none" stroke-width="1"/>
+<circle cx="396.2" cy="480.5" r="5" fill="#0b3a66" stroke="none" stroke-width="1"/>
+<circle cx="396.2" cy="117.0" r="5" fill="#0b3a66" stroke="none" stroke-width="1"/>
+<circle cx="533.8" cy="480.5" r="5" fill="#0b3a66" stroke="none" stroke-width="1"/>
+<circle cx="533.8" cy="117.0" r="5" fill="#0b3a66" stroke="none" stroke-width="1"/>
+<circle cx="671.2" cy="480.5" r="5" fill="#0b3a66" stroke="none" stroke-width="1"/>
+<circle cx="671.2" cy="117.0" r="5" fill="#0b3a66" stroke="none" stroke-width="1"/>
+<line x1="465.0" y1="485.5" x2="465.0" y2="529.5" stroke="#0b3a66" stroke-width="2.5"/>
+<polygon points="465.0,529.5 462.0,523.2 468.0,523.2" fill="#0b3a66"/>
+<text x="473.0" y="523.5" font-size="9.5" fill="#1c2b36" text-anchor="start">Colector PEAD SN8 Ø300–400 → descarga (toma de quebrada, P05 R-20)</text>
+<circle cx="234.0" cy="100.0" r="7" fill="#c0272d" stroke="none" stroke-width="1"/>
+<text x="246.0" y="104.0" font-size="9.5" fill="#1c2b36" text-anchor="start">Hidrante/toma siamesa borde Norte (coord. P04-R02 Cap. 12.4)</text>
+<text x="190.0" y="520.0" font-size="10.5" fill="#1c2b36" text-anchor="start">• Q propio = 73,13 L/s · Q c/faldones ≈ 145 L/s · Tr = 25 años</text>
+<text x="190.0" y="540.0" font-size="10.5" fill="#1c2b36" text-anchor="start">• Canaletas perimetrales rejilla C250 AISI 316/f.dúctil: ≈ 180 m</text>
+<text x="190.0" y="560.0" font-size="10.5" fill="#1c2b36" text-anchor="start">• Colectores PEAD doble pared SN8 Ø 300–400 mm: ≈ 140 m</text>
+<text x="190.0" y="580.0" font-size="10.5" fill="#1c2b36" text-anchor="start">• Tanquillas/sumideros: 8 ud · pendiente de losa 1,2–1,5 %</text>
+<text x="190.0" y="604.0" font-size="9" fill="#5a6b7a" text-anchor="start">[FUENTE: Ficha EXT-PCH-04, partida E4.01 y Técnico 4] · Trazado esquemático [HIPÓTESIS]; cotas de descarga → RFI-GEO-01</text>
+<text x="14.0" y="604.0" font-size="9" fill="#5a6b7a" text-anchor="start">Canaletas perimetrales C250, colectores PEAD SN8, 8 tanquillas.</text>
+<line x1="0.0" y1="618.0" x2="1000.0" y2="618.0" stroke="#5a6b7a" stroke-width="0.6"/>
+<text x="10.0" y="630.0" font-size="7.5" fill="#5a6b7a" text-anchor="start">INGENIERÍA BÁSICA / ANTEPROYECTO — EMITIDO PARA COORDINACIÓN Y PRESUPUESTO PRELIMINAR — NO APTO PARA CONSTRUCCIÓN</text>
+<text x="990.0" y="630.0" font-size="7.5" fill="#5a6b7a" text-anchor="end">Figura G-08 · esquema de anteproyecto, sin valor de replanteo</text></svg>

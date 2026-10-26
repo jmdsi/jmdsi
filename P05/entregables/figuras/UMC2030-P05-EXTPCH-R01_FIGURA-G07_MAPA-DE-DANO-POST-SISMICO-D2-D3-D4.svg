@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" font-family="Helvetica,Arial,sans-serif">
+<rect x="0" y="0" width="1000" height="640" fill="#ffffff"/>
+<rect x="0.0" y="0.0" width="1000.0" height="26.0" rx="0" fill="#0b3a66" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="10.0" y="17.0" font-size="12" fill="#ffffff" text-anchor="start" font-weight="bold">G-07 — MAPA DE DANO POST-SISMICO D2/D3/D4 (24-06-2026)</text>
+<text x="990.0" y="17.0" font-size="9" fill="#cfe0f0" text-anchor="end">UMC2030-P05-EXTPCH-R01</text>
+<rect x="180.0" y="74.0" width="570.0" height="36.0" rx="0" fill="#cdd9e5" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="465.0" y="96.0" font-size="10" fill="#5a6b7a" text-anchor="middle">FRACCIÓN 1 — AULA MAGNA / AUDITORIO + FOYER (NPT ±0,000)</text>
+<rect x="752.0" y="74.0" width="34.0" height="439.5" rx="0" fill="#cdd9e5" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="769.0" y="298.8" font-size="9" fill="#5a6b7a" text-anchor="middle" transform="rotate(90 769.0 298.75)">FRACCIÓN 2 — 13 módulos × 4,00 m = 52,00 m</text>
+<rect x="180.0" y="489.5" width="570.0" height="30.0" rx="0" fill="#cdd9e5" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="465.0" y="508.5" font-size="10" fill="#5a6b7a" text-anchor="middle">FRACCIÓN 3 — DORMITORIOS DE CADETES (Popa)</text>
+<rect x="138.0" y="150.0" width="26.0" height="26.0" rx="0" fill="#9fb4c8" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="151.0" y="144.0" font-size="8" fill="#5a6b7a" text-anchor="middle">TORRE</text>
+<text x="151.0" y="190.0" font-size="7" fill="#5a6b7a" text-anchor="middle">CUL-TOO-02</text>
+<rect x="132.0" y="190.0" width="38.0" height="22.0" rx="0" fill="#b8c9d9" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="151.0" y="224.0" font-size="7" fill="#5a6b7a" text-anchor="middle">SALA ACA-STH-15</text>
+<rect x="190.0" y="120.0" width="550.0" height="357.5" rx="0" fill="#ffffff" fill-opacity="1" stroke="#0b3a66" stroke-width="2"/>
+<line x1="190.0" y1="483.5" x2="740.0" y2="483.5" stroke="#0b3a66" stroke-width="0.8"/>
+<text x="465.0" y="471.5" font-size="11" fill="#0b3a66" text-anchor="middle" font-weight="bold">50,00 m</text>
+<text x="198.0" y="298.8" font-size="11" fill="#0b3a66" text-anchor="start" font-weight="bold" transform="rotate(-90 198 298.75)">32,50 m</text>
+<line x1="810.0" y1="190.0" x2="810.0" y2="150.0" stroke="#0b3a66" stroke-width="2"/>
+<polygon points="810.0,150.0 813.0,156.3 807.0,156.3" fill="#0b3a66"/>
+<text x="810.0" y="140.0" font-size="9" fill="#0b3a66" text-anchor="middle" font-weight="bold">N (Proa)</text>
+<rect x="190.0" y="120.0" width="128.7" height="357.5" rx="0" fill="#c0272d" fill-opacity="0.75" stroke="#28506e" stroke-width="1"/>
+<rect x="318.7" y="120.0" width="230.2" height="357.5" rx="0" fill="#e8762c" fill-opacity="0.75" stroke="#28506e" stroke-width="1"/>
+<rect x="548.9" y="120.0" width="191.1" height="357.5" rx="0" fill="#f5c843" fill-opacity="0.8" stroke="#28506e" stroke-width="1"/>
+<text x="254.4" y="290.8" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">D4 (riesgo</text>
+<text x="254.4" y="306.8" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">inducido)</text>
+<text x="254.4" y="324.8" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">380,00 m²</text>
+<text x="433.8" y="298.8" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">D3 — 680,00 m²</text>
+<text x="433.8" y="316.8" font-size="9" fill="#fff" text-anchor="middle">fracturación + escalonamiento 1,5–4,5 cm</text>
+<text x="644.4" y="298.8" font-size="12" fill="#4a3a00" text-anchor="middle" font-weight="bold">D2 — 565,00 m²</text>
+<text x="644.4" y="316.8" font-size="9" fill="#4a3a00" text-anchor="middle">fisuración y pérdida de sellos</text>
+<rect x="190.0" y="508.0" width="26.0" height="16.0" rx="0" fill="#c0272d" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="224.0" y="520.0" font-size="10" fill="#1c2b36" text-anchor="start">D4 — Riesgo inducido por caída de escombros Torre (borde Babor) — transferido a P04</text>
+<rect x="190.0" y="530.0" width="26.0" height="16.0" rx="0" fill="#e8762c" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="224.0" y="542.0" font-size="10" fill="#1c2b36" text-anchor="start">D3 — Daño severo: fractura de paños, escalonamientos, asentamientos s/ colectores</text>
+<rect x="190.0" y="552.0" width="26.0" height="16.0" rx="0" fill="#f5c843" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="224.0" y="564.0" font-size="10" fill="#1c2b36" text-anchor="start">D2 — Daño moderado: fisuración, pérdida de sellos de juntas</text>
+<text x="190.0" y="592.0" font-size="9.5" fill="#5a6b7a" text-anchor="start">Verificación: 680,00 + 565,00 + 380,00 = 1.625,00 m² ✔ · Escala D0–D4 declarada REFERENCIAL (adaptada ATC-20/condición de pavimentos)</text>
+<text x="190.0" y="608.0" font-size="9" fill="#5a6b7a" text-anchor="start">[FUENTE: Ficha EXT-PCH-04 — Dictamen] · [HIPÓTESIS: distribución espacial en bandas, esquema; el mapa real exige TLS → RFI-PAT-01]</text>
+<text x="14.0" y="604.0" font-size="9" fill="#5a6b7a" text-anchor="start">680+565+380 = 1.625,00 m² — escala D0-D4 referencial declarada.</text>
+<line x1="0.0" y1="618.0" x2="1000.0" y2="618.0" stroke="#5a6b7a" stroke-width="0.6"/>
+<text x="10.0" y="630.0" font-size="7.5" fill="#5a6b7a" text-anchor="start">INGENIERÍA BÁSICA / ANTEPROYECTO — EMITIDO PARA COORDINACIÓN Y PRESUPUESTO PRELIMINAR — NO APTO PARA CONSTRUCCIÓN</text>
+<text x="990.0" y="630.0" font-size="7.5" fill="#5a6b7a" text-anchor="end">Figura G-07 · esquema de anteproyecto, sin valor de replanteo</text></svg>

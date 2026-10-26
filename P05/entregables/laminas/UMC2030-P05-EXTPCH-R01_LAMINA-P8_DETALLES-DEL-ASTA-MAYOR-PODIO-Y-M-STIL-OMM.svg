@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="780" viewBox="0 0 1000 780" font-family="Helvetica,Arial,sans-serif">
+<rect x="0" y="0" width="1000" height="780" fill="#ffffff"/>
+<rect x="0.0" y="0.0" width="1000.0" height="26.0" rx="0" fill="#0b3a66" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="10.0" y="17.0" font-size="12" fill="#ffffff" text-anchor="start" font-weight="bold">UMC-PCH-P-8 — DETALLES DEL ASTA MAYOR, PODIO Y MÁSTIL OMM</text>
+<text x="990.0" y="17.0" font-size="9" fill="#cfe0f0" text-anchor="end">UMC2030-P05-EXTPCH-R01</text>
+<line x1="80.0" y1="500.0" x2="940.0" y2="500.0" stroke="#6b5b3e" stroke-width="3"/>
+<rect x="120.0" y="147.7" width="40.0" height="352.3" rx="0" fill="#9fb4c8" fill-opacity="1" stroke="#5a6b7a" stroke-width="1"/>
+<text x="140.0" y="139.7" font-size="9.5" fill="#5a6b7a" text-anchor="start">Torre CUL-TOO-02 · h=22,02 m (RFI-ALT-01: 12,20 m orig.)</text>
+<line x1="520.0" y1="500.0" x2="520.0" y2="308.0" stroke="#c9a227" stroke-width="4"/>
+<text x="528.0" y="312.0" font-size="10" fill="#7a6212" text-anchor="start">Asta Mayor h=12,00 m</text>
+<line x1="760.0" y1="500.0" x2="760.0" y2="340.0" stroke="#2e8b57" stroke-width="4"/>
+<text x="768.0" y="344.0" font-size="10" fill="#1e5c3a" text-anchor="start">Mástil OMM h=10,00 m</text>
+<line x1="748.0" y1="468.0" x2="772.0" y2="468.0" stroke="#2e8b57" stroke-width="2"/>
+<line x1="748.0" y1="340.0" x2="772.0" y2="340.0" stroke="#2e8b57" stroke-width="2"/>
+<line x1="160.0" y1="520.0" x2="760.0" y2="520.0" stroke="#5a6b7a" stroke-width="1.2"/>
+<polygon points="760.0,520.0 753.7,523.0 753.7,517.0" fill="#5a6b7a"/>
+<line x1="760.0" y1="520.0" x2="160.0" y2="520.0" stroke="#5a6b7a" stroke-width="1.2"/>
+<polygon points="160.0,520.0 166.3,517.0 166.3,523.0" fill="#5a6b7a"/>
+<text x="460.0" y="536.0" font-size="9.5" fill="#5a6b7a" text-anchor="middle">d Torre→Mástil s/ verificación en sitio · referencia radial Torre C-TO→centroide d = 34,81 m (ΔE +32,21 / ΔN −13,21)</text>
+<text x="80.0" y="70.0" font-size="11" fill="#0b3a66" text-anchor="start" font-weight="bold">Criterios OMM (Guía de Instrumentos — referencial, vigencia por verificar RFI-NOR-01):</text>
+<text x="80.0" y="96.0" font-size="10" fill="#1c2b36" text-anchor="start">• Viento a 10 m sobre terreno abierto; distancia a obstáculos ≥ 10 × altura del obstáculo (torre de 22,02 m → zona de distorsión)</text>
+<text x="80.0" y="118.0" font-size="10" fill="#1c2b36" text-anchor="start">• Temperatura/humedad en abrigo ventilado a 1,25–2,00 m · precipitación alejada de superficies reflectantes</text>
+<text x="80.0" y="140.0" font-size="10" fill="#1c2b36" text-anchor="start">• El emplazamiento definitivo del mástil exige estudio de obstáculos del borde Babor → RFI-OMM-01</text>
+<text x="80.0" y="162.0" font-size="10" fill="#1c2b36" text-anchor="start">• Telemetría: adquisición integrada a la estación del P04 (Sala ACA-STH-15) — sin duplicar registradores</text>
+<text x="80.0" y="600.0" font-size="9" fill="#5a6b7a" text-anchor="start">[FUENTE: Ficha EXT-PCH-04 §2 Altura; P04-R02 (estación)] · Alzado esquemático sin escala</text>
+<rect x="6.0" y="6.0" width="988.0" height="768.0" rx="0" fill="none" fill-opacity="1" stroke="#0b3a66" stroke-width="2"/>
+<line x1="6.0" y1="648.0" x2="994.0" y2="648.0" stroke="#0b3a66" stroke-width="1.5"/>
+<rect x="6.0" y="648.0" width="988.0" height="126.0" rx="0" fill="#f4f7fa" fill-opacity="1" stroke="#28506e" stroke-width="1"/>
+<text x="20.0" y="670.0" font-size="10" fill="#0b3a66" text-anchor="start" font-weight="bold">UNIVERSIDAD MARÍTIMA DEL CARIBE — PLAN MAESTRO UMC 2025–2030</text>
+<text x="20.0" y="688.0" font-size="9" fill="#5a6b7a" text-anchor="start">PATIO / CUBIERTA DE HONOR (EXT-PCH-04) · PROA CENTRAL · Catia La Mar</text>
+<text x="20.0" y="706.0" font-size="10" fill="#0b3a66" text-anchor="start" font-weight="bold">LÁMINA UMC-PCH-P-8 — DETALLES DEL ASTA MAYOR, PODIO Y MÁSTIL OMM</text>
+<text x="20.0" y="724.0" font-size="8" fill="#5a6b7a" text-anchor="start">Asta Mayor h = 12,00 m (partida E3.03) · Mástil OMM h = 10,00 m [RFI-OMM-01] · fundaciones por cálculo de detalle</text>
+<line x1="686.0" y1="648.0" x2="686.0" y2="774.0" stroke="#28506e" stroke-width="1"/>
+<text x="700.0" y="668.0" font-size="9" fill="#0b3a66" text-anchor="start" font-weight="bold">CÓDIGO: UMC2030-P05-EXTPCH-R01</text>
+<text x="700.0" y="684.0" font-size="8" fill="#5a6b7a" text-anchor="start">ESCALA: 1:50 (referencial s/ impresión)</text>
+<text x="700.0" y="700.0" font-size="8" fill="#5a6b7a" text-anchor="start">REV.: R01 · FECHA: 26 de octubre de 2026</text>
+<text x="700.0" y="716.0" font-size="7.5" fill="#5a6b7a" text-anchor="start">PROYECTISTA: Por designar · FUENTE: Prof. J. Da Silva I. (CIV 95787)</text>
+<text x="700.0" y="732.0" font-size="7.5" fill="#5a6b7a" text-anchor="start">APROBACIÓN: Rectorado UMC — Cap. Alt./Dr. G. A. Riut Hernández</text>
+<rect x="20.0" y="740.0" width="560.0" height="26.0" rx="0" fill="#fff3cd" fill-opacity="1" stroke="#c9a227" stroke-width="1.5"/>
+<text x="300.0" y="757.0" font-size="8.5" fill="#7a5900" text-anchor="middle" font-weight="bold">NO APTO PARA CONSTRUCCIÓN — ANTEPROYECTO · Uso institucional UMC – Marina Mercante de Venezuela</text></svg>

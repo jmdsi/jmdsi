@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" font-family="Helvetica,Arial,sans-serif">
+<rect x="0" y="0" width="1000" height="640" fill="#ffffff"/>
+<rect x="0.0" y="0.0" width="1000.0" height="26.0" rx="0" fill="#0b3a66" fill-opacity="1" stroke="none" stroke-width="1"/>
+<text x="10.0" y="17.0" font-size="12" fill="#ffffff" text-anchor="start" font-weight="bold">G-03 — CONCILIACION DE AREAS ANIDADAS 1.625 / 380 / 210 / 1.245 m2</text>
+<text x="990.0" y="17.0" font-size="9" fill="#cfe0f0" text-anchor="end">UMC2030-P05-EXTPCH-R01</text>
+<rect x="200.0" y="120.0" width="550.0" height="357.5" rx="0" fill="#dfe9f2" fill-opacity="1" stroke="#0b3a66" stroke-width="2.5"/>
+<rect x="200.0" y="120.0" width="128.6" height="357.5" rx="0" fill="#f3c9ca" fill-opacity="1" stroke="#c0272d" stroke-width="2"/>
+<rect x="208.0" y="227.2" width="112.6" height="160.9" rx="0" fill="#e49a9c" fill-opacity="1" stroke="#c0272d" stroke-width="1.5" stroke-dasharray="5,3"/>
+<text x="264.3" y="245.2" font-size="9" fill="#7a1517" text-anchor="middle" font-weight="bold">Banda de Protocolo</text>
+<text x="264.3" y="259.2" font-size="9" fill="#7a1517" text-anchor="middle">210,00 m² (12,92 %)</text>
+<text x="264.3" y="144.0" font-size="10" fill="#c0272d" text-anchor="middle" font-weight="bold">Borde P04-R02</text>
+<text x="264.3" y="160.0" font-size="10" fill="#c0272d" text-anchor="middle">380,00 m² (23,38 %)</text>
+<text x="539.3" y="288.8" font-size="11" fill="#0b3a66" text-anchor="middle" font-weight="bold">Explanada central remanente — alcance neto P05</text>
+<text x="539.3" y="308.8" font-size="12" fill="#0b3a66" text-anchor="middle" font-weight="bold">1.245,00 m² (76,62 %)</text>
+<text x="475.0" y="106.0" font-size="12" fill="#0b3a66" text-anchor="middle" font-weight="bold">TOTAL EXT-PCH-04 = 1.625,00 m² (50,00 × 32,50 m)</text>
+<text x="200.0" y="520.0" font-size="11" fill="#1c2b36" text-anchor="start">Conjuntos ANIDADOS: 1.625,00 ⊃ 380,00 ⊃ 210,00. Regla R4: nunca se suman entre sí ni se presupuestan dos veces.</text>
+<text x="200.0" y="540.0" font-size="10" fill="#5a6b7a" text-anchor="start">Verificación: 380,00 + 1.245,00 = 1.625,00 m² ✔ [FUENTE: Ficha EXT-PCH-04 §3.3] · Deducción económica: USD 330.000 → Cap. 22</text>
+<text x="14.0" y="604.0" font-size="9" fill="#5a6b7a" text-anchor="start">Regla de oro del P05: conjuntos anidados, prohibida la doble presupuestación.</text>
+<line x1="0.0" y1="618.0" x2="1000.0" y2="618.0" stroke="#5a6b7a" stroke-width="0.6"/>
+<text x="10.0" y="630.0" font-size="7.5" fill="#5a6b7a" text-anchor="start">INGENIERÍA BÁSICA / ANTEPROYECTO — EMITIDO PARA COORDINACIÓN Y PRESUPUESTO PRELIMINAR — NO APTO PARA CONSTRUCCIÓN</text>
+<text x="990.0" y="630.0" font-size="7.5" fill="#5a6b7a" text-anchor="end">Figura G-03 · esquema de anteproyecto, sin valor de replanteo</text></svg>
