@@ -42,7 +42,9 @@
     "2 escaleras laterales (Norte y Sur, ancho ~1.20 m)",
     "2 baterías sanitarias separadas por sexo",
     "Biblioteca y administración (cuerpos adyacentes Fracción 1 — a verificar linderos)",
-    "Caja de incendio (red Hidroven) IMG_2243 P03-L9-A"
+    "Caja de incendio (red Hidroven) IMG_2243 P03-L9-A",
+    "Unidad central A/C (destruida 24/06/2026 por caída torre UMC-ED-003 — a reponer)",
+    "Ductería principal y difusores en plafond Travacustic (posible afectación por escombros — a inspeccionar tras retiro plafond)"
   ],
   "capacidad": {
     "butacas": 300,
@@ -52,8 +54,8 @@
   },
   "estado": {
     "nominal_historico": "Íntegro — Activo (1958-2026 funcionamiento continuo)",
-    "actual_post_sismo": "NO APTO para actos ceremoniales y académicos tras doblete sísmico 24/06/2026 (M7.2 + M7.5). Fisuras en revestimiento, desprendimientos parciales de plafond Travacustic y techo deflector (1958), fisuras diagonales en mampostería. Requiere retiro controlado de revestimiento, inspección intrusiva y reforzamiento.",
-    "clasificacion_riesgo": "ROJO — Uso restringido hasta inspección estructural colegiada (CIV) y ensayo patológico"
+    "actual_post_sismo": "NO APTO para actos ceremoniales y académicos tras doblete 24/06/2026 (M7.2 + M7.5). Fisuras en revestimiento, desprendimientos parciales de plafond Travacustic y techo deflector 1958, fisuras diagonales en mampostería. Unidad central de A/C destruida por colapso de Torre de Observación (escombros sobre equipo, ductería y acometida). Requiere retiro controlado de revestimiento + escombros torre/AC, inspección intrusiva, reforzamiento y reposición integral climatización.",
+    "clasificacion_riesgo": "ROJO — Uso restringido hasta inspección estructural + peritaje electromecánico y manejo ambiental refrigerante"
   },
   "ano_construccion": "1951 (proyecto 28-08-1951) / 1958 (corrección acústica techo deflector) — MOP, sello ministerial visible",
   "disenador": "Oficina Técnica Gutiérrez & Co. S.A. (En cajetines también: Gutiérrez y Acuña)",
@@ -79,12 +81,14 @@
     "techo_deflector_acustico": "Armadura madera + tirantes + metal lath + yeso (agosto 1958) IMG_2485-2490 P04-L15-C",
     "luces_ventilacion": "Tipo 63 (90×60 cm) IMG_2468-2470 P04-L14-A",
     "ventanas_foyer": "4 tipologías 1:20 + 8 secciones 1:1 IMG_2140 P0102-L1-G",
-    "caja_incendio": "Red Auditorio IMG_2243 P03-L9-A"
+    "caja_incendio": "Red Auditorio IMG_2243 P03-L9-A",
+    "climatizacion_AC_central": "Equipo original no documentado en planos MOP 1951 (instalación posterior ~1960-80) — Destruido 24/06/2026 por torre — Capacidad est. 20-30 TR — Ver fotos torre + inventario AC (a recabar)"
   },
   "estructura": {
     "sistema": "Pórticos de concreto armado + cerchas metálicas soldadas + vigas acarteladas de madera + losas nervadas",
     "fundaciones": "Zapatas aisladas + vigas de fundación VF1-9, VF25-10 + pilotes (ver P0102-L7-A-D, P03-L10)",
     "cubierta": "Plafond Travacustic en sala + tapas metálicas giratorias en escenario + techo deflector yeso/madera 1958",
-    "fachada": "Mampostería de bloque + friso + ventanales foyer"
+    "fachada": "Mampostería de bloque + friso + ventanales foyer",
+    "climatizacion": "Unidad central de aire acondicionado (chiller/UMA) — Ubicada en cubierta lateral / patio técnico adyacente a Torre de Observación UMC-ED-003 (CUL-TOO-02) — Capacidad estimada 20-30 TR — Destruida el 24/06/2026 por colapso parcial de la torre (impacto escombros sobre condensadora, ductería y bancada). Refrigerante R-410A/R-22 liberado — requiere manejo ambiental."
   }
 }

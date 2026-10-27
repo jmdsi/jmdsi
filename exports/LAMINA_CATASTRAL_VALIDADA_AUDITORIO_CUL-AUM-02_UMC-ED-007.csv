@@ -37,7 +37,7 @@ C-35,Capacidad total,Butacas+palco,320,—,UMC-ED-007-CP03,✅,Planos MOP 28-08-
 C-36,Escaleras,2 laterales ancho 1.20 m,2 uds,—,UMC-ED-007-EC01,✅,Planos MOP 28-08-1951
 C-37,Servicios sanitarios,2 baterías por sexo en laterales,2,—,UMC-ED-007-I01,✅ IMG_2363,Planos MOP 28-08-1951
 C-38,Agua (Hidroven),Red general + caja incendio auditorio,—,—,UMC-ED-007-I02,✅ IMG_2243 P03-L9-A,Planos MOP 28-08-1951
-C-39,Eléctrico (CORPOELEC),Tubos fluorescentes plafond + acometida a verificar,—,—,UMC-ED-007-I03,⚠️ Parcial,Planos MOP 28-08-1951
+C-39,Climatización central A/C,Unidad central 20-30 TR + ductería plafond — Destruida 24/06/2026 por colapso torre UMC-ED-003,DESTRUIDA 🔴,—,UMC-ED-007-MEC01,🔴 Destruida,Planos MOP 28-08-1951
 C-40,Iluminación,Tubos fluorescentes en plafond,—,—,UMC-ED-007-IL01,✅ IMG_2137,Planos MOP 28-08-1951
 C-41,Coordenada centroide,"10°36'02.53""N 67°1'56.56""O WGS-84",Ver ficha,—,UMC-ED-007-G01,⚠️ Inferida,Planos MOP 28-08-1951
 C-42,Sistema geodésico,WGS-84 / SIRGAS-REGVEN Zona 19N,—,—,UMC-ED-007-G02,⚠️,Planos MOP 28-08-1951
@@ -49,3 +49,5 @@ C-47,Estado actual post-sismo,"NO APTO — fisuras revestimiento, desprendimient
 C-48,Relación con torre,Fracción 1: Auditorio al sur de Torre CUL-TOO-02,—,—,UMC-ED-007-R01,✅ IMG_2134,Planos MOP 28-08-1951
 C-49,MOP responsable,Ministerio de Obras Públicas — Dirección Edificios,—,—,UMC-ED-007-H01,✅,Planos MOP 28-08-1951
 C-50,Responsable levantamiento,Prof. Jhonny Da Silva Izquierdo (MSc. Ing. Lic.) 2026,—,—,UMC-ED-007-R02,✅,Planos MOP 28-08-1951
+C-51,Ductería y difusores,Red ductos en plafond Travacustic — posible abolladura/rotura por escombros torre,A inspeccionar,—,UMC-ED-007-MEC02,⚠️ Crit,Planos MOP 28-08-1951
+C-52,Torre Observación vinculada,CUL-TOO-02 / UMC-ED-003 colapso parcial 24/06/2026 — impacto sobre AC y auditorio,Colapsada,CUL-TOO-02,UMC-ED-003,🔴,Planos MOP 28-08-1951

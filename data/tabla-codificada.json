@@ -343,12 +343,12 @@
   },
   {
     "id": "C-39",
-    "concepto": "Eléctrico (CORPOELEC)",
-    "descripcion": "Tubos fluorescentes plafond + acometida a verificar",
-    "valor": "—",
+    "concepto": "Climatización central A/C",
+    "descripcion": "Unidad central 20-30 TR + ductería plafond — Destruida 24/06/2026 por colapso torre UMC-ED-003",
+    "valor": "DESTRUIDA 🔴",
     "codigo_funcional": "—",
-    "codigo_infra": "UMC-ED-007-I03",
-    "verif": "⚠️ Parcial"
+    "codigo_infra": "UMC-ED-007-MEC01",
+    "verif": "🔴 Destruida"
   },
   {
     "id": "C-40",
@@ -448,5 +448,23 @@
     "codigo_funcional": "—",
     "codigo_infra": "UMC-ED-007-R02",
     "verif": "✅"
+  },
+  {
+    "id": "C-51",
+    "concepto": "Ductería y difusores",
+    "descripcion": "Red ductos en plafond Travacustic — posible abolladura/rotura por escombros torre",
+    "valor": "A inspeccionar",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-MEC02",
+    "verif": "⚠️ Crit"
+  },
+  {
+    "id": "C-52",
+    "concepto": "Torre Observación vinculada",
+    "descripcion": "CUL-TOO-02 / UMC-ED-003 colapso parcial 24/06/2026 — impacto sobre AC y auditorio",
+    "valor": "Colapsada",
+    "codigo_funcional": "CUL-TOO-02",
+    "codigo_infra": "UMC-ED-003",
+    "verif": "🔴"
   }
 ]

@@ -4,8 +4,8 @@
       "id": "AG1",
       "disciplina": "Ingeniería Estructural y Sismorresistente",
       "responsable": "Subagente Estructural — CIV",
-      "hallazgos": "Sistema mixto pórticos concreto armado (1951) + cerchas metálicas soldadas luces 20.80 m y 17.20 m + vigas acarteladas madera 1V14-1V16. Diseño pre-normativo sismorresistente moderno (MOP 1951). Zona sísmica 6 COVENIN 1756-2019: demanda alta. Vulnerabilidad: conexiones yugos/pernos/cartelas techo/foro (IMG_2335-2339) sin ductilidad verificada; mampostería no confinada con fisuras diagonales post-sismo indica deriva. Cerchas con soldadura 1951 requieren END (partículas magnéticas).",
-      "recomendacion": "Análisis modal espectral + pushover + verificación deriva ≤0.018 (COVENIN). Reforzar nudos viga-columna con FRP o encamisado. Retiro plafond para inspección intrusiva cerchas. Clasificación ROJO hasta validar capacidad."
+      "hallazgos": "Sistema mixto pórticos concreto armado (1951) + cerchas metálicas soldadas luces 20.80 m y 17.20 m + vigas acarteladas madera 1V14-1V16. Diseño pre-normativo sismorresistente moderno (MOP 1951). Zona sísmica 6 COVENIN 1756-2019: demanda alta. Vulnerabilidad: conexiones yugos/pernos/cartelas techo/foro (IMG_2335-2339) sin ductilidad verificada; mampostería no confinada con fisuras diagonales post-sismo indica deriva. Cerchas con soldadura 1951 requieren END (partículas magnéticas). Torre UMC-ED-003 colapsada impactó AC y losa lateral auditorio — sobrecarga puntual no prevista — verificar punzonamiento losa y anclajes bancada AC.",
+      "recomendacion": "Análisis modal espectral + pushover + verificación deriva ≤0.018 (COVENIN). Reforzar nudos viga-columna con FRP o encamisado. Retiro plafond para inspección intrusiva cerchas. Clasificación ROJO hasta validar capacidad. Inspeccionar losa patio técnico donde cayó torre/AC por posible punzonamiento y fisuras por impacto."
     },
     {
       "id": "AG2",
@@ -25,25 +25,25 @@
       "id": "AG4",
       "disciplina": "Ingeniería de Sistemas de Aguas (Hidráulica y Sanitaria)",
       "responsable": "Subagente Aguas",
-      "hallazgos": "Red agua potable con caja incendio documentada en auditorio (IMG_2243 P03-L9-A) — válvula + siamesa. 2 baterías sanitarias separadas por sexo (verificado IMG_2363) conectadas a colector Escuela Grumetes (P05-002). Canal agua lluvia 1:200 (P05-003) + perfil protección ladera (P05-001). Riesgo post-sismo: rotura juntas tubería enterrada, filtración en losas, obstrucción bajantes pluviales por escombros plafond.",
-      "recomendacion": "Prueba hidrostática red incendio, video-inspección colectores, limpieza bajantes/imbornales, verificar pendiente canal. Sin intervención no afecta estabilidad pero sí salubridad para reapertura."
+      "hallazgos": "Red agua potable con caja incendio documentada en auditorio (IMG_2243 P03-L9-A) — válvula + siamesa. 2 baterías sanitarias separadas por sexo (verificado IMG_2363) conectadas a colector Escuela Grumetes (P05-002). Canal agua lluvia 1:200 (P05-003) + perfil protección ladera (P05-001). Riesgo post-sismo: rotura juntas tubería enterrada, filtración en losas, obstrucción bajantes pluviales por escombros plafond. Condensados A/C (tubería PVC 2\" hacia canal pluvial P05-003) arrancada — riesgo infiltración en losa.",
+      "recomendacion": "Prueba hidrostática red incendio, video-inspección colectores, limpieza bajantes/imbornales, verificar pendiente canal. Sin intervención no afecta estabilidad pero sí salubridad para reapertura. Taponar línea condensados y verificar drenaje pluvial obstruido por escombros torre."
     },
     {
       "id": "AG5",
-      "disciplina": "Ingeniería Eléctrica y Telecomunicaciones",
+      "disciplina": "Ingeniería Electromecánica (Eléctrica + Climatización)",
       "responsable": "Subagente Eléctrico",
-      "hallazgos": "Iluminación original tubos fluorescentes en plafond (IMG_2137) + acometida CORPOELEC no declarada en ficha. Instalación 1951-1958 obsoleta, sin canalización anti-sísmica. Post-sismo desprendimiento parcial luminarias (riesgo caída). Sin sistema detección incendio / evacuación normado. CANTV/telecom sin declarar.",
-      "recomendacion": "Desenergizar y balizar luminarias sueltas. Levantamiento eléctrico + termografía. Adecuar a Código Eléctrico Nacional FONDONORMA 200:2004 y COVENIN 3810:2003 Iluminación emergencia + señalización fotoluminiscente. Prever planta emergencia para actos."
+      "hallazgos": "Iluminación tubos fluorescentes plafond (IMG_2137) + acometida CORPOELEC no declarada (obsoleta 1951-58, sin canalización antisísmica, luminarias descolgadas). CLIMATIZACIÓN: Unidad central A/C 20-30 TR ubicada en patio técnico entre auditorio y torre UMC-ED-003 — DESTRUIDA el 24/06/2026 por caída de torre (escombros perforaron condensadora, arrancaron ductería principal, doblaron bancada). Refrigerante R-410A/R-22 liberado (riesgo ambiental/ocupacional). Ductos en plafond potencialmente abollados. Tablero CCM A/C sin enclavamiento sísmico. CANTV/telecom sin declarar.",
+      "recomendacion": "Desenergizar y balizar tablero A/C + luminarias. Aislar alimentación 440V/220V. Contratar manejo ambiental refrigerante (MPP Ecosocialismo, norma COVENIN 3296, Montreal). Retiro escombros torre/AC con grúa, inventario daños ductería tras retiro plafond. Peritaje electromecánico: cómputo carga térmica 341 m² → ~25 TR, proponer nueva UMA inverter de alta eficiencia (SEER ≥16), ductería sismorresistente con juntas flexibles, soportes antisísmicos, CCM con relé sísmico. Costo estimado 18-28k USD equipo + 8-12k ductería/tablero. Adecuar CEN FONDONORMA 200:2004 + COVENIN 3810 + COVENIN 1013 ventilación. Prever planta emergencia 150 kVA para actos."
     },
     {
       "id": "AG6",
       "disciplina": "Normativa Venezolana e Internacional y Contratación Pública",
       "responsable": "Subagente Normativo",
-      "hallazgos": "Marco aplicable: COVENIN 1756-2019 (Edificaciones Sismorresistentes Zona 6), COVENIN 1753-2006 Concreto, COVENIN 3400:1998 Impermeabilización, FONDONORMA 2956 Vidrio, Ley Orgánica Contrataciones Públicas + Reglamento, Norma Sanitaria 4044, NFPA 101 Vida, Norma patrimonio UMC. Obra requiere concurso perito CIV + laboratorio acreditado SENCAMER. Presupuesto estimado Fase II: inspección + ensayos 8-12k USD + reforzamiento 80-150k USD.",
-      "recomendacion": "Abrir RFI/RFP contratación directa por emergencia (Art. 101 LCP) con TDR anexo. Exigir memoria cálculo con factor R, memoria patológica, plan seguridad. Entregables: informe patológico Level 2, modelo ETABS/SAP2000, cómputos reforzamiento, lámina actualizada 1:100."
+      "hallazgos": "Marco aplicable: COVENIN 1756-2019 (Edificaciones Sismorresistentes Zona 6), COVENIN 1753-2006 Concreto, COVENIN 3400:1998 Impermeabilización, FONDONORMA 2956 Vidrio, Ley Orgánica Contrataciones Públicas + Reglamento, Norma Sanitaria 4044, NFPA 101 Vida, Norma patrimonio UMC. Obra requiere concurso perito CIV + laboratorio acreditado SENCAMER. Presupuesto estimado Fase II: inspección + ensayos 8-12k USD + reforzamiento 80-150k USD. Refrigerante: Protocolo Montreal + Ley Gestión Sustancias Agotadoras Ozono. Equipo A/C bien nacional — siniestro cubierto por póliza todo riesgo (si vigente). Reposición vía LCP emergencia.",
+      "recomendacion": "Abrir RFI/RFP contratación directa por emergencia (Art. 101 LCP) con TDR anexo. Exigir memoria cálculo con factor R, memoria patológica, plan seguridad. Entregables: informe patológico Level 2, modelo ETABS/SAP2000, cómputos reforzamiento, lámina actualizada 1:100. Incluir partida 'Reposición A/C central 25 TR + manejo refrigerante' en RFP. Exigir ficha técnica SEER, garantía, plan ambiental."
     }
   ],
-  "conclusion_integrada": "Auditorio CUL-AUM-02 / UMC-ED-007 presenta DAÑO MODERADO post-doblete 24/06/2026, sin colapso de sistema primario pero con fisuración de mampostería y revestimiento que OCULTA daño y genera riesgo de caída de plafond/deflector. Clasificación USO RESTRINGIDO (ROJO ATC-20) — NO APTO para actos hasta completar retiro revestimiento + ensayos + reforzamiento. Contradicción entre disciplinas resuelta: todos coinciden en priorizar inspección intrusiva antes de cualquier reapertura. Estimación preliminar: 60-90 días para diagnóstico + proyecto reforzamiento.",
+  "conclusion_integrada": "Auditorio CUL-AUM-02 / UMC-ED-007 presenta DAÑO MODERADO estructural + DAÑO TOTAL electromecánico post-doblete 24/06/2026: fisuración mampostería/revestimiento que OCULTA daño + destrucción total unidad central A/C por colapso torre UMC-ED-003 (escombros, liber. refrigerante, ductería arrancada). Aunque sistema primario no colapsó, la pérdida de climatización en clima tropical La Guaira hace el recinto INOPERABLE para actos (confort, aforo 320p, normativa ventilación COVENIN 1013). Clasificación ROJO ATC-20 — NO APTO hasta retiro revestimiento+escombros, ensayos, reforzamiento y reposición A/C 25 TR con manejo ambiental. 60-90 días diagnóstico + 90-120 días reposición A/C.",
   "mapa_danos": [
     {
       "zona": "Fachada posterior (Proa)",
@@ -86,6 +86,13 @@
       "fotos": "IMG_1815-1820",
       "severidad": "Leve",
       "accion": "Prueba estanqueidad, sellado"
+    },
+    {
+      "zona": "Patio técnico / cubierta lateral (entre auditorio y torre)",
+      "lesion": "Unidad central A/C 20-30 TR destruida por escombros torre UMC-ED-003 — condensadora aplastada, ductería arrancada, bancada deformada, refrigerante liberado",
+      "fotos": "IMG torre + AC (a incorporar — ver inventario torre)",
+      "severidad": "Total (pérdida bien)",
+      "accion": "Aislar eléctricamente, manejo ambiental refrigerante (COVENIN 3296), retiro con grúa, peritaje, cómputo 25 TR nuevo inverter, ductería antisísmica, CCM relé sísmico — 26-40k USD"
     }
   ]
 }
