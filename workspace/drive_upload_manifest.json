@@ -1,0 +1,23 @@
+{
+  "folder_name": "UMC-LAMINA-AUDITORIO-CUL-AUM-02-UMC-ED-007-2026-VALIDADA",
+  "parent_folder": "1BOU04FOeFQTC_SIQFiP_MFa3-CmCLotD",
+  "description": "Lámina Catastral Validada Auditorio 2026 post-sismo + portal + exportables PDF/DOCX/CSV — CUL-AUM-02/UMC-ED-007 — incluye A/C destruido por torre, CSS P04 exacto 5.2MB",
+  "files": [
+    "index.html",
+    "docs/lamina-auditorio/index.html",
+    "assets/css/lamina.css",
+    "assets/css/p04-expediente.css",
+    "data/ficha-auditorio.json",
+    "data/tabla-codificada.json",
+    "data/cronologia.json",
+    "data/diagnostico-patologico.json",
+    "data/imagenes-auditorio-postsismo.json",
+    "data/planos-vinculados-auditorio.json",
+    "exports/LAMINA_CATASTRAL_VALIDADA_AUDITORIO_CUL-AUM-02_UMC-ED-007.pdf",
+    "exports/LAMINA_CATASTRAL_VALIDADA_AUDITORIO_CUL-AUM-02_UMC-ED-007.docx",
+    "exports/LAMINA_CATASTRAL_VALIDADA_AUDITORIO_CUL-AUM-02_UMC-ED-007.csv",
+    "exports/FICHA_CATASTRAL_CUL-AUM-02_UMC-ED-007.json",
+    "README.md",
+    "UMC-LAMINA-AUDITORIO-CUL-AUM-02-UMC-ED-007-2026-VALIDADA.zip"
+  ]
+}
