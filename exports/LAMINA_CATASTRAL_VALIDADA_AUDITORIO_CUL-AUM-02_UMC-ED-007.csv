@@ -1,0 +1,51 @@
+﻿ID,Concepto,Descripción,Valor,Código Funcional,Código Infraestructura,Verificación,Fuente
+C-01,Identificación del bien,"Aula Magna - Auditorium / Galería de Honor ""Almirante en Jefe José María García Rojas""",—,CUL-AUM-02,UMC-ED-007,✅ Verificado,Planos MOP 28-08-1951
+C-02,Tipo de edificación,"Sala de actos con escenario, butacas, vestíbulo, foyer y palco elevado",—,CUL-AUM,UMC-ED,✅,Planos MOP 28-08-1951
+C-03,Sector / Orientación naval,Proa-Babor / Noroeste (frente litoral). Corrige Popa-Babor anterior (ref. torre),—,—,UMC-ED-007-S01,✅ Corregido,Planos MOP 28-08-1951
+C-04,Diseñador estructural original,Oficina Técnica Gutiérrez & Co. S.A. / Gutiérrez y Acuña,—,—,UMC-ED-007-D01,✅,Planos MOP 28-08-1951
+C-05,Arquitecto,Luis Raimundo Malaussena Andueza (L. Malaussena),—,—,UMC-ED-007-D02,✅,Planos MOP 28-08-1951
+C-06,Fecha proyecto,28-08-1951 (sello MOP visible),—,—,UMC-ED-007-D03,✅,Planos MOP 28-08-1951
+C-07,Corrección acústica,Techo deflector yeso/madera/metal lath — Agosto 1958 (P04-L15-C),—,—,UMC-ED-007-D04,✅,Planos MOP 28-08-1951
+C-08,Fracción MOP,Fracción 1 (Auditorio + Torre) — Escuela Náutica Venezuela,—,—,UMC-ED-007-F01,✅,Planos MOP 28-08-1951
+C-09,Área construida neta Aula Magna,225.5 m² (solo sala auditorio),225.5 m²,—,UMC-ED-007-A01,⚠️ Segregada,Planos MOP 28-08-1951
+C-10,Área sala principal (ejes),12×18 m = 216 m²,216 m²,—,UMC-ED-007-A02,✅,Planos MOP 28-08-1951
+C-11,Área escenario,8×5 m = 40 m²,~40 m²,—,UMC-ED-007-A03,✅,Planos MOP 28-08-1951
+C-12,Área vestíbulo/foyer,Vestíbulo central + pasillo entrada,~40 m²,—,UMC-ED-007-A04,✅,Planos MOP 28-08-1951
+C-13,Área palco oficial,2 palcos laterales 10 m² c/u,20 m²,—,UMC-ED-007-A05,✅,Planos MOP 28-08-1951
+C-14,Área total con dependencias,Sala+escenario+foyer+palco+SS+circulaciones,~341 m²,—,UMC-ED-007-A06,✅ Calculado,Planos MOP 28-08-1951
+C-15,Servicios y circulaciones,2 baterías SS + camerinos + galería + escaleras,~25 m²,—,UMC-ED-007-A07,✅,Planos MOP 28-08-1951
+C-16,Nº niveles,1 planta + palco elevado,1+palco,—,UMC-ED-007-N01,✅,Planos MOP 28-08-1951
+C-17,Altura butacas,Cota baja sala,3.30 m,—,UMC-ED-007-N02,✅ IMG_2365,Planos MOP 28-08-1951
+C-18,Altura escenario,Boca escena + plafond,5.30 m,—,UMC-ED-007-N03,✅ IMG_2365,Planos MOP 28-08-1951
+C-19,Altura vestíbulo,Techo foyer,4.20 m,—,UMC-ED-007-N04,✅ IMG_2365,Planos MOP 28-08-1951
+C-20,Altura total,Punto más alto cubierta,7.80 m,—,UMC-ED-007-N05,✅ IMG_2362,Planos MOP 28-08-1951
+C-21,Cota escenario,Sobre nivel butacas,+0.95 m,—,UMC-ED-007-N06,✅,Planos MOP 28-08-1951
+C-22,Cota palco,Palco oficial,+2.15 m,—,UMC-ED-007-N07,✅ IMG_2364,Planos MOP 28-08-1951
+C-23,Armadura A,Cercha metálica soldada Auditorio,Luz 20.80 m,—,UMC-ED-007-EST01,✅ IMG_2184,Planos MOP 28-08-1951
+C-24,Armadura B,Cercha metálica soldada cuerpo principal,Luz 17.20 m,—,UMC-ED-007-EST02,✅ IMG_2184,Planos MOP 28-08-1951
+C-25,Vigas acarteladas,"1V14, 1V14a, 1V15, 1V16",Envigado P0102-L4-A,—,UMC-ED-007-EST03,✅,Planos MOP 28-08-1951
+C-26,Losas,Losas Fracción 1 + envigado P.A.,—,—,UMC-ED-007-EST04,✅ IMG_2148-2150,Planos MOP 28-08-1951
+C-27,Plafond Travacustic,Sala auditorio escala 1:50 + pérgola 1:2,—,—,UMC-ED-007-M01,✅ IMG_2137,Planos MOP 28-08-1951
+C-28,Techo deflector 1958,Armadura madera + tirantes + metal lath + yeso,—,—,UMC-ED-007-M02,✅ IMG_2485-2490,Planos MOP 28-08-1951
+C-29,Fachada,Mampostería + friso,—,—,UMC-ED-007-M03,✅,Planos MOP 28-08-1951
+C-30,Ventanales foyer,4 tipologías 1:20 + 8 secciones 1:1,—,—,UMC-ED-007-M04,✅ IMG_2140,Planos MOP 28-08-1951
+C-31,Ventilación,Luces Tipo 63 90×60 cm,90×60 cm,—,UMC-ED-007-M05,✅ IMG_2468-2470,Planos MOP 28-08-1951
+C-32,Uniones metálicas,"Yugos, pernos, cartelas techo/foro + armadura inclinada proscenio",—,—,UMC-ED-007-M06,✅ IMG_2335-2339,Planos MOP 28-08-1951
+C-33,Capacidad butacas,15 filas × 20 = 300,300,—,UMC-ED-007-CP01,✅,Planos MOP 28-08-1951
+C-34,Capacidad palco,2 palcos,20,—,UMC-ED-007-CP02,✅,Planos MOP 28-08-1951
+C-35,Capacidad total,Butacas+palco,320,—,UMC-ED-007-CP03,✅,Planos MOP 28-08-1951
+C-36,Escaleras,2 laterales ancho 1.20 m,2 uds,—,UMC-ED-007-EC01,✅,Planos MOP 28-08-1951
+C-37,Servicios sanitarios,2 baterías por sexo en laterales,2,—,UMC-ED-007-I01,✅ IMG_2363,Planos MOP 28-08-1951
+C-38,Agua (Hidroven),Red general + caja incendio auditorio,—,—,UMC-ED-007-I02,✅ IMG_2243 P03-L9-A,Planos MOP 28-08-1951
+C-39,Eléctrico (CORPOELEC),Tubos fluorescentes plafond + acometida a verificar,—,—,UMC-ED-007-I03,⚠️ Parcial,Planos MOP 28-08-1951
+C-40,Iluminación,Tubos fluorescentes en plafond,—,—,UMC-ED-007-IL01,✅ IMG_2137,Planos MOP 28-08-1951
+C-41,Coordenada centroide,"10°36'02.53""N 67°1'56.56""O WGS-84",Ver ficha,—,UMC-ED-007-G01,⚠️ Inferida,Planos MOP 28-08-1951
+C-42,Sistema geodésico,WGS-84 / SIRGAS-REGVEN Zona 19N,—,—,UMC-ED-007-G02,⚠️,Planos MOP 28-08-1951
+C-43,Zona sísmica COVENIN 1756,Zona 6 (alta peligrosidad) costa La Guaira,Zona 6,—,UMC-ED-007-S01,⚠️ Obligatorio,Planos MOP 28-08-1951
+C-44,Año construcción,1951 proyecto / 1958 corrección acústica,1951/1958,—,UMC-ED-007-T01,✅,Planos MOP 28-08-1951
+C-45,Cronología lámina,Levantamiento 2026,2026,—,UMC-ED-007-T02,✅,Planos MOP 28-08-1951
+C-46,Estado nominal,Íntegro 1958-2026,Activo,—,UMC-ED-007-E01,✅,Planos MOP 28-08-1951
+C-47,Estado actual post-sismo,"NO APTO — fisuras revestimiento, desprendimiento plafond",ROJO,—,UMC-ED-007-E02,🔴 24/06/2026,Planos MOP 28-08-1951
+C-48,Relación con torre,Fracción 1: Auditorio al sur de Torre CUL-TOO-02,—,—,UMC-ED-007-R01,✅ IMG_2134,Planos MOP 28-08-1951
+C-49,MOP responsable,Ministerio de Obras Públicas — Dirección Edificios,—,—,UMC-ED-007-H01,✅,Planos MOP 28-08-1951
+C-50,Responsable levantamiento,Prof. Jhonny Da Silva Izquierdo (MSc. Ing. Lic.) 2026,—,—,UMC-ED-007-R02,✅,Planos MOP 28-08-1951

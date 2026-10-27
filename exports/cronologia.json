@@ -1,0 +1,86 @@
+[
+  {
+    "fecha": "28-08-1951",
+    "hito": "Proyecto original Escuela Náutica de Venezuela",
+    "autor": "Oficina Técnica Gutiérrez & Co. S.A. + Arq. L. Malaussena",
+    "fuente": "Cajetín MOP 15 DF 30 / 8.DF.2.364, IMG_2134-2143",
+    "estado": "✅ Verificado"
+  },
+  {
+    "fecha": "1951-1958",
+    "hito": "Construcción inicial por el MOP (Dirección de Edificios e Instalaciones Industriales, Estados Unidos de Venezuela)",
+    "autor": "MOP",
+    "fuente": "Sello ministerial en planos P0102-L1..L7",
+    "estado": "✅"
+  },
+  {
+    "fecha": "Agosto 1958",
+    "hito": "Corrección acústica — Techo deflector: armadura madera + tirantes + metal lath + yeso",
+    "autor": "MOP / Asesoría acústica",
+    "fuente": "IMG_2485-2490 P04-L15-C, Memoria 1958",
+    "estado": "✅"
+  },
+  {
+    "fecha": "1960-1975",
+    "hito": "Modificaciones: aumento Torre de Observación de 12.20 m a 22.02 m (P0102-L1-A) y obras complementarias",
+    "autor": "MOP",
+    "fuente": "Plano P0102-L1-A, Inventario Portaplanos 01-05",
+    "estado": "✅"
+  },
+  {
+    "fecha": "1958-2000",
+    "hito": "Funcionamiento continuo: Escuela Náutica → Instituto Universitario de Tecnología del Mar → UMC (2000)",
+    "autor": "UMC",
+    "fuente": "Gaceta Oficial creación UMC 2000",
+    "estado": "✅"
+  },
+  {
+    "fecha": "2000-2025",
+    "hito": "Vida útil 75 años sin reforzamiento sísmico integral documentado; mantenimiento menor",
+    "autor": "UMC",
+    "fuente": "Expediente mantenimiento (a recabar)",
+    "estado": "⚠️ Vacío documental"
+  },
+  {
+    "fecha": "24-06-2026 10:47 VET",
+    "hito": "Doblete sísmico M7.2 (10:47) + M7.5 (réplica) — Centro-Norte Venezuela, epicentro costa La Guaira / Cordillera de la Costa",
+    "autor": "FUNVISIS / USGS",
+    "fuente": "Boletín sísmico 24/06/2026",
+    "estado": "🔴"
+  },
+  {
+    "fecha": "24-06-2026",
+    "hito": "Daños reportados: Torre CUL-TOO-02 colapso parcial fachada; Auditorio fisuras diagonales mampostería, desprendimiento friso, fisuras techo deflector y plafond",
+    "autor": "Inspección visual UMC",
+    "fuente": "Fotos post-sismo IMG_1785-1833 (28 uds)",
+    "estado": "🔴"
+  },
+  {
+    "fecha": "26-06-2026",
+    "hito": "Declaratoria NO APTO para actos ceremoniales/académicos; acordonamiento preventivo; retiro programado de revestimiento fisurado",
+    "autor": "Rectoría UMC + Comisión Técnica",
+    "fuente": "Acta Comisión 26/06/2026",
+    "estado": "🔴"
+  },
+  {
+    "fecha": "10-2026",
+    "hito": "Inventario General Consolidado Portaplanos Nº01-05 (198 PDF + 487 fotos IMG_2134-2778) — verificación Fracción 1",
+    "autor": "Prof. Jhonny Da Silva Izquierdo + equipo multidisciplinario",
+    "fuente": "Inventario_General_Consolidado_Tubo_Portaplanos_Nº01_05.pdf",
+    "estado": "✅"
+  },
+  {
+    "fecha": "10-2026",
+    "hito": "Lámina Catastral Validada V2026 post-sismo — CUL-AUM-02 / UMC-ED-007 — validación dimensional contra planimetría MOP",
+    "autor": "Prof. Jhonny Da Silva Izquierdo (MSc. Ing. Lic.)",
+    "fuente": "AUDITORIO PLANOS POSTSISMO.pdf + presente lámina",
+    "estado": "✅"
+  },
+  {
+    "fecha": "Pendiente 2026-2027",
+    "hito": "Fase II: Ensayos patológicos (esclerometría, ultrasonido, calas), levantamiento GNSS RTK, drone fotogramétrico, análisis modal, reforzamiento sismorresistente COVENIN 1756-2019",
+    "autor": "Perito estructural CIV + Geotecnia + Lab. Materiales",
+    "fuente": "TDR a licitar LO Contrataciones Públicas",
+    "estado": "🔵 Por ejecutar"
+  }
+]

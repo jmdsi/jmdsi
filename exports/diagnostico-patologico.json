@@ -1,0 +1,91 @@
+{
+  "agentes": [
+    {
+      "id": "AG1",
+      "disciplina": "Ingeniería Estructural y Sismorresistente",
+      "responsable": "Subagente Estructural — CIV",
+      "hallazgos": "Sistema mixto pórticos concreto armado (1951) + cerchas metálicas soldadas luces 20.80 m y 17.20 m + vigas acarteladas madera 1V14-1V16. Diseño pre-normativo sismorresistente moderno (MOP 1951). Zona sísmica 6 COVENIN 1756-2019: demanda alta. Vulnerabilidad: conexiones yugos/pernos/cartelas techo/foro (IMG_2335-2339) sin ductilidad verificada; mampostería no confinada con fisuras diagonales post-sismo indica deriva. Cerchas con soldadura 1951 requieren END (partículas magnéticas).",
+      "recomendacion": "Análisis modal espectral + pushover + verificación deriva ≤0.018 (COVENIN). Reforzar nudos viga-columna con FRP o encamisado. Retiro plafond para inspección intrusiva cerchas. Clasificación ROJO hasta validar capacidad."
+    },
+    {
+      "id": "AG2",
+      "disciplina": "Patología y Diagnóstico Forense de Estructuras",
+      "responsable": "Ing. Patólogo — Coordinador",
+      "hallazgos": "LESIONES DOCUMENTADAS 28 fotos post-sismo: Fisuras revestimiento friso 0.3-2.5 mm en fachadas posterior y lateral (IMG_1785-1833), desprendimientos puntuales plafond Travacustic (salón butacas), fisuras en techo deflector yeso 1958 (juntas metal lath), fisuras diagonales 45° en mampostería escenario (indican corte). No se observó colapso de cerchas ni pandeo. Humedad previa en foyer (eflorescencia). Revestimiento fisurado oculta daño estructural — debe retirarse.",
+      "recomendacion": "Retiro controlado de revestimiento fisurado (picado selectivo 100%), calas 30×30 cm en fisuras críticas, fisurómetro, esclerometría 20 puntos, ultrasonido PUNDIT, pachómetro, extracción 3 núcleos diamantinos (si autoriza IPC). Mapeo fisuras 1:50. Informe Level 2 ATC-20. Plazo 15 días."
+    },
+    {
+      "id": "AG3",
+      "disciplina": "Ingeniería Geotécnica, Cimentaciones, Taludes y Costa",
+      "responsable": "Subagente Geotecnia",
+      "hallazgos": "Campus en llanura aluvial Catia La Mar, pie de ladera sur / quebrada (P05-001 perfil canal protección 1:500). Fundaciones: zapatas + pilotes (P0102-L7-A-D) + vigas fundación VF. Sismo 24/06/2026 pudo generar licuación parcial / asentamiento diferencial leve (a verificar con nivelación). Quebrada adyacente con canal agua lluvia (P05-003) — riesgo socavación. Sin evidencia de volcamiento pero fisuras verticales en muros sugieren movimiento diferencial.",
+      "recomendacion": "Sondeo SPT 2×15 m + CPTu, nivelación de precisión de pisos y vigas fundación, inspección canal protección, ensayo MASW para Vs30. Verificar drenaje pluvial obstruido post-sismo."
+    },
+    {
+      "id": "AG4",
+      "disciplina": "Ingeniería de Sistemas de Aguas (Hidráulica y Sanitaria)",
+      "responsable": "Subagente Aguas",
+      "hallazgos": "Red agua potable con caja incendio documentada en auditorio (IMG_2243 P03-L9-A) — válvula + siamesa. 2 baterías sanitarias separadas por sexo (verificado IMG_2363) conectadas a colector Escuela Grumetes (P05-002). Canal agua lluvia 1:200 (P05-003) + perfil protección ladera (P05-001). Riesgo post-sismo: rotura juntas tubería enterrada, filtración en losas, obstrucción bajantes pluviales por escombros plafond.",
+      "recomendacion": "Prueba hidrostática red incendio, video-inspección colectores, limpieza bajantes/imbornales, verificar pendiente canal. Sin intervención no afecta estabilidad pero sí salubridad para reapertura."
+    },
+    {
+      "id": "AG5",
+      "disciplina": "Ingeniería Eléctrica y Telecomunicaciones",
+      "responsable": "Subagente Eléctrico",
+      "hallazgos": "Iluminación original tubos fluorescentes en plafond (IMG_2137) + acometida CORPOELEC no declarada en ficha. Instalación 1951-1958 obsoleta, sin canalización anti-sísmica. Post-sismo desprendimiento parcial luminarias (riesgo caída). Sin sistema detección incendio / evacuación normado. CANTV/telecom sin declarar.",
+      "recomendacion": "Desenergizar y balizar luminarias sueltas. Levantamiento eléctrico + termografía. Adecuar a Código Eléctrico Nacional FONDONORMA 200:2004 y COVENIN 3810:2003 Iluminación emergencia + señalización fotoluminiscente. Prever planta emergencia para actos."
+    },
+    {
+      "id": "AG6",
+      "disciplina": "Normativa Venezolana e Internacional y Contratación Pública",
+      "responsable": "Subagente Normativo",
+      "hallazgos": "Marco aplicable: COVENIN 1756-2019 (Edificaciones Sismorresistentes Zona 6), COVENIN 1753-2006 Concreto, COVENIN 3400:1998 Impermeabilización, FONDONORMA 2956 Vidrio, Ley Orgánica Contrataciones Públicas + Reglamento, Norma Sanitaria 4044, NFPA 101 Vida, Norma patrimonio UMC. Obra requiere concurso perito CIV + laboratorio acreditado SENCAMER. Presupuesto estimado Fase II: inspección + ensayos 8-12k USD + reforzamiento 80-150k USD.",
+      "recomendacion": "Abrir RFI/RFP contratación directa por emergencia (Art. 101 LCP) con TDR anexo. Exigir memoria cálculo con factor R, memoria patológica, plan seguridad. Entregables: informe patológico Level 2, modelo ETABS/SAP2000, cómputos reforzamiento, lámina actualizada 1:100."
+    }
+  ],
+  "conclusion_integrada": "Auditorio CUL-AUM-02 / UMC-ED-007 presenta DAÑO MODERADO post-doblete 24/06/2026, sin colapso de sistema primario pero con fisuración de mampostería y revestimiento que OCULTA daño y genera riesgo de caída de plafond/deflector. Clasificación USO RESTRINGIDO (ROJO ATC-20) — NO APTO para actos hasta completar retiro revestimiento + ensayos + reforzamiento. Contradicción entre disciplinas resuelta: todos coinciden en priorizar inspección intrusiva antes de cualquier reapertura. Estimación preliminar: 60-90 días para diagnóstico + proyecto reforzamiento.",
+  "mapa_danos": [
+    {
+      "zona": "Fachada posterior (Proa)",
+      "lesion": "Fisuras diagonales 0.5-2.0 mm en mampostería + desprendimiento friso 1.2 m²",
+      "fotos": "IMG_1785-1790",
+      "severidad": "Moderada",
+      "accion": "Retiro friso + cosido fisuras con varilla helicoidal + malla + mortero reparación"
+    },
+    {
+      "zona": "Fachada lateral Babor",
+      "lesion": "Fisuras verticales en juntas bloque + eflorescencia humedad",
+      "fotos": "IMG_1791-1794",
+      "severidad": "Leve-Moderada",
+      "accion": "Calas + sellado + impermeabilización"
+    },
+    {
+      "zona": "Salón butacas — plafond Travacustic",
+      "lesion": "Fisuras junta + desplazamiento placas + luminarias sueltas",
+      "fotos": "IMG_1795-1804",
+      "severidad": "Moderada (riesgo caída)",
+      "accion": "Desmonte parcial plafond, inspección cercha A 20.80 m, reinstalación sistema anti-sísmico"
+    },
+    {
+      "zona": "Escenario / techo deflector 1958",
+      "lesion": "Fisuras yeso en metal lath, juntas tirantes cedidas",
+      "fotos": "IMG_1824-1833",
+      "severidad": "Moderada",
+      "accion": "Retiro yeso fisurado, refuerzo tirantes, nuevo yeso acústico (mantener criterio 1958)"
+    },
+    {
+      "zona": "Foyer / vestíbulo",
+      "lesion": "Fisuras capilares pavimento + fisuras dinteles ventanas foyer",
+      "fotos": "IMG_1800-1810",
+      "severidad": "Leve",
+      "accion": "Monitoreo fisurómetro, refuerzo dinteles si procede"
+    },
+    {
+      "zona": "Camerinos + SS",
+      "lesion": "Fisuras esquina + posible filtración junta losa",
+      "fotos": "IMG_1815-1820",
+      "severidad": "Leve",
+      "accion": "Prueba estanqueidad, sellado"
+    }
+  ]
+}

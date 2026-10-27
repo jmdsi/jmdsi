@@ -1,0 +1,90 @@
+{
+  "proyecto": "Escuela Náutica de Venezuela (hoy Universidad Marítima del Caribe — UMC)",
+  "ubicacion": "Campus Catia La Mar, Estado La Guaira, Venezuela",
+  "denominacion_oficial": "AULA MAGNA - AUDITORIUM / Galería de Honor",
+  "denominacion_extendida": "Auditorio Principal \"Almirante en Jefe José María García Rojas\" — Fracción 1",
+  "codigo_funcional": "CUL-AUM-02",
+  "codigo_fisico": "UMC-ED-007",
+  "codigo_funcional_anterior": "CUL-AUD-01 (corregido)",
+  "codigo_fisico_anterior": "UMC-ED-002 (corregido)",
+  "sector": "Proa-Babor / Noroeste",
+  "sector_anterior": "Popa-Babor / Sur (Fracción 1 — referencia de torre)",
+  "orientacion_naval": "Proa = Norte-Noroeste hacia el litoral; Babor = Oeste; Estribor = Este; Popa = Sur-Sureste hacia ladera",
+  "area_construida": {
+    "aula_magna_neta_m2": 225.5,
+    "total_con_dependencias_m2": 341,
+    "sala_principal_m2": 216,
+    "escenario_m2": 40,
+    "foyer_vestibulo_m2": 40,
+    "palco_m2": 20,
+    "servicios_circulaciones_m2": 25,
+    "fuente": "Verificación dimensional directa en planos MOP 28-08-1951 (IMG_2362, IMG_2363, IMG_2365)",
+    "inconsistencia_critica": "Láminas previas omitían área o mezclaban 225.5 m² (solo sala) con 341 m² (total). Se segrega y declara ambos valores."
+  },
+  "niveles": "1 planta + palco oficial elevado (cota +2.15 m)",
+  "alturas": {
+    "punto_mas_alto_m": 7.8,
+    "butacas_m": 3.3,
+    "escenario_m": 5.3,
+    "vestibulo_foyer_m": 4.2,
+    "cota_escenario_sobre_butacas_m": 0.95,
+    "cota_palco_m": 2.15,
+    "fuente": "Cortes A-A IMG_2365, Fachada Sur IMG_2362"
+  },
+  "uso_principal": "Formación académica, actos institucionales y ceremonias marineras, conferencias, foros del gremio de Marina Mercante y actividades culturales",
+  "dependencias": [
+    "Sala principal con 300 butacas (15 filas × 20)",
+    "Escenario 8×5 m con estrado",
+    "Vestíbulo / foyer central 40 m²",
+    "Palco oficial elevado 20 m² (2 laterales)",
+    "Camerinos (2 detrás de escenario)",
+    "Galería de Honor",
+    "2 escaleras laterales (Norte y Sur, ancho ~1.20 m)",
+    "2 baterías sanitarias separadas por sexo",
+    "Biblioteca y administración (cuerpos adyacentes Fracción 1 — a verificar linderos)",
+    "Caja de incendio (red Hidroven) IMG_2243 P03-L9-A"
+  ],
+  "capacidad": {
+    "butacas": 300,
+    "palco": 20,
+    "total": 320,
+    "norma": "COVENIN 810, NFPA 101: 0.65 m²/persona sentada + pasillos 1.20 m"
+  },
+  "estado": {
+    "nominal_historico": "Íntegro — Activo (1958-2026 funcionamiento continuo)",
+    "actual_post_sismo": "NO APTO para actos ceremoniales y académicos tras doblete sísmico 24/06/2026 (M7.2 + M7.5). Fisuras en revestimiento, desprendimientos parciales de plafond Travacustic y techo deflector (1958), fisuras diagonales en mampostería. Requiere retiro controlado de revestimiento, inspección intrusiva y reforzamiento.",
+    "clasificacion_riesgo": "ROJO — Uso restringido hasta inspección estructural colegiada (CIV) y ensayo patológico"
+  },
+  "ano_construccion": "1951 (proyecto 28-08-1951) / 1958 (corrección acústica techo deflector) — MOP, sello ministerial visible",
+  "disenador": "Oficina Técnica Gutiérrez & Co. S.A. (En cajetines también: Gutiérrez y Acuña)",
+  "arquitecto": "Luis Raimundo Malaussena Andueza (L. Malaussena / L.M.)",
+  "coordenada_centroide": {
+    "lat": "10°36'02.53\"N",
+    "lon": "67°01'56.56\"O",
+    "datum": "WGS-84 / SIRGAS-REGVEN",
+    "zona_UTM": "19N (Catia La Mar)",
+    "variante_anterior": "10°36'3.20\"N 67°1'56.50\"O (inferida 2025, desplazada ~22 m)",
+    "precision": "Inferida de planimetría + ortofoto; pendiente levantamiento GNSS RTK ±0.03 m",
+    "fuente": "Planos MOP Fracción 1 + georreferenciación 2026"
+  },
+  "medidas_verificadas_MOP": {
+    "sala": "12×18 m (216 m²)",
+    "escenario": "8×5 m (40 m²)",
+    "foyer": "40 m²",
+    "palco": "20 m² (2×10)",
+    "armadura_A": "20.80 m cercha metálica soldada (Auditorio) IMG_2184 P0102-L3-G",
+    "armadura_B": "17.20 m cercha metálica soldada (cuerpo principal)",
+    "vigas_acarteladas": "1V14, 1V14a, 1V15, 1V16 IMG_2183/2182 P0102-L4-A",
+    "plafond": "Travacustic 1:50 IMG_2137 P0102-L1-D + pérgola madera 1:2",
+    "techo_deflector_acustico": "Armadura madera + tirantes + metal lath + yeso (agosto 1958) IMG_2485-2490 P04-L15-C",
+    "luces_ventilacion": "Tipo 63 (90×60 cm) IMG_2468-2470 P04-L14-A",
+    "ventanas_foyer": "4 tipologías 1:20 + 8 secciones 1:1 IMG_2140 P0102-L1-G",
+    "caja_incendio": "Red Auditorio IMG_2243 P03-L9-A"
+  },
+  "estructura": {
+    "sistema": "Pórticos de concreto armado + cerchas metálicas soldadas + vigas acarteladas de madera + losas nervadas",
+    "fundaciones": "Zapatas aisladas + vigas de fundación VF1-9, VF25-10 + pilotes (ver P0102-L7-A-D, P03-L10)",
+    "cubierta": "Plafond Travacustic en sala + tapas metálicas giratorias en escenario + techo deflector yeso/madera 1958",
+    "fachada": "Mampostería de bloque + friso + ventanales foyer"
+  }
+}

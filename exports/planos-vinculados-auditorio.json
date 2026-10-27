@@ -1,0 +1,146 @@
+[
+  {
+    "codigo": "P0102-L1-A",
+    "img": "IMG_2134",
+    "titulo": "Planta auditorio + torre Fracción 1 — 1:100",
+    "disciplina": "ARQ",
+    "signatura": "8.DF.2.364 Nº101",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P0102-L1-D",
+    "img": "IMG_2137",
+    "titulo": "Plafond Travacustic + pérgola madera 1:2 + armaduras A/B 1:20",
+    "disciplina": "DET/ACU",
+    "signatura": "15 DF 30",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P0102-L1-G",
+    "img": "IMG_2140",
+    "titulo": "Ventanales foyer 4 tipologías 1:20 + 8 secciones 1:1",
+    "disciplina": "ARQ/DET",
+    "signatura": "8.DF.2.361",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P0102-L1-J",
+    "img": "IMG_2143",
+    "titulo": "Planta baja cuerpos Fracción 1",
+    "disciplina": "ARQ",
+    "signatura": "8.DF.2.364",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P0102-L3-G",
+    "img": "IMG_2184",
+    "titulo": "Estructura metálica cubierta — Armaduras A 20.80 m / B 17.20 m soldadas",
+    "disciplina": "EST",
+    "signatura": "28-8-51 Gutiérrez",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P0102-L4-A",
+    "img": "IMG_2182/2183",
+    "titulo": "Vigas acarteladas 1V14,1V14a,1V15,1V16 — envigado",
+    "disciplina": "EST",
+    "signatura": "8.DF.2.364 Nº110-101",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P0102-L7-E/F/G",
+    "img": "IMG_2148/2149/2150",
+    "titulo": "Losas Fracción 1 + envigado P.A. curva + P.B.",
+    "disciplina": "EST",
+    "signatura": "8.DF.2.364",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P03-L9-A",
+    "img": "IMG_2243",
+    "titulo": "Red agua — caja incendio auditorio",
+    "disciplina": "AGU",
+    "signatura": "8.DF.2.362",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P04-L1-E",
+    "img": "IMG_2335-2339",
+    "titulo": "Uniones metálicas yugos/pernos/cartelas + armadura proscenio",
+    "disciplina": "EST/DET",
+    "signatura": "15 DF 30",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P04-L4-A/B",
+    "img": "IMG_2362",
+    "titulo": "Fachada Sur + Planta auditorio (medidas 12×18, 8×5)",
+    "disciplina": "ARQ",
+    "signatura": "8.DF.1.361",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P04-L4-C",
+    "img": "IMG_2363",
+    "titulo": "Planta distribución butacas 300 + SS + escaleras",
+    "disciplina": "ARQ",
+    "signatura": "8.DF.1.361",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P04-L4-B",
+    "img": "IMG_2364",
+    "titulo": "Corte B-B palco +2.15 m",
+    "disciplina": "ARQ",
+    "signatura": "8.DF.1.361",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P04-L6-A",
+    "img": "IMG_2365",
+    "titulo": "Corte A-A alturas 3.30 / 5.30 / 4.20 / 7.80 m",
+    "disciplina": "ARQ",
+    "signatura": "8.DF.1.361",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P04-L14-A",
+    "img": "IMG_2468-2470",
+    "titulo": "Luces ventilación Tipo 63 90×60 cm",
+    "disciplina": "ILV",
+    "signatura": "8.DF.2.361",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P04-L15-C",
+    "img": "IMG_2485-2490",
+    "titulo": "Techo deflector acústico 1958 — madera/tirantes/metal lath/yeso",
+    "disciplina": "ACU/EST",
+    "signatura": "Agosto 1958",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P05-001",
+    "img": "IMG_2615",
+    "titulo": "Perfil canal protección ladera sur 1:500/1:50",
+    "disciplina": "PLU/EST",
+    "signatura": "MOP",
+    "verif": "✅ Referencia"
+  },
+  {
+    "codigo": "P05-002",
+    "img": "IMG_2638",
+    "titulo": "Colector aguas negras Esc. Grumetes 1:200",
+    "disciplina": "SAN",
+    "signatura": "MOP",
+    "verif": "✅"
+  },
+  {
+    "codigo": "P05-003",
+    "img": "IMG_2639",
+    "titulo": "Canal agua lluvia 1:200",
+    "disciplina": "PLU",
+    "signatura": "MOP",
+    "verif": "✅"
+  }
+]

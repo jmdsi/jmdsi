@@ -1,0 +1,452 @@
+[
+  {
+    "id": "C-01",
+    "concepto": "Identificación del bien",
+    "descripcion": "Aula Magna - Auditorium / Galería de Honor \"Almirante en Jefe José María García Rojas\"",
+    "valor": "—",
+    "codigo_funcional": "CUL-AUM-02",
+    "codigo_infra": "UMC-ED-007",
+    "verif": "✅ Verificado"
+  },
+  {
+    "id": "C-02",
+    "concepto": "Tipo de edificación",
+    "descripcion": "Sala de actos con escenario, butacas, vestíbulo, foyer y palco elevado",
+    "valor": "—",
+    "codigo_funcional": "CUL-AUM",
+    "codigo_infra": "UMC-ED",
+    "verif": "✅"
+  },
+  {
+    "id": "C-03",
+    "concepto": "Sector / Orientación naval",
+    "descripcion": "Proa-Babor / Noroeste (frente litoral). Corrige Popa-Babor anterior (ref. torre)",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-S01",
+    "verif": "✅ Corregido"
+  },
+  {
+    "id": "C-04",
+    "concepto": "Diseñador estructural original",
+    "descripcion": "Oficina Técnica Gutiérrez & Co. S.A. / Gutiérrez y Acuña",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-D01",
+    "verif": "✅"
+  },
+  {
+    "id": "C-05",
+    "concepto": "Arquitecto",
+    "descripcion": "Luis Raimundo Malaussena Andueza (L. Malaussena)",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-D02",
+    "verif": "✅"
+  },
+  {
+    "id": "C-06",
+    "concepto": "Fecha proyecto",
+    "descripcion": "28-08-1951 (sello MOP visible)",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-D03",
+    "verif": "✅"
+  },
+  {
+    "id": "C-07",
+    "concepto": "Corrección acústica",
+    "descripcion": "Techo deflector yeso/madera/metal lath — Agosto 1958 (P04-L15-C)",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-D04",
+    "verif": "✅"
+  },
+  {
+    "id": "C-08",
+    "concepto": "Fracción MOP",
+    "descripcion": "Fracción 1 (Auditorio + Torre) — Escuela Náutica Venezuela",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-F01",
+    "verif": "✅"
+  },
+  {
+    "id": "C-09",
+    "concepto": "Área construida neta Aula Magna",
+    "descripcion": "225.5 m² (solo sala auditorio)",
+    "valor": "225.5 m²",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-A01",
+    "verif": "⚠️ Segregada"
+  },
+  {
+    "id": "C-10",
+    "concepto": "Área sala principal (ejes)",
+    "descripcion": "12×18 m = 216 m²",
+    "valor": "216 m²",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-A02",
+    "verif": "✅"
+  },
+  {
+    "id": "C-11",
+    "concepto": "Área escenario",
+    "descripcion": "8×5 m = 40 m²",
+    "valor": "~40 m²",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-A03",
+    "verif": "✅"
+  },
+  {
+    "id": "C-12",
+    "concepto": "Área vestíbulo/foyer",
+    "descripcion": "Vestíbulo central + pasillo entrada",
+    "valor": "~40 m²",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-A04",
+    "verif": "✅"
+  },
+  {
+    "id": "C-13",
+    "concepto": "Área palco oficial",
+    "descripcion": "2 palcos laterales 10 m² c/u",
+    "valor": "20 m²",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-A05",
+    "verif": "✅"
+  },
+  {
+    "id": "C-14",
+    "concepto": "Área total con dependencias",
+    "descripcion": "Sala+escenario+foyer+palco+SS+circulaciones",
+    "valor": "~341 m²",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-A06",
+    "verif": "✅ Calculado"
+  },
+  {
+    "id": "C-15",
+    "concepto": "Servicios y circulaciones",
+    "descripcion": "2 baterías SS + camerinos + galería + escaleras",
+    "valor": "~25 m²",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-A07",
+    "verif": "✅"
+  },
+  {
+    "id": "C-16",
+    "concepto": "Nº niveles",
+    "descripcion": "1 planta + palco elevado",
+    "valor": "1+palco",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-N01",
+    "verif": "✅"
+  },
+  {
+    "id": "C-17",
+    "concepto": "Altura butacas",
+    "descripcion": "Cota baja sala",
+    "valor": "3.30 m",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-N02",
+    "verif": "✅ IMG_2365"
+  },
+  {
+    "id": "C-18",
+    "concepto": "Altura escenario",
+    "descripcion": "Boca escena + plafond",
+    "valor": "5.30 m",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-N03",
+    "verif": "✅ IMG_2365"
+  },
+  {
+    "id": "C-19",
+    "concepto": "Altura vestíbulo",
+    "descripcion": "Techo foyer",
+    "valor": "4.20 m",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-N04",
+    "verif": "✅ IMG_2365"
+  },
+  {
+    "id": "C-20",
+    "concepto": "Altura total",
+    "descripcion": "Punto más alto cubierta",
+    "valor": "7.80 m",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-N05",
+    "verif": "✅ IMG_2362"
+  },
+  {
+    "id": "C-21",
+    "concepto": "Cota escenario",
+    "descripcion": "Sobre nivel butacas",
+    "valor": "+0.95 m",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-N06",
+    "verif": "✅"
+  },
+  {
+    "id": "C-22",
+    "concepto": "Cota palco",
+    "descripcion": "Palco oficial",
+    "valor": "+2.15 m",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-N07",
+    "verif": "✅ IMG_2364"
+  },
+  {
+    "id": "C-23",
+    "concepto": "Armadura A",
+    "descripcion": "Cercha metálica soldada Auditorio",
+    "valor": "Luz 20.80 m",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-EST01",
+    "verif": "✅ IMG_2184"
+  },
+  {
+    "id": "C-24",
+    "concepto": "Armadura B",
+    "descripcion": "Cercha metálica soldada cuerpo principal",
+    "valor": "Luz 17.20 m",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-EST02",
+    "verif": "✅ IMG_2184"
+  },
+  {
+    "id": "C-25",
+    "concepto": "Vigas acarteladas",
+    "descripcion": "1V14, 1V14a, 1V15, 1V16",
+    "valor": "Envigado P0102-L4-A",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-EST03",
+    "verif": "✅"
+  },
+  {
+    "id": "C-26",
+    "concepto": "Losas",
+    "descripcion": "Losas Fracción 1 + envigado P.A.",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-EST04",
+    "verif": "✅ IMG_2148-2150"
+  },
+  {
+    "id": "C-27",
+    "concepto": "Plafond Travacustic",
+    "descripcion": "Sala auditorio escala 1:50 + pérgola 1:2",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-M01",
+    "verif": "✅ IMG_2137"
+  },
+  {
+    "id": "C-28",
+    "concepto": "Techo deflector 1958",
+    "descripcion": "Armadura madera + tirantes + metal lath + yeso",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-M02",
+    "verif": "✅ IMG_2485-2490"
+  },
+  {
+    "id": "C-29",
+    "concepto": "Fachada",
+    "descripcion": "Mampostería + friso",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-M03",
+    "verif": "✅"
+  },
+  {
+    "id": "C-30",
+    "concepto": "Ventanales foyer",
+    "descripcion": "4 tipologías 1:20 + 8 secciones 1:1",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-M04",
+    "verif": "✅ IMG_2140"
+  },
+  {
+    "id": "C-31",
+    "concepto": "Ventilación",
+    "descripcion": "Luces Tipo 63 90×60 cm",
+    "valor": "90×60 cm",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-M05",
+    "verif": "✅ IMG_2468-2470"
+  },
+  {
+    "id": "C-32",
+    "concepto": "Uniones metálicas",
+    "descripcion": "Yugos, pernos, cartelas techo/foro + armadura inclinada proscenio",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-M06",
+    "verif": "✅ IMG_2335-2339"
+  },
+  {
+    "id": "C-33",
+    "concepto": "Capacidad butacas",
+    "descripcion": "15 filas × 20 = 300",
+    "valor": "300",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-CP01",
+    "verif": "✅"
+  },
+  {
+    "id": "C-34",
+    "concepto": "Capacidad palco",
+    "descripcion": "2 palcos",
+    "valor": "20",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-CP02",
+    "verif": "✅"
+  },
+  {
+    "id": "C-35",
+    "concepto": "Capacidad total",
+    "descripcion": "Butacas+palco",
+    "valor": "320",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-CP03",
+    "verif": "✅"
+  },
+  {
+    "id": "C-36",
+    "concepto": "Escaleras",
+    "descripcion": "2 laterales ancho 1.20 m",
+    "valor": "2 uds",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-EC01",
+    "verif": "✅"
+  },
+  {
+    "id": "C-37",
+    "concepto": "Servicios sanitarios",
+    "descripcion": "2 baterías por sexo en laterales",
+    "valor": "2",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-I01",
+    "verif": "✅ IMG_2363"
+  },
+  {
+    "id": "C-38",
+    "concepto": "Agua (Hidroven)",
+    "descripcion": "Red general + caja incendio auditorio",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-I02",
+    "verif": "✅ IMG_2243 P03-L9-A"
+  },
+  {
+    "id": "C-39",
+    "concepto": "Eléctrico (CORPOELEC)",
+    "descripcion": "Tubos fluorescentes plafond + acometida a verificar",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-I03",
+    "verif": "⚠️ Parcial"
+  },
+  {
+    "id": "C-40",
+    "concepto": "Iluminación",
+    "descripcion": "Tubos fluorescentes en plafond",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-IL01",
+    "verif": "✅ IMG_2137"
+  },
+  {
+    "id": "C-41",
+    "concepto": "Coordenada centroide",
+    "descripcion": "10°36'02.53\"N 67°1'56.56\"O WGS-84",
+    "valor": "Ver ficha",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-G01",
+    "verif": "⚠️ Inferida"
+  },
+  {
+    "id": "C-42",
+    "concepto": "Sistema geodésico",
+    "descripcion": "WGS-84 / SIRGAS-REGVEN Zona 19N",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-G02",
+    "verif": "⚠️"
+  },
+  {
+    "id": "C-43",
+    "concepto": "Zona sísmica COVENIN 1756",
+    "descripcion": "Zona 6 (alta peligrosidad) costa La Guaira",
+    "valor": "Zona 6",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-S01",
+    "verif": "⚠️ Obligatorio"
+  },
+  {
+    "id": "C-44",
+    "concepto": "Año construcción",
+    "descripcion": "1951 proyecto / 1958 corrección acústica",
+    "valor": "1951/1958",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-T01",
+    "verif": "✅"
+  },
+  {
+    "id": "C-45",
+    "concepto": "Cronología lámina",
+    "descripcion": "Levantamiento 2026",
+    "valor": "2026",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-T02",
+    "verif": "✅"
+  },
+  {
+    "id": "C-46",
+    "concepto": "Estado nominal",
+    "descripcion": "Íntegro 1958-2026",
+    "valor": "Activo",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-E01",
+    "verif": "✅"
+  },
+  {
+    "id": "C-47",
+    "concepto": "Estado actual post-sismo",
+    "descripcion": "NO APTO — fisuras revestimiento, desprendimiento plafond",
+    "valor": "ROJO",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-E02",
+    "verif": "🔴 24/06/2026"
+  },
+  {
+    "id": "C-48",
+    "concepto": "Relación con torre",
+    "descripcion": "Fracción 1: Auditorio al sur de Torre CUL-TOO-02",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-R01",
+    "verif": "✅ IMG_2134"
+  },
+  {
+    "id": "C-49",
+    "concepto": "MOP responsable",
+    "descripcion": "Ministerio de Obras Públicas — Dirección Edificios",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-H01",
+    "verif": "✅"
+  },
+  {
+    "id": "C-50",
+    "concepto": "Responsable levantamiento",
+    "descripcion": "Prof. Jhonny Da Silva Izquierdo (MSc. Ing. Lic.) 2026",
+    "valor": "—",
+    "codigo_funcional": "—",
+    "codigo_infra": "UMC-ED-007-R02",
+    "verif": "✅"
+  }
+]

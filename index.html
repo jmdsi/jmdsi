@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UMC — Sistema de Catastro Universitario — Portal 2026</title>
+<link rel="stylesheet" href="assets/css/lamina.css">
+<style>
+.hero{background:linear-gradient(135deg,#0A2342 0%,#1e3a5f 60%,#2a4a73 100%);color:white;padding:30px 20px;text-align:center}
+.hero h1{font-size:28px;margin:0;font-weight:900;letter-spacing:0.04em}
+.hero p{font-size:13px;opacity:0.92;max-width:900px;margin:10px auto 0}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:16px 0}
+.kpi div{background:white;border:1px solid #e5e7eb;border-radius:10px;padding:12px;text-align:center}
+.kpi b{font-size:22px;color:#0A2342;display:block}
+.mod-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.mod{border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;background:white}
+.mod img{width:100%;height:140px;object-fit:cover;background:#eee}
+.mod .body{padding:12px}
+.mod .cod{font-size:11px;font-weight:800;color:#C9A86A;background:#0A2342;display:inline-block;padding:2px 6px;border-radius:4px}
+</style>
+</head>
+<body>
+<div class="header-inst">
+  <div class="brand">
+    <img class="logo" src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='55' x='50' text-anchor='middle' font-size='32'>⚓</text></svg>" alt="UMC">
+    <div><h1>UNIVERSIDAD MARÍTIMA DEL CARIBE — UMC</h1><h2>SISTEMA DE CATASTRO INSTITUCIONAL <span>· 2026</span></h2><div style="font-size:11px">Estandarización Revisión Catastral — Cualquier Planta Física del Campus</div></div>
+  </div>
+  <div class="meta" style="text-align:right">
+    <div><b>Superagente + 6 Subagentes</b> — Catastral Senior Verificación Planos</div>
+    <div>MOP 1951 · Malaussena · Gutiérrez & Co. — Inventario 198 PDF + 487 fotos</div>
+    <div>Exportables: HTML · PDF · Word · CSV · JSON</div>
+  </div>
+</div>
+<div class="hero">
+  <h1>⚓ CATASTRO UNIVERSITARIO: CODIFICACIÓN DE LA PLANTA FÍSICA</h1>
+  <p>Plataforma estandarizada para <b>revisión catastral de cualquier edificación del campus UMC</b> — valida datos contra planos, corrige inconsistencias, asigna <b>Código Funcional (CUL-…)</b> + <b>Código Infraestructura (UMC-ED-…)</b>, integra 6 disciplinas y produce <b>lámina validada exportable</b> con observaciones técnicas y cronología histórica — <b>orientado a recuperación, reforzamiento y resguardo post-sismo 24/06/2026.</b></p>
+  <div style="margin-top:16px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+    <a href="docs/lamina-auditorio/" style="background:#C9A86A;color:#0A2342;padding:10px 18px;border-radius:8px;font-weight:800;text-decoration:none">📄 VER LÁMINA VALIDADA — AUDITORIO CUL-AUM-02 / UMC-ED-007</a>
+    <a href="data/ficha-auditorio.json" target="_blank" style="background:white;color:#0A2342;padding:10px 18px;border-radius:8px;font-weight:700;text-decoration:none">🧾 Ficha JSON</a>
+    <a href="data/tabla-codificada.json" target="_blank" style="background:transparent;border:1px solid white;color:white;padding:10px 18px;border-radius:8px;font-weight:700;text-decoration:none">📊 Tabla 50 registros</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="kpi">
+    <div><b>198</b><small>PDF planos MOP 1951-58 verificados</small></div>
+    <div><b>487</b><small>Fotos IMG_2134-2778 inventariadas</small></div>
+    <div><b>28</b><small>Fotos post-sismo Auditorio (IMG_1785-1833)</small></div>
+    <div><b>14</b><small>Planos vinculados Auditorio validados</small></div>
+    <div><b>50</b><small>Registros tabla codificada CUL/UMC</small></div>
+    <div><b>6+1</b><small>Subagentes + Superagente coordinador</small></div>
+  </div>
+
+  <div class="card">
+    <h3>🎯 ¿Qué estandariza este sistema? — Entregables de toda lámina</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;font-size:12px">
+      <div style="background:#f8fafc;padding:10px;border-radius:8px;border:1px solid #e5e7eb"><b>✅ Datos catastrales verificados contra planos</b><br>Declarado vs verificado · Medidas MOP · Inconsistencia crítica (área) · Sector naval · Coordenada WGS84 · Fuente foto/plano con signatura.</div>
+      <div style="background:#f8fafc;padding:10px;border-radius:8px;border:1px solid #e5e7eb"><b>✅ Tabla codificada (Funcional + Infraestructura)</b><br>50 ids C-xx · Concepto · Valor · Código funcional (CUL-…) · Código físico (UMC-ED-…) · Verificación ✅/⚠️/🔴 — Indexable en GIS/BD patrimonial.</div>
+      <div style="background:#f8fafc;padding:10px;border-radius:8px;border:1px solid #e5e7eb"><b>✅ Observaciones técnicas por categoría</b><br>6 bloques obligatorios: codificación, medidas MOP, área, normas dimensionales, cronología, post-sismo (quitar revestimiento) — Sin contradicciones entre disciplinas.</div>
+      <div style="background:#f8fafc;padding:10px;border-radius:8px;border:1px solid #e5e7eb"><b>✅ Cronología histórica</b><br>28-08-1951 → 24-06-2026 doblete M7.2+7.5 → 2026 validación — Fuente documental + referencia plano.</div>
+      <div style="background:#f8fafc;padding:10px;border-radius:8px;border:1px solid #e5e7eb"><b>✅ Formatos exportables</b><br>HTML (interactivo) · PDF (A3 paisaje) · Word (.doc/.docx) · CSV (tabla) · JSON (ficha) — Listo para Rectoría, IPC, contrataciones.</div>
+      <div style="background:#f8fafc;padding:10px;border-radius:8px;border:1px solid #e5e7eb"><b>✅ Diagnóstico forense 6 subagentes</b><br>Estructural sismorresistente · Patología · Geotecnia · Aguas · Eléctrica · Normativa/LCP — Conclusión integrada USO RESTRINGIDO ROJO.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🏛️ PLANTA FÍSICA VALIDADA — EJEMPLO COMPLETO — AUDITORIO <span class="badge">CUL-AUM-02 / UMC-ED-007</span></h3>
+    <div class="mod-grid">
+      <div class="mod">
+        <img src="https://via.placeholder.com/600x300/0A2342/C9A86A?text=AULA+MAGNA+%7C+12x18m+%7C+7.80m+%7C+320p" alt="">
+        <div class="body">
+          <div class="cod">CUL-AUM-02 / UMC-ED-007</div>
+          <h4 style="margin:6px 0 4px">AULA MAGNA - AUDITORIUM / Galería de Honor</h4>
+          <p style="font-size:12px;color:#444;margin:0">Auditorio Principal “Almte. García Rojas” — Fracción 1 — 225.5 m² neta / 341 m² total — 1 planta+palco — 7.80 m — 320 p — 1951/1958 MOP — NO APTO post-sismo 24/06/2026 (fisuras revestimiento, desprendimiento plafond) — Retiro revestimiento requerido.</p>
+          <div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"><a href="docs/lamina-auditorio/" style="background:#0A2342;color:white;padding:6px 10px;border-radius:6px;font-size:12px;font-weight:700;text-decoration:none">📄 Abrir lámina</a><a href="data/ficha-auditorio.json" target="_blank" style="border:1px solid #ddd;padding:6px 10px;border-radius:6px;font-size:12px;text-decoration:none;color:#0A2342">🧾 JSON</a><a href="https://drive.google.com/drive/folders/1T8uN5iY4kFgBaH2upuNQ8yVzLtwMQnuF" target="_blank" style="border:1px solid #ddd;padding:6px 10px;border-radius:6px;font-size:12px;text-decoration:none;color:#0A2342">📸 Drive 28 fotos</a></div>
+          <div style="font-size:10px;color:#6b7280;margin-top:6px">Homologa CUL-AUD-01→CUL-AUM-02 / UMC-ED-002→UMC-ED-007 · Verificado P0102-L1-A..L7, P03-L9-A, P04-L1-E..L15-C</div>
+        </div>
+      </div>
+      <div class="mod" style="opacity:0.85">
+        <img src="https://via.placeholder.com/600x300/C9A86A/0A2342?text=P05+PATIO+CUBIERTA+HONOR" alt="">
+        <div class="body">
+          <div class="cod">CUL-PCH-01 / UMC-ED-005</div>
+          <h4 style="margin:6px 0 4px">PATIO CUBIERTA DE HONOR — Proyecto UMC2030-P05</h4>
+          <p style="font-size:12px;color:#444;margin:0">Expediente ingeniería básica R01 + Anexos P0-P9 + 15 figuras + QA checklist — Ver carpeta P05 en Drive. Plantilla reutilizable del sistema.</p>
+          <div style="margin-top:8px"><a href="https://drive.google.com/drive/folders/1SCR3fAex16WZylyfieYZKVRMmfwa3khT" target="_blank" style="border:1px solid #ddd;padding:6px 10px;border-radius:6px;font-size:12px;text-decoration:none;color:#0A2342">📂 Abrir Drive P05</a></div>
+        </div>
+      </div>
+      <div class="mod" style="opacity:0.6;border-style:dashed">
+        <img src="https://via.placeholder.com/600x300/e5e7eb/6b7280?text=PR%C3%93XIMA+EDIFICACI%C3%93N+%7C+PLANTILLA+CUL-XXX" alt="">
+        <div class="body">
+          <div class="cod">CUL-XXX-NN / UMC-ED-0NN</div>
+          <h4 style="margin:6px 0 4px">Plantilla genérica — Cualquier planta física UMC</h4>
+          <p style="font-size:12px;color:#444;margin:0">Usa <code>templates/plantilla-ficha.json</code> + <code>templates/generar-lamina.py</code> para crear nueva lámina en 3 pasos: 1) completar ficha, 2) cargar fotos, 3) exportar. Codificación automática.</p>
+          <div style="margin-top:8px"><a href="templates/PLANTILLA_INSTRUCCIONES.md" style="border:1px solid #ddd;padding:6px 10px;border-radius:6px;font-size:12px;text-decoration:none;color:#0A2342">📖 Ver instrucciones</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>👥 SUPERAGENTE + 6 SUBAGENTES — Metodología</h3>
+    <p style="font-size:12px;color:#444">Superagente: <b>Ingeniero Catastral Senior — Patólogo Forense</b> activa modelo agéntico y coordina subagentes. Cada subagente genera hallazgo + recomendación; el superagente integra sin contradicciones y emite clasificación ROJO/AMARILLO/VERDE + orden “quitar revestimiento”.</p>
+    <div class="grid3" style="font-size:11px">
+      <div><b>AG1 Estructural Sismorresistente</b> — Pórticos + cerchas 20.80/17.20 m — Zona 6 COVENIN 1756 — pushover</div>
+      <div><b>AG2 Patología Forense (Coordinador)</b> — Fisuras, mapeo, calas, esclerometría ATC-20</div>
+      <div><b>AG3 Geotecnia / Taludes / Costa</b> — Zapatas+pilotes, SPT, MASW, canal protección</div>
+      <div><b>AG4 Aguas (Hidroven)</b> — Caja incendio, colector Grumetes, canal lluvia</div>
+      <div><b>AG5 Eléctrica (CORPOELEC)</b> — Fluorescentes, CEN, emergencia</div>
+      <div><b>AG6 Normativa + Contratación Pública</b> — COVENIN 1756/1753, LCP Art.101, RFP</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>📥 EXPORTABLES — Lámina Auditorio (ejemplo)</h3>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <a href="docs/lamina-auditorio/" style="background:#0A2342;color:white;padding:8px 14px;border-radius:6px;font-size:12px;font-weight:700;text-decoration:none">🌐 HTML interactivo + PDF/Word/CSV (botones en lámina)</a>
+      <a href="exports/LAMINA_CATASTRAL_VALIDADA_AUDITORIO_CUL-AUM-02_UMC-ED-007.csv" style="border:1px solid #0A2342;color:#0A2342;padding:8px 14px;border-radius:6px;font-size:12px;font-weight:700;text-decoration:none">📊 CSV tabla</a>
+      <a href="exports/FICHA_CATASTRAL_CUL-AUM-02_UMC-ED-007.json" style="border:1px solid #0A2342;color:#0A2342;padding:8px 14px;border-radius:6px;font-size:12px;font-weight:700;text-decoration:none">🧾 JSON ficha</a>
+      <a href="https://drive.google.com/file/d/1heG1ACTCREUmTRh1x7p3CEmhqV-3Kh4K/view" target="_blank" style="border:1px solid #ddd;padding:8px 14px;border-radius:6px;font-size:12px;text-decoration:none;color:#444">📄 PDF original Drive</a>
+      <a href="https://drive.google.com/file/d/1uGj6lvmY2uEEFZdZBelzw23Zmy2y3VFU/view" target="_blank" style="border:1px solid #ddd;padding:8px 14px;border-radius:6px;font-size:12px;text-decoration:none;color:#444">📄 Lámina previa UMC-ED-002</a>
+    </div>
+    <p style="font-size:11px;color:#666;margin-top:8px">Para generar nueva lámina: duplica <code>data/ficha-auditorio.json</code> → edita código funcional/físico → ejecuta <code>python tools/generar_exports.py --ficha data/nueva.json</code>. Ver <code>templates/PLANTILLA_INSTRUCCIONES.md</code>.</p>
+  </div>
+</div>
+<div style="text-align:center;font-size:11px;color:#6b7280;padding:14px">Universidad Marítima del Caribe — Sistema de Catastro Institucional — Comisión Técnica 2026 — Prof. Jhonny Da Silva Izquierdo (MSc. Ing. Lic.) — Todos los derechos reservados · 2026</div>
+</body>
+</html>
