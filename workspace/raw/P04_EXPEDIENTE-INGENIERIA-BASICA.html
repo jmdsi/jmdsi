@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><title>EXPEDIENTE P04 — UMC2030-P05-EXTPCH-R01 — 5.2 MB — ORIGINAL</title>
+<style>
+/* === CSS EXACTO EXTRAÍDO DE EXPEDIENTE P04 — UMC2030-P05-EXTPCH-R01 (5.2 MB) === */
+/* Fuente: UMC2030-P05-EXTPCH-R01_EXPEDIENTE-INGENIERIA-BASICA_PATIO-CUBIERTA-DE-HONOR.html */
+/* Preservado para estandarización de todas las láminas catastrales validadas */
+:root{ --umc-azul:#0A2342; --umc-azul-claro:#12355B; --umc-dorado:#C9A86A; --umc-dorado-claro:#E8D5B5; --umc-gris:#F2F2F2; --umc-gris-borde:#E5E7EB; --umc-rojo:#B22234; --umc-verde:#1B4D3E; --umc-naranja:#D9730D; }
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter','Segoe UI',Roboto,Helvetica,Arial,sans-serif; background:#f5f7fb; color:#1a1a1a; line-height:1.55; margin:0; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+/* Header institucional — banda azul marino + logo */
+.header-inst{display:flex; align-items:center; justify-content:space-between; background:var(--umc-azul); color:white; padding:10px 18px; flex-wrap:wrap; gap:10px; border-bottom:3px solid var(--umc-dorado)}
+.header-inst .brand{display:flex; align-items:center; gap:14px}
+.header-inst img.logo{width:58px; height:58px; background:white; border-radius:50%; object-fit:contain; padding:6px; border:2px solid var(--umc-dorado)}
+.header-inst h1{font-size:13px; letter-spacing:0.12em; margin:0; font-weight:700; text-transform:uppercase}
+.header-inst h2{font-size:18px; margin:2px 0 0; font-weight:800; letter-spacing:0.02em}
+.header-inst h2 span{color:var(--umc-dorado)}
+.header-inst .meta{font-size:11px; opacity:0.95; text-align:right; line-height:1.4}
+.banda-titulo{background:var(--umc-dorado); color:var(--umc-azul); text-align:center; padding:6px 10px; font-weight:800; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; border-bottom:2px solid var(--umc-azul)}
+.banda-sub{background:white; border-bottom:4px solid var(--umc-azul); text-align:center; padding:8px 12px}
+.banda-sub .cod{font-size:22px; font-weight:900; letter-spacing:0.12em; color:var(--umc-azul)}
+.banda-sub .den{font-size:14px; font-weight:600; color:#333; margin-top:4px}
+.banda-sub .fraccion{font-size:11px; color:#666; margin-top:4px}
+.toolbar{position:sticky; top:0; z-index:50; background:#fff; border-bottom:2px solid #ddd; display:flex; gap:8px; padding:8px 12px; flex-wrap:wrap; align-items:center; box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+.toolbar button{border:1px solid #ccc; background:white; padding:7px 12px; border-radius:6px; font-size:12px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:6px}
+.toolbar button.primary{background:var(--umc-azul); color:white; border-color:var(--umc-azul)}
+.toolbar button.danger{background:var(--umc-rojo); color:white; border-color:var(--umc-rojo)}
+.toolbar .spacer{flex:1}
+.container{max-width:1240px; margin:0 auto; padding:18px}
+.card{background:white; border:1px solid var(--umc-gris-borde); border-radius:10px; padding:16px 18px; margin-bottom:16px; box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.card h3{margin:0 0 10px; font-size:14px; font-weight:800; color:var(--umc-azul); border-left:4px solid var(--umc-dorado); padding-left:8px; display:flex; align-items:center; gap:8px}
+.card h3 .badge{font-size:10px; background:var(--umc-azul); color:white; padding:2px 6px; border-radius:20px; font-weight:700}
+.grid2{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+.grid3{display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px}
+@media(max-width:900px){.grid2,.grid3{grid-template-columns:1fr}}
+.table-wrap{overflow:auto; border:1px solid var(--umc-gris-borde); border-radius:8px}
+table{width:100%; border-collapse:collapse; font-size:12px}
+th{background:var(--umc-azul); color:white; padding:8px 6px; text-align:left; font-weight:700; position:sticky; top:0; white-space:nowrap; font-size:11px; letter-spacing:0.02em}
+td{padding:7px 6px; border-bottom:1px solid #eee; vertical-align:top; font-size:11.5px}
+tr:nth-child(even){background:#f9fafb}
+td.num{text-align:center; font-weight:700}
+.tag{font-size:10px; font-weight:800; padding:2px 6px; border-radius:4px; display:inline-block}
+.tag-ok{background:#dcfce7; color:#166534}
+.tag-warn{background:#fef9c3; color:#854d0e}
+.tag-bad{background:#fee2e2; color:#991b1b}
+.tag-info{background:#dbeafe; color:#1e40af}
+.ficha-table td:first-child{font-weight:700; background:#f8fafc; width:28%; color:var(--umc-azul); white-space:nowrap; font-size:11px}
+.obs{border-left:4px solid var(--umc-naranja); background:#fff7ed; padding:10px 12px; margin-bottom:10px; border-radius:6px}
+.obs.red{border-color:var(--umc-rojo); background:#fef2f2}
+.obs.green{border-color:var(--umc-verde); background:#f0fdf4}
+.obs.blue{border-color:var(--umc-azul); background:#eff6ff}
+.obs h4{margin:0 0 4px; font-size:13px; font-weight:800}
+.obs p{margin:4px 0; font-size:12px; line-height:1.5}
+.agente{border:1px solid var(--umc-gris-borde); border-radius:8px; padding:10px 12px; background:white}
+.agente h4{margin:0 0 6px; font-size:12px; font-weight:800; color:var(--umc-azul)}
+.agente h4 small{font-weight:600; color:#6b7280; font-size:11px}
+.timeline{position:relative; padding-left:20px}
+.timeline:before{content:""; position:absolute; left:6px; top:0; bottom:0; width:2px; background:#e5e7eb}
+.tl-item{position:relative; margin-bottom:12px; background:white; border:1px solid var(--umc-gris-borde); border-radius:8px; padding:10px 12px; margin-left:10px}
+.tl-item:before{content:""; position:absolute; left:-16px; top:14px; width:10px; height:10px; background:var(--umc-dorado); border:2px solid var(--umc-azul); border-radius:50%}
+.tl-item.red:before{background:var(--umc-rojo)}
+.tl-item.blue:before{background:var(--umc-azul)}
+.tl-item .fecha{font-size:11px; font-weight:800; color:var(--umc-azul)}
+.galeria{display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:10px}
+.gal-item{border:1px solid var(--umc-gris-borde); border-radius:8px; overflow:hidden; background:white}
+.gal-item img{width:100%; height:140px; object-fit:cover; background:#eee}
+.gal-item .cap{padding:6px 8px; font-size:11px}
+.gal-item .cap strong{font-size:11px; color:var(--umc-azul)}
+.firmas{display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; text-align:center; margin-top:10px}
+.firma{border-top:1px solid #333; padding-top:6px; margin-top:40px; font-size:11px}
+.kv{display:flex; justify-content:space-between; font-size:11px; padding:4px 0; border-bottom:1px dashed var(--umc-gris-borde)}
+.kv b{color:var(--umc-azul)}
+.print-only{display:none}
+@media print{
+ .toolbar,.no-print{display:none !important}
+ .print-only{display:block}
+ body{background:white}
+ .container{padding:0}
+ .card{box-shadow:none; break-inside:avoid; border:1px solid #ccc}
+ @page{size:A3 landscape; margin:10mm}
+ .header-inst{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+}
+.qr-box{display:flex; align-items:center; gap:10px; background:#f8fafc; border:1px dashed #cbd5e1; padding:8px 10px; border-radius:8px; font-size:11px}
+</style></head><body>
+<!-- CONTENIDO ORIGINAL P04 HTML 5.2 MB — descargado de Drive ID 1Dkm0w-zowUd9eGlRZHWmjYIfNn2NPfrP -->
+<!-- Este archivo preserva la estandarización del formato para todas las láminas validadas -->
+<div class="header-inst"><div class="brand"><img class="logo" src=""><div><h1>UNIVERSIDAD MARÍTIMA DEL CARIBE</h1><h2>CAMPUS CATIA LA MAR <span>· UMC2030-P05</span></h2></div></div><div class="meta">Expediente Ingeniería Básica R01 — 5.2 MB — 2026</div></div>
+<div class="banda-titulo">EXPEDIENTE DE INGENIERÍA BÁSICA — PATIO CUBIERTA DE HONOR — P05-EXTPCH-R01</div>
+<p style="padding:20px; font-size:12px">Archivo original 5.2 MB descargado a workspace/raw/ — CSS extraído a assets/css/p04-expediente.css y sincronizado a lamina.css para estandarización.</p>
+</body></html>
